@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Страница Товара</title>
+    <meta charset="utf-8"/>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <link href="favicon.ico?ver=2" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+
+</head>
+<body>
+<div id="wrapper">
+
+    <header>
+
+        <div class="h_top clear">
+            <div class="clear">
+                <div class="search">
+                    <a class="click_search" href="javascript:void(0)"><i class="ico_search"></i></a>
+                    <form action="#">
+                        <p class="clear">
+                            <input type="text" placeholder="Поиск по сайту..."/>
+                            <input type="submit" value=""/>
+                            <i class="ico_search"></i>
+                        </p>
+                    </form>
+                </div> <!--search-->
+
+                <div class="auth_block clear">
+                    <p class="h_auth">
+                        <i class="ico_user"></i>
+                        <a id="auth" href="#">Вход</a> / <a id="registr" href="#">Регистрация</a>
+                    </p>
+                    <p class="h_cart">
+                        <a href="#">
+                            <i class="ico_cart"></i>
+                            <span>2</span>
+                        </a>
+                    </p>
+                </div><!--auth_block-->
+
+                <div class="contact_center">
+                    <a href="tel:"><i class="ico_tel"></i>495 540 52 52</a>
+                    <a href="mailto:"><i class="ico_plane"></i>info@bellashop.ru</a>
+                </div> <!--contact_center-->
+            </div>
+        </div> <!--h_top-->
+        <div class="h_bot head_inner_page clear">
+            <a href="#" class="logo"><img src="img/logo.png" alt="BellaShop"/></a>
+            <a class="burger_menu" href="javascript:void(0)"><i class="ico_burg"></i></a>
+            <nav class="menu_home_page">
+                <ul class="clear">
+                    <li><a class="active" href="">Главная</a></li>
+                    <li><a href="">Каталог</a></li>
+                    <li><a href="">Акции</a></li>
+                    <li><a href="">Оплата и доставка</a></li>
+                    <li><a href="">Оптовикам</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
+            </nav>
+        </div><!--h_bot-->
+
+    </header> <!-- header -->
+    <div class="inner_page_menu">
+
+        <div class="clear">
+            <nav>
+                <ul class="clear">
+                    <li><a class="active" href="">кухонная</a></li>
+                    <li><a href="">дизайнерская</a></li>
+                    <li><a href="">для готовки</a></li>
+                    <li><a href="">предметы интерьера</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </div><!--inner_page_menu-->
+    <div id="main_container">
+
+        <div class="inner_page clear">
+
+            <div class="path">
+                <a href="">главная</a> • <a href="">категория</a> • <a href="">кухонная</a> • <a href="" class="active">кофейная посуда</a>
+            </div>
+
+            <div class="product_filter clear">
+                <div class="sidebar">
+                    <p class="clear show_f"> <a class="burger_menu" href="javascript:void(0)"><i class="ico_burg"></i></a> Показать фильтр </p>
+                    <aside class="filtr_prod">
+                        <h3>Категории</h3>
+                        <ul>
+                            <li>
+                                <input id="check_1" type="checkbox"/>
+                                <a class="ico_plus_min" href="javascript:void(0);"><label for="check_1">Кухонная посуда</label></a>
+
+                                <ul class="active_tab">
+                                    <li><a href="#">Столовые сервизы</a></li>
+                                    <li><a href="#">Чайная посуда</a></li>
+                                    <li><a href="#">Кофейная посуда</a></li>
+                                    <li><a href="#">Столовая посуда</a></li>
+                                    <li><a href="#">Столовые сервизы</a></li>
+                                </ul>
+
+                            </li>
+                            <li>
+                                <input id="check_2" type="checkbox"/>
+                                <a class="ico_plus_min" href="javascript:void(0);"><label for="check_2">Дизайнерская посуда</label></a>
+
+                                <ul class="active_tab">
+                                    <li><a href="#">Столовые сервизы</a></li>
+                                    <li><a href="#">Чайная посуда</a></li>
+                                    <li><a href="#">Кофейная посуда</a></li>
+                                    <li><a href="#">Столовая посуда</a></li>
+                                    <li><a href="#">Столовые сервизы</a></li>
+                                </ul>
+
+                            </li>
+                            <li>
+                                <input id="check_3" type="checkbox"/>
+                                <a class="ico_plus_min" href="javascript:void(0);"><label for="check_3">Посуда для готовки</label></a>
+
+                                <ul class="active_tab">
+                                    <li><a href="#">Столовые сервизы</a></li>
+                                    <li><a href="#">Чайная посуда</a></li>
+                                    <li><a href="#">Кофейная посуда</a></li>
+                                    <li><a href="#">Столовая посуда</a></li>
+                                    <li><a href="#">Столовые сервизы</a></li>
+                                </ul>
+
+                            </li>
+                            <li>
+                                <input id="check_4" type="checkbox"/>
+                                <a class="ico_plus_min" href="javascript:void(0);"><label for="check_4">Предметы Интерьера</label></a>
+                            </li>
+                            <li>
+                                <input id="check_5" type="checkbox"/>
+                                <a class="ico_plus_min" href="javascript:void(0);"><label for="check_5">По стране</label></a>
+                            </li>
+                            <li>
+                                <input id="check_6" type="checkbox"/>
+                                <a class="ico_plus_min" href="javascript:void(0);"><label for="check_6">По цвету</label></a>
+                            </li>
+                            <li>
+                                <input id="check_7" type="checkbox"/>
+                                <a class="ico_plus_min" href="javascript:void(0);"><label for="check_7">По бренду</label></a>
+                            </li>
+                        </ul>
+
+                    </aside>
+
+                    <aside class="price_filter">
+                        <h3>Фильтр по цене</h3>
+                        <div id="slider-range"></div>
+                        <div class="slider_price">
+                            <input type="text" id="min_price" readonly/><input type="text" id="max_price" readonly/>
+                            <a href="javascript:void(0);" class="but_price">Найти</a>
+                        </div>
+                    </aside>
+
+                    <aside class="have_banner">
+                        <div class="sidebar_banner">
+                            <a href="javascript:void(0)">
+                                <img src="img/sidebar_banner.jpg" alt=""/>
+                                <p>
+                                    Новая <br /><span>коллекция</span>
+                                </p>
+                                <div class="skidka">скидка 50%</div>
+                            </a>
+                        </div>
+                    </aside>
+
+                    <aside>
+                        <h3>Популярные товары</h3>
+
+                        <div class="new_prod clear">
+                            <a href="#"><img src="img/tov.jpg" alt=""/></a>
+                            <div>
+                                <p class="stars_prod">
+                                    <i class="ico_star"></i>
+                                    <i class="ico_star"></i>
+                                    <i class="ico_star"></i>
+                                    <i class="ico_star"></i>
+                                    <i class="ico_star"></i>
+                                </p>
+                                <p class="name_tov"><a href="">Название товара</a></p>
+                                <p class="name_price">
+                                    <span class="old_price">18 000 ₷</span>
+                                    <span class="new_price">12 000 ₷</span>
+                                </p>
+                            </div>
+                        </div><!--new_prod-->
+                        <div class="new_prod clear">
+                            <a href="#"><img src="img/tov.jpg" alt=""/></a>
+                            <div>
+                                <p class="stars_prod">
+                                    <i class="ico_star"></i>
+                                    <i class="ico_star"></i>
+                                    <i class="ico_star"></i>
+                                    <i class="ico_star"></i>
+                                    <i class="ico_star"></i>
+                                </p>
+                                <p class="name_tov"><a href="">Название товара</a></p>
+                                <p class="name_price">
+                                    <span class="old_price">18 000 ₷</span>
+                                    <span class="new_price">12 000 ₷</span>
+                                </p>
+                            </div>
+                        </div><!--new_prod-->
+                        <div class="new_prod clear">
+                            <a href="#"><img src="img/tov.jpg" alt=""/></a>
+                            <div>
+                                <p class="stars_prod">
+                                    <i class="ico_star"></i>
+                                    <i class="ico_star"></i>
+                                    <i class="ico_star"></i>
+                                    <i class="ico_star"></i>
+                                    <i class="ico_star"></i>
+                                </p>
+                                <p class="name_tov"><a href="">Название товара</a></p>
+                                <p class="name_price">
+                                    <span class="old_price">18 000 ₷</span>
+                                    <span class="new_price">12 000 ₷</span>
+                                </p>
+                            </div>
+                        </div><!--new_prod-->
+
+
+                    </aside>
+                </div><!--sidebar-->
+
+                <div class="all_products">
+
+                    <div class="about_product clear">
+
+                        <div class="slider_product">
+
+                            <div id="ax_slider">
+                                <a class="ax_slide_img group1"  href="img/tovar_sider.jpg"><img src="img/tovar_sider.jpg" alt=""></a>
+                               <div class="mini_slide">
+                                   <ul class="clear">
+                                       <li><a href="img/product.jpg"><img src="img/tov.jpg" alt=""></a></li>
+                                       <li><a href="img/product.jpg"><img src="img/tov.jpg" alt=""></a></li>
+                                       <li><a href="img/sidebar_banner.jpg"><img src="img/tov.jpg" alt=""></a></li>
+                                       <li><a href="img/sidebar_banner.jpg"><img src="img/tov.jpg" alt=""></a></li>
+                                       <li><a href="img/tovar_sider.jpg"><img src="img/tov.jpg" alt=""></a></li>
+                                       <li><a href="img/tovar_sider.jpg"><img src="img/tov.jpg" alt=""></a></li>
+                                       <li><a href="img/product.jpg"><img src="img/tov.jpg" alt=""></a></li>
+                                       <li><a href="img/product.jpg"><img src="img/tov.jpg" alt=""></a></li>
+                                       <li><a href="img/sidebar_banner.jpg"><img src="img/tov.jpg" alt=""></a></li>
+                                       <li><a href="img/sidebar_banner.jpg"><img src="img/tov.jpg" alt=""></a></li>
+                                       <li><a href="img/tovar_sider.jpg"><img src="img/tov.jpg" alt=""></a></li>
+                                       <li><a href="img/tovar_sider.jpg"><img src="img/tov.jpg" alt=""></a></li>
+                                   </ul>
+                               </div>
+                                <a class="ax_nav_left" href="javascript:void(0);"><i class="ico_left"></i></a>
+                                <a class="ax_nav_right" href="javascript:void(0);"><i class="ico_right"></i></a>
+                            </div>
+
+                        </div><!--slider_product-->
+
+                        <div class="details_prod">
+                            <p class="stars_prod">
+                                <i class="ico_star"></i>
+                                <i class="ico_star"></i>
+                                <i class="ico_star"></i>
+                                <i class="ico_star"></i>
+                                <i class="ico_star"></i>
+                            </p>
+                            <h1>название продукта</h1>
+                            <p class="price">
+                                <span class="old_price">9 600 ₽</span>
+                                <span class="now_price">5 783 ₽</span>
+                            </p>
+                            <h3>Описание товара</h3>
+                            <p class="text_prod">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</p>
+
+                            <div class="add_in_cart clear">
+                                <ul class="price_plus_minus clear">
+                                    <li><a class="btn_minus"  href="javascript:void(0)">-</a></li>
+                                    <li>
+                                        <input class="count_prod" type="text" name="" value=""/>
+                                    </li>
+                                    <li><a class="btn_plus"  href="javascript:void(0)">+</a></li>
+                                </ul><!--price_plus_minus-->
+                                <input class="promo_kod" type="text" placeholder="Введите промокод"/>
+                            </div><!--add_in_cart-->
+
+                            <a href="javascript:void(0);" class="btn_add_cart"><i class="ico_cart"></i>В корзину</a>
+
+                            <p class="dop_cat">
+                                <span>Категория:</span> <a href="#">кофейный сервиз</a>
+                            </p>
+                            <p class="dop_share">
+                                <span>Поделиться:</span>
+                                <a href=""><i class="ico_fb"></i></a>
+                                <a href=""><i class="ico_vk"></i></a>
+                                <a href=""><i class="ico_ok"></i></a>
+                            </p>
+
+                        </div><!--details_prod-->
+
+                        <div class="prod_tabs">
+
+                            <ul class="tab_link clear">
+                                <li><a class="tab_act" href="#tab_opis">Описание</a></li>
+                                <li><a href="#tab_oplat">Оплата и доставка</a></li>
+                            </ul>
+
+                            <div class="act" id="tab_opis">
+                                <a href="#"><img src="img/tov.jpg" alt=""></a>
+                                <div>
+                                    <h3>Название продукта</h3>
+                                    <div class="stars_prod clear">
+                                        <i class="ico_star"></i>
+                                        <i class="ico_star"></i>
+                                        <i class="ico_star"></i>
+                                        <i class="ico_star"></i>
+                                        <i class="ico_star"></i>
+                                    </div>
+                                    <p>Стоимость доставки в пределах МКАД и до 20 км за МКАД составляет 400 рублей. В пределы МКАД также входят районы Бутово, Жулебино, Новокосино, Реутов, Старое Косино.
+                                        Доставка осуществляется на следующий день после покупки. Оформляется только на товар, имеющийся в наличии на складах Компании и при условии поступления заказа до 16:00 текущего дня. Время доставки с 9:00 до 15:00 либо с 15:00 до 21:00.
+                                        Доставка c 20.00 до 00.00 осуществляется через день со дня покупки.
+                                        Стоимость всех указанных видов доставки одинаковая.
+                                        Оформив заказ, Вы можете отложить доставку на срок до 14 дней, предупредив об этом оператора.<br />
+                                        Внимание!!!<br />
+                                        Если Вам не привезли заказанную в интернет магазине технику в срок в соответствии с указанной датой при создании заказа , то повторная доставка будет для Вас бесплатной*
+                                    </p>
+                                    <p>Оплата производится: наличными при получении, перечеслением на карту Сбербанка, оплата выставленного счета.. </p>
+                                </div>
+                            </div><!--tab_opis-->
+
+                            <div id="tab_oplat">
+
+                                <a href="#"><img src="img/tov.jpg" alt=""></a>
+                                <div>
+                                    <h3>Название продукта</h3>
+                                    <p>Стоимость доставки в пределах МКАД и до 20 км за МКАД составляет 400 рублей. В пределы МКАД также входят районы Бутово, Жулебино, Новокосино, Реутов, Старое Косино.
+                                        Доставка осуществляется на следующий день после покупки. Оформляется только на товар, имеющийся в наличии на складах Компании и при условии поступления заказа до 16:00 текущего дня. Время доставки с 9:00 до 15:00 либо с 15:00 до 21:00.
+                                        Доставка c 20.00 до 00.00 осуществляется через день со дня покупки.
+                                        Стоимость всех указанных видов доставки одинаковая.
+                                        Оформив заказ, Вы можете отложить доставку на срок до 14 дней, предупредив об этом оператора.<br />
+                                        Внимание!!!<br />
+                                        Если Вам не привезли заказанную в интернет магазине технику в срок в соответствии с указанной датой при создании заказа , то повторная доставка будет для Вас бесплатной*
+                                    </p>
+                                    <p>Оплата производится: наличными при получении, перечеслением на карту Сбербанка, оплата выставленного счета.. </p>
+                                </div>
+
+                            </div><!--tab_oplat-->
+
+                        </div><!--prod_tabs-->
+
+                    </div><!--about_product-->
+
+                </div><!--all_products-->
+
+            </div><!--product_filter-->
+
+            <div class="with_this_buy">
+                <h2>С этим товаром покупают</h2>
+
+                <div class="this_by_list clear">
+
+                    <aside class="prod">
+                        <figure>
+                            <a class="img_prod" href="#"><img src="img/product.jpg" alt=""/></a>
+                            <p class="skidki_prod">
+                                <i class="sprite_1"></i>
+                                <i class="sprite_2"></i>
+                                <i class="sprite_3"></i>
+                            </p><!--skidki_prod-->
+                        </figure>
+                        <p class="cat_prod"><a href="#">Категория</a></p>
+                        <p class="name_prod"><a href="#">набор «Медовая Золотая»</a></p>
+                        <p class="price_prod">
+                            <span class="old_price">1 927 ₽</span>
+                            <span class="now_price">1 927 ₽</span>
+                        </p>
+                        <p class="but_prod">
+                            <a href="#">в корзину</a>
+                        </p>
+                    </aside>
+                    <aside class="prod">
+                        <figure>
+                            <a class="img_prod" href="#"><img src="img/product.jpg" alt=""/></a>
+                            <p class="skidki_prod">
+                                <i class="sprite_1"></i>
+                                <i class="sprite_2"></i>
+                                <i class="sprite_3"></i>
+                            </p><!--skidki_prod-->
+                        </figure>
+                        <p class="cat_prod"><a href="#">Категория</a></p>
+                        <p class="name_prod"><a href="#">набор «Медовая Золотая»</a></p>
+                        <p class="price_prod">
+                            <span class="old_price">1 927 ₽</span>
+                            <span class="now_price">1 927 ₽</span>
+                        </p>
+                        <p class="but_prod">
+                            <a href="#">в корзину</a>
+                        </p>
+                    </aside>
+                    <aside class="prod">
+                        <figure>
+                            <a class="img_prod" href="#"><img src="img/product.jpg" alt=""/></a>
+                            <p class="skidki_prod">
+                                <i class="sprite_1"></i>
+                                <i class="sprite_2"></i>
+                                <i class="sprite_3"></i>
+                            </p><!--skidki_prod-->
+                        </figure>
+                        <p class="cat_prod"><a href="#">Категория</a></p>
+                        <p class="name_prod"><a href="#">набор «Медовая Золотая»</a></p>
+                        <p class="price_prod">
+                            <span class="old_price">1 927 ₽</span>
+                            <span class="now_price">1 927 ₽</span>
+                        </p>
+                        <p class="but_prod">
+                            <a class="in_cart" href="#">в корзину</a>
+                        </p>
+                    </aside>
+
+                </div><!--this_by_list-->
+
+            </div><!--with_this_buy-->
+
+        </div><!--inner_page-->
+
+        <div class="our_brends">
+
+            <h2>наши бренды</h2>
+
+            <div class="slider1">
+                <div class="slide"><a href="#"><img src="img/01.png" alt=""/></a></div>
+                <div class="slide"><a href="#"><img src="img/02.png" alt=""/></a></div>
+                <div class="slide"><a href="#"><img src="img/03.png" alt=""/></a></div>
+                <div class="slide"><a href="#"><img src="img/04.png" alt=""/></a></div>
+                <div class="slide"><a href="#"><img src="img/05.png" alt=""/></a></div>
+
+                <div class="slide"><a href="#"><img src="img/01.png" alt=""/></a></div>
+                <div class="slide"><a href="#"><img src="img/02.png" alt=""/></a></div>
+                <div class="slide"><a href="#"><img src="img/03.png" alt=""/></a></div>
+                <div class="slide"><a href="#"><img src="img/04.png" alt=""/></a></div>
+                <div class="slide"><a href="#"><img src="img/05.png" alt=""/></a></div>
+            </div>
+
+        </div><!--our_brends-->
+
+    </div> <!--#content_main-->
+    <footer>
+        <div class="footer_top">
+            <section class="clear">
+                <aside>
+                    <h4>О нас</h4>
+                    <p class="f_text">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud.
+                        <br /><a href="#">Читать далее »</a>
+                    </p>
+
+                    <h3>E-Mail рассылка:</h3>
+                    <form action="#">
+                        <p class="clear emal_podpiska">
+                            <input type="text" placeholder="E-Mail адрес"/>
+                            <input type="submit" value=""/>
+                            <i class="ico_msg"></i>
+                        </p>
+                    </form>
+                </aside>
+                <aside>
+                    <h4>Новинки</h4>
+                    <ul>
+                        <li>
+                            <div class="new_prod clear">
+                                <a href="#"><img src="img/tov.jpg" alt=""/></a>
+                                <div>
+                                    <p class="name_tov"><a href="">Название товара</a></p>
+                                    <p class="name_price">
+                                        <span class="old_price">18 000 ₷</span>
+                                        <span class="new_price">12 000 ₷</span>
+                                    </p>
+                                    <p class="stars_prod">
+                                        <i class="ico_star"></i>
+                                        <i class="ico_star"></i>
+                                        <i class="ico_star"></i>
+                                        <i class="ico_star"></i>
+                                        <i class="ico_star"></i>
+                                    </p>
+                                </div>
+                            </div><!--new_prod-->
+                        </li>
+                        <li>
+                            <div class="new_prod clear">
+                                <a href="#"><img src="img/tov.jpg" alt=""/></a>
+                                <div>
+                                    <p class="name_tov"><a href="">Название товара</a></p>
+                                    <p class="name_price">
+                                        <span class="old_price">18 000 ₷</span>
+                                        <span class="new_price">12 000 ₷</span>
+                                    </p>
+                                    <p class="stars_prod">
+                                        <i class="ico_star"></i>
+                                        <i class="ico_star"></i>
+                                        <i class="ico_star"></i>
+                                        <i class="ico_star"></i>
+                                        <i class="ico_star"></i>
+                                    </p>
+                                </div>
+                            </div><!--new_prod-->
+                        </li>
+                        <li>
+                            <div class="new_prod clear">
+                                <a href="#"><img src="img/tov.jpg" alt=""/></a>
+                                <div>
+                                    <p class="name_tov"><a href="">Название товара</a></p>
+                                    <p class="name_price">
+                                        <span class="old_price">18 000 ₷</span>
+                                        <span class="new_price">12 000 ₷</span>
+                                    </p>
+                                    <p class="stars_prod">
+                                        <i class="ico_star"></i>
+                                        <i class="ico_star"></i>
+                                        <i class="ico_star"></i>
+                                        <i class="ico_star"></i>
+                                        <i class="ico_star"></i>
+                                    </p>
+                                </div>
+                            </div><!--new_prod-->
+                        </li>
+                    </ul>
+                </aside>
+                <aside>
+                    <h4>Контакты</h4>
+                    <ul>
+                        <li><i class="ico_map"></i>Москва Куркино Соловьиная роща 9</li>
+                        <li><i class="ico_tel"></i><a href="tel:">495 540 52 52</a></li>
+                        <li><i class="ico_plane"></i><a href="mailto:">info@bellashop.ru</a></li>
+                        <li>
+                            <p class="soc">
+                                <a href=""><i class="ico_fb"></i></a>
+                                <a href=""><i class="ico_vk"></i></a>
+                                <a href=""><i class="ico_ok"></i></a>
+                            </p>
+                        </li>
+                    </ul>
+                </aside>
+            </section>
+        </div> <!--footer_top-->
+        <div class="footer_bot">
+            <p class="copy">&copy; 2016 <a href="#">BellaShop</a></p>
+        </div> <!--footer_bot-->
+    </footer> <!-- footer -->
+
+    <div id="modal_window">
+        <a href="javascript:void(0);" class="close_win"></a>
+        <div class="window_open">
+            <h4>Авторизация</h4>
+            <div class="form_block">
+                <form id="auth_form" action="#">
+                    <p><input type="email" placeholder="Ваш E-mail..." required/><i class="ico_msg"></i></p>
+                    <p><input type="password" placeholder="Введите Пароль..." required/><i class="ico_key"></i></p>
+                    <div>
+                        <input type="submit" value="Вход"/><br />
+                        <a id="registr_form_show" href="javascript:void(0)">Зарегистрироваться</a>
+                    </div>
+                </form>
+                <form id="registr_form" action="#">
+                    <p><input min="3" type="text" placeholder="Ваше Имя..." required/><i class="ico_user"></i></p>
+                    <p><input type="email" placeholder="Ваш E-mail..." required/><i class="ico_msg"></i></p>
+                    <p><input type="password" placeholder="Введите Пароль..." required/><i class="ico_key"></i></p>
+                    <p><input type="password" placeholder="Повторите Пароль..." required/><i class="ico_key"></i></p>
+                    <div>
+                        <input type="submit" value="Зарегистрироваться"/><br />
+                        <a id="auth_form_show" href="javascript:void(0)">Вход</a>
+                    </div>
+                </form><!--form_block-->
+            </div><!--form_block-->
+        </div><!--window_open-->
+    </div><!--modal_window-->
+
+</div> <!-- wrap -->
+<script src="js/jquery-1.12.0.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script defer src="js/bootstrap.js"></script>
+<script defer src="js/jquery.glide.min.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<script src="js/jquery.colorbox.js"></script>
+<script src="js/js.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+<link rel="stylesheet" type="text/css" href="css/colorbox.css"/>
+
+</body>
+</html>
