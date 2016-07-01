@@ -89,8 +89,7 @@ header .h_top .auth_block{float:right;padding: 10px 0 0;}
 
 /*header block bottom*/
 header .h_bot {max-width: 1170px; margin:0 auto 25px; padding: 25px 0 0;border-bottom: 1px solid #F3F3F3;}
-header .h_bot .logo{float: left; display: table; margin:0  auto 25px;}
-.head_inner_page .logo img{width: 150px;}
+header .h_bot .logo{display: table; margin:0  auto 25px;}
 
 /*menu_home_page*/
 .menu_home_page{margin: 0 auto; display: table;font-family:'Geometria-Bold';position: relative; top: 1px;}
@@ -102,7 +101,7 @@ header .h_bot .logo{float: left; display: table; margin:0  auto 25px;}
 
 /*******head_inner_page*****/
 .head_inner_page{border:none !important;}
-.head_inner_page .logo{float:left; margin: 0 25px 25px 0;}
+.head_inner_page .logo{float:left;margin: 0 25px 25px 0;}
 .head_inner_page .logo img{width: 150px;}
 .head_inner_page .menu_home_page{margin: 20px auto 0;}
 .head_inner_page .menu_home_page ul li a {border-top: 2px solid #fff; border-bottom:none;padding: 10px 0 0;}
