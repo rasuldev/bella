@@ -581,7 +581,7 @@ display:-webkit-flex;
 .form_block p i[class^="ico"]{position: absolute;right: 10px;top: 12px;color:#E1E1E1;font-size: 20px;}
 .form_block p i.ico_key{transform: rotateY(180deg);}
 
-#registr_form,#auth_form{display: none;}
+#registr_form,#auth_form, #form_forg_p{display: none;}
 
 
 /**********BIG SLIDER HOME PAGE************/

@@ -134,7 +134,11 @@
 						<input type="submit" value="Зарегистрироваться"/><br />
 						<a id="auth_form_show" href="javascript:void(0)">Вход</a>
 					</div>
-				</form><!--form_block-->
+				</form>
+				<form id="form_forg_p">
+					<?$APPLICATION->IncludeComponent("bitrix:system.auth.forgotpasswd", "my_flat", array());?>
+				</form>
+				<!--form_block-->
 			</div><!--form_block-->
 		</div><!--window_open-->
 	</div><!--modal_window-->

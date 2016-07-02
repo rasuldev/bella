@@ -93,7 +93,7 @@ $APPLICATION->SetAdditionalCSS("/bitrix/css/main/system.auth/flat/style.css");
 
         <noindex>
             <div class="bx-authform-link-container">
-                <a href="http://<?= $_SERVER["SERVER_NAME"] ?>/login/?forgot_password=yes"
+                <a id="forg_p" href="javascript:void(0)"
                    rel="nofollow"><b><?= GetMessage("AUTH_FORGOT_PASSWORD_2") ?></b></a>
             </div>
         </noindex>
@@ -102,7 +102,6 @@ $APPLICATION->SetAdditionalCSS("/bitrix/css/main/system.auth/flat/style.css");
     <? if ($arParams["NOT_SHOW_LINKS"] != "Y" && $arResult["NEW_USER_REGISTRATION"] == "Y" && $arParams["AUTHORIZE_REGISTRATION"] != "Y"): ?>
         <noindex>
             <div class="bx-authform-link-container">
-                <?= GetMessage("AUTH_FIRST_ONE") ?><br/>
                 <a id="registr_form_show" href="javascript:void(0)"
                    rel="nofollow"><b><?= GetMessage("AUTH_REGISTER") ?></b></a>
             </div>

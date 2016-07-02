@@ -63,7 +63,7 @@ $APPLICATION->SetTitle("Контакты");
 		"SIZE_INPUT" => "12px",
 		"SIZE_NAME" => "12px",
 		"USERMAIL_FROM" => "N",
-		"USE_CAPTCHA" => "Y",
+		"USE_CAPTCHA" => "N",
 		"WIDTH_FORM" => "100%"
 	)
 );?><br>

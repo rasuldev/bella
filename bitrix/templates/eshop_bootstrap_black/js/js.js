@@ -45,6 +45,7 @@ jQuery(document).ready(function(){
     $("#auth, #auth_form_show").click(function(){
         $("#modal_window h4").html('Авторизация' + '<i class="ico_close"></i>');
         $("#registr_form").fadeOut(function(){
+            $("#form_forg_p").css({"display":"none"});
             $("#modal_window, #form_auth").css({"opacity":"1"}).fadeIn();
         });
     }); // show auth
@@ -55,6 +56,13 @@ jQuery(document).ready(function(){
             $("#modal_window, #registr_form").css({"opacity":"1"}).fadeIn();
         });
     }); // show registr
+
+    $("#forg_p").click(function(){
+        $("#modal_window h4").html('Восстановления пароля' + '<i class="ico_close"></i>');
+        $("#form_auth").fadeOut(function(){
+            $("#modal_window, #form_forg_p").css({"opacity":"1"}).fadeIn();
+        });
+    }); // show recover password
 
 
     /**********AX SLIDER*************/
