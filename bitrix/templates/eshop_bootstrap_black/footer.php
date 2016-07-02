@@ -117,19 +117,13 @@
 	</footer> <!-- footer -->
 
 	<a href="javascript:void(0);" class="but_top"><i class="ico_top"></i></a>
-
 	<div id="modal_window">
 		<a href="javascript:void(0);" class="close_win"></a>
 		<div class="window_open">
 			<h4>Авторизация</h4>
 			<div class="form_block">
-				<form id="auth_form" action="#">
-					<p><input type="email" placeholder="Ваш E-mail..." required/><i class="ico_msg"></i></p>
-					<p><input type="password" placeholder="Введите Пароль..." required/><i class="ico_key"></i></p>
-					<div>
-						<input type="submit" value="Вход"/><br />
-						<a id="registr_form_show" href="javascript:void(0)">Зарегистрироваться</a>
-					</div>
+				<form id="form_auth">
+					<?$APPLICATION->IncludeComponent("mytemplate:system.auth.authorize", "flat", array());?>
 				</form>
 				<form id="registr_form" action="#">
 					<p><input min="3" type="text" placeholder="Ваше Имя..." required/><i class="ico_user"></i></p>

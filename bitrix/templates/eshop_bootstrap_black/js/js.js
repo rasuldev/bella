@@ -45,13 +45,13 @@ jQuery(document).ready(function(){
     $("#auth, #auth_form_show").click(function(){
         $("#modal_window h4").html('Авторизация' + '<i class="ico_close"></i>');
         $("#registr_form").fadeOut(function(){
-            $("#modal_window, #auth_form").css({"opacity":"1"}).fadeIn();
+            $("#modal_window, #form_auth").css({"opacity":"1"}).fadeIn();
         });
     }); // show auth
 
     $("#registr, #registr_form_show").click(function(){
         $("#modal_window h4").html('Регистрация' + '<i class="ico_close"></i>');
-        $("#auth_form").fadeOut(function(){
+        $("#form_auth").fadeOut(function(){
             $("#modal_window, #registr_form").css({"opacity":"1"}).fadeIn();
         });
     }); // show registr

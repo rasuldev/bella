@@ -572,7 +572,7 @@ display:-webkit-flex;
 .window_open h4 .ico_close{position: absolute; right:20px;cursor: pointer;}
 .form_block{background: #fff;padding: 30px;}
 .form_block p{margin: 0 0 20px;position: relative;}
-.form_block p input{width: 100%;background: #FAFAFA;border-radius: 6px; height: 47px;border:none;padding: 0 40px 0 10px;line-height: 1.3;}
+.form_block p input{width: 100% !important;background: #FAFAFA !important; border-radius: 6px !important; height: 47px !important; border:none !important; padding: 0 40px 0 10px !important; line-height: 1.3 !important;}
 .form_block div{text-align: center;}
 .form_block div input[type="submit"]{background: #ffc600; border-radius: 6px;border:none;color:#fff; text-transform: uppercase;height: 54px;padding: 0 15px;margin: 0 0 10px;transition: 1s;min-width: 150px;}
 .form_block div input[type="submit"]:hover{background: #000;}

@@ -19,9 +19,9 @@ $compositeStub = (isset($arResult['COMPOSITE_STUB']) && $arResult['COMPOSITE_STU
 			<a href="?logout=yes"><?=GetMessage('TSB1_LOGOUT')?></a>
 		<?else:?>
 			<!-- <a id="auth" href="#">Вход</a> / <a id="registr" href="#">Регистрация</a> -->
-			<a href="<?=$arParams['PATH_TO_REGISTER']?>?login=yes"><?=GetMessage('TSB1_LOGIN')?></a>
+			<a id="auth" href="#"><?=GetMessage('TSB1_LOGIN')?></a>
 			&nbsp;
-			<a href="<?=$arParams['PATH_TO_REGISTER']?>?register=yes"><?=GetMessage('TSB1_REGISTER')?></a>
+			<a id="registr" href="#"><?=GetMessage('TSB1_REGISTER')?></a>
 		<?endif?>
 	</p>
 
