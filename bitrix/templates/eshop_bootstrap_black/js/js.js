@@ -174,9 +174,13 @@ jQuery(document).ready(function(){
     $( "#min_price" ).val($( "#slider-range" ).slider( "values", 0 ) + "₽");
     $( "#max_price" ).val($( "#slider-range" ).slider( "values", 1 ) + "₽");
 
+    // registration modal windows css
+    $('input[name="REGISTER[EMAIL]"]').attr('type', 'email').attr('required', '').attr('placeholder', 'Ваш E-mail...').after('<i class="ico_msg"></i>');
+    $('input[name="REGISTER[NAME]"]').attr('required', '').attr('placeholder', 'Ваше Имя...').after('<i class="ico_user"></i>');
+    $('input[name="REGISTER[PASSWORD]"]').attr('required', '').attr('placeholder', 'Введите Пароль...').after('<i class="ico_key"></i>');
+    $('input[name="REGISTER[CONFIRM_PASSWORD]"]').attr('required', '').attr('placeholder', 'Повторите Пароль...').after('<i class="ico_key"></i>');
 
 });/*end Ready*/
-
 
 $(document).ready(function(){
     //Examples of how to assign the Colorbox event to elements

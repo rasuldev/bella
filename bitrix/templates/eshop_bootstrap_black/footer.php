@@ -18,7 +18,6 @@
 	*/?>
 </div><!--// sidebar -->
 <?endif?>
-
 <footer>
 		<div class="footer_top">
 			<section class="clear">
@@ -115,7 +114,9 @@
 			<p class="copy">&copy; 2016 <a href="#">BellaShop</a></p>
 		</div> <!--footer_bot-->
 	</footer> <!-- footer -->
+<?
 
+?>
 	<a href="javascript:void(0);" class="but_top"><i class="ico_top"></i></a>
 	<div id="modal_window">
 		<a href="javascript:void(0);" class="close_win"></a>
@@ -123,20 +124,37 @@
 			<h4>Авторизация</h4>
 			<div class="form_block">
 				<form id="form_auth">
-					<?$APPLICATION->IncludeComponent("mytemplate:system.auth.authorize", "flat", array());?>
+					<?$APPLICATION->IncludeComponent("bitrix:system.auth.form", "my_template1", array("SHOW_ERRORS" => "Y"));?>
 				</form>
-				<form id="registr_form" action="#">
-					<p><input min="3" type="text" placeholder="Ваше Имя..." required/><i class="ico_user"></i></p>
-					<p><input type="email" placeholder="Ваш E-mail..." required/><i class="ico_msg"></i></p>
-					<p><input type="password" placeholder="Введите Пароль..." required/><i class="ico_key"></i></p>
-					<p><input type="password" placeholder="Повторите Пароль..." required/><i class="ico_key"></i></p>
-					<div>
-						<input type="submit" value="Зарегистрироваться"/><br />
-						<a id="auth_form_show" href="javascript:void(0)">Вход</a>
-					</div>
+				<form id="registr_form" method="post" action="" name="regform" enctype="multipart/form-data">
+					<?$APPLICATION->IncludeComponent("bitrix:main.register","my_reg_template",Array(
+									"AUTH" => "Y",
+									"REQUIRED_FIELDS" => array(
+											'EMAIL',
+											'PASSWORD',
+											'CONFIRM_PASSWORD'),
+									"SET_TITLE" => "Y",
+									"SHOW_FIELDS" => array(
+											'EMAIL',
+											'PASSWORD',
+											'CONFIRM_PASSWORD'),
+									"SUCCESS_PAGE" => "/personal/",
+									"USER_PROPERTY" => array(),
+									"USER_PROPERTY_NAME" => "",
+									"USE_BACKURL" => "Y"
+							)
+					);?>
+	<script>
+	var email_input = document.getElementsByClassName("email_field_param")[0];
+	var login_input = document.getElementsByClassName('login_field_param')[0];
+	login_input.parentElement.parentElement.setAttribute("style", "display:none");
+	email_input.oninput = function() {
+		login_input.setAttribute("value", email_input.value);
+	};
+	</script>
 				</form>
 				<form id="form_forg_p">
-					<?$APPLICATION->IncludeComponent("bitrix:system.auth.forgotpasswd", "my_flat", array());?>
+					<?$APPLICATION->IncludeComponent("bitrix:system.auth.forgotpasswd", "my_flat", array("SHOW_ERRORS" => "Y"));?>
 				</form>
 				<!--form_block-->
 			</div><!--form_block-->
