@@ -50,7 +50,7 @@ endif;
 <table style="width: 100%;">
 	<thead>
 		<tr>
-			<td colspan="2"><b><?=GetMessage("AUTH_REGISTER")?></b></td>
+			
 		</tr>
 	</thead>
 	<tbody>
