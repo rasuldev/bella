@@ -176,9 +176,15 @@ foreach ($arResult['ITEMS'] as $key => $arItem)
 	    <figure>
 	        <a class="img_prod" href="<?=$arItem['DETAIL_PAGE_URL']?>" title="<?=$productTitle?>"><img src="<? echo $arItem['PREVIEW_PICTURE']['SRC']; ?>" alt="<? echo $imgTitle; ?>"/></a>
 	        <p class="skidki_prod">
-	            <i class="sprite_1"></i>
-	            <i class="sprite_2"></i>
-	            <i class="sprite_3"></i>
+				<?if ($arItem['PROPERTIES']['SALELEADER']['VALUE_XML_ID'] == "YYY") {
+					echo "<i class=\"sprite_1\"></i>";
+				}?>
+				<?if ($arItem['PROPERTIES']['NEWPRODUCT']['VALUE_XML_ID'] == "Y") {
+					echo "<i class=\"sprite_2\"></i>";
+				}?>
+				<?if ($arItem['PROPERTIES']['SPECIALOFFER']['VALUE_XML_ID'] == "YES") {
+					echo "<i class=\"sprite_3\"></i>";
+				}?>
 	        </p><!--skidki_prod-->
 	    </figure>
 	    <p class="cat_prod"><a href="<?=$iBlockSection['SECTION_PAGE_URL']?>"><?=$iBlockSection['NAME']?></a></p>
