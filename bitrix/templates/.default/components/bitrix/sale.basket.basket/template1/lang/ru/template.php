@@ -33,6 +33,6 @@ $MESS["SALE_BASKET_ITEMS_SUBSCRIBED"] = "Ожидаемые";
 $MESS["SALE_BASKET_ITEMS_NOT_AVAILABLE"] = "Отсутствуют";
 $MESS["SALE_NO_ITEMS"] = "В вашей корзине ещё нет товаров.";
 $MESS["SALE_REFRESH"] = "Пересчитать";
-$MESS["SALE_COUPON_APPLY"] = "Ок";
+$MESS["SALE_COUPON_APPLY"] = "Применить";
 $MESS["SALE_COUPON_APPLY_TITLE"] = "Нажмите для применения нового купона";
 ?>

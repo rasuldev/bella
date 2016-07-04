@@ -407,17 +407,14 @@ if ($normalCount > 0):
         <input type="hidden" id="use_prepayment" value="<?= ($arParams["USE_PREPAYMENT"] == "Y") ? "Y" : "N" ?>"/>
         <input type="hidden" id="auto_calculation" value="<?= ($arParams["AUTO_CALCULATION"] == "N") ? "N" : "Y" ?>"/>
 
-        <div class="bx_ordercart_order_pay">
-
-            <div class="bx_ordercart_order_pay_left" id="coupons_block">
+        <div class="clear">
+            <div id="coupons_block">
                 <?
                 if ($arParams["HIDE_COUPON"] != "Y") {
                     ?>
                     <div class="bx_ordercart_coupon">
-                    <span><?= GetMessage("STB_COUPON_PROMT") ?></span><input type="text" id="coupon" name="COUPON"
-                                                                             value="" onchange="enterCoupon();">&nbsp;<a
-                        class="bx_bt_button bx_big" href="javascript:void(0)" onclick="enterCoupon();"
-                        title="<?= GetMessage('SALE_COUPON_APPLY_TITLE'); ?>"><?= GetMessage('SALE_COUPON_APPLY'); ?></a>
+                    <input type="text" id="coupon" name="COUPON" value="" placeholder="Введите промокод..." onchange="enterCoupon();">
+                    <a class="bx_bt_button bx_big" href="javascript:void(0)" onclick="enterCoupon();" title="<?= GetMessage('SALE_COUPON_APPLY_TITLE'); ?>"><?= GetMessage('SALE_COUPON_APPLY'); ?></a>
                     </div><?
                     if (!empty($arResult['COUPON_LIST'])) {
                         foreach ($arResult['COUPON_LIST'] as $oneCoupon) {

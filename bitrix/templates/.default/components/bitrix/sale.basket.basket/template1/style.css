@@ -1066,7 +1066,7 @@ body{font-family:'Geometria'; font-size: 14px; color:#363636;}
 .del_prod .ico_close{color:#fff !important;left: 3px;top: 2px;}
 
 /*block_zakaz*/
-.block_zakaz{background: #F3F3F3;padding: 20px 30px;}
+.block_zakaz{background: #F3F3F3; padding: 20px 30px;}
 .block_zakaz > div, .dostavka > div{overflow: hidden;width: 50%;}
 .block_zakaz > div:first-child{float:left;}
 .block_zakaz > div:last-child{float:right; text-align: right;}
@@ -1202,7 +1202,7 @@ i[class^='sprite']{background-image: url(../img/sprite.png);display: block;heigh
 	.dostavka > div {float:none !important; padding: 0; width: 100%;}
 	.block_zakaz{padding: 20px 0 0;}
 	.block_zakaz > div:last-child input[type="button"]{margin: 0 0 5px;}
-	.block_zakaz > div input[type="text"]{width: 160px;}
+	.block_zakaz > div input[type="text"]{width: 160px !important;}
 	/*.about_product*/
 	.about_product{padding: 0;}
 	.about_product .slider_product{float:none; width: 100%;padding: 0;}

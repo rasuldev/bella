@@ -50,7 +50,7 @@ endif;
 <table style="width: 100%;">
 	<thead>
 		<tr>
-			
+
 		</tr>
 	</thead>
 	<tbody>
