@@ -1086,16 +1086,16 @@ body{font-family:'Geometria'; font-size: 14px; color:#363636;}
 
 /*block dostavka*/
 .dostavka{margin: 50px 0 0;}
-.dostavka > div:first-child{float:left;padding: 0 3% 0 0;}
-.dostavka > div:last-child{float:right;}
-.dostavka > div h4{text-transform: uppercase;font-size: 18px; font-family: 'Geometria-Bold'; margin:0 0 30px;}
-.dostavka > div select{width: 100%;height: 40px; border:1px solid #B7B7B7;padding: 0 10px;}
+.dostavka > div:first-child{float:left!important;;padding: 0 3% 0 0!important;;}
+.dostavka > div:last-child{float:right!important;;}
+.dostavka > div h4{text-transform: uppercase!important;;font-size: 18px!important;; font-family: 'Geometria-Bold'!important;; margin:0 0 30px!important;;}
+.dostavka > div select{width: 100%!important;;height: 40px!important;; border:1px solid #B7B7B7!important;;padding: 0 10px!important;;}
 
-.dostavka > div:last-child ul{margin: 0;font-family: "Geometria-Light"; color:#555555;}
-.dostavka > div:last-child ul li{background: #FAFAFA;padding: 20px;margin: 0 0 3px; overflow: hidden;}
-.dostavka > div:last-child ul li span{display: block; width: 50%;float:left;}
-.dostavka > div:last-child ul li span:last-child{text-align: right;}
-.dostavka .price_color{color:#8DC63F;}
+.dostavka > div:last-child ul{margin: 0 !important;font-family: "Geometria-Light"!important;; color:#555555!important;;}
+.dostavka > div:last-child ul li{background: #FAFAFA!important;;padding: 20px!important;;margin: 0 0 3px!important;; overflow: hidden!important;;}
+.dostavka > div:last-child ul li span{display: block!important;; width: 50%!important;;float:left!important;;}
+.dostavka > div:last-child ul li span:last-child{text-align: right!important;;}
+.dostavka .price_color{color:#8DC63F!important;;}
 
 /*you_have_searched_the*/
 .you_have_searched_the {margin: 40px 0 0;}

@@ -13,7 +13,7 @@ $bPriceType = false;
 
 if ($normalCount > 0):
     ?>
-    <div id="added_products">
+    <div class="added_products">
         <div class="added_products_list">
             <table class="added_products_list" id="basket_items" style="width: 100%;">
                 <thead>
@@ -450,51 +450,6 @@ if ($normalCount > 0):
                 ?>
             </div>
             <div class="bx_ordercart_order_pay_right">
-                <table class="bx_ordercart_order_sum">
-                    <? if ($bWeightColumn && floatval($arResult['allWeight']) > 0): ?>
-                        <tr>
-                            <td class="custom_t1"><?= GetMessage("SALE_TOTAL_WEIGHT") ?></td>
-                            <td class="custom_t2" id="allWeight_FORMATED"><?= $arResult["allWeight_FORMATED"] ?>
-                            </td>
-                        </tr>
-                    <? endif; ?>
-                    <? if ($arParams["PRICE_VAT_SHOW_VALUE"] == "Y"): ?>
-                        <tr>
-                            <td><? echo GetMessage('SALE_VAT_EXCLUDED') ?></td>
-                            <td id="allSum_wVAT_FORMATED"><?= $arResult["allSum_wVAT_FORMATED"] ?></td>
-                        </tr>
-                        <? if (floatval($arResult["DISCOUNT_PRICE_ALL"]) > 0): ?>
-                            <tr>
-                                <td class="custom_t1"></td>
-                                <td class="custom_t2" style="text-decoration:line-through; color:#828282;"
-                                    id="PRICE_WITHOUT_DISCOUNT">
-                                    <?= $arResult["PRICE_WITHOUT_DISCOUNT"] ?>
-                                </td>
-                            </tr>
-                        <? endif; ?>
-                        <?
-                        if (floatval($arResult['allVATSum']) > 0):
-                            ?>
-                            <tr>
-                                <td><? echo GetMessage('SALE_VAT') ?></td>
-                                <td id="allVATSum_FORMATED"><?= $arResult["allVATSum_FORMATED"] ?></td>
-                            </tr>
-                            <?
-                        endif;
-                        ?>
-                    <? endif; ?>
-                    <tr>
-                        <td class="fwb"><?= GetMessage("SALE_TOTAL") ?></td>
-                        <td class="fwb"
-                            id="allSum_FORMATED"><?= str_replace(" ", "&nbsp;", $arResult["allSum_FORMATED"]) ?></td>
-                    </tr>
-
-
-                </table>
-                <div style="clear:both;"></div>
-            </div>
-            <div style="clear:both;"></div>
-            <div class="bx_ordercart_order_pay_center">
 
                 <? if ($arParams["USE_PREPAYMENT"] == "Y" && strlen($arResult["PREPAY_BUTTON"]) > 0): ?>
                     <?= $arResult["PREPAY_BUTTON"] ?>
@@ -508,8 +463,58 @@ if ($normalCount > 0):
                     <?
                 }
                 ?>
-                <a href="javascript:void(0)" onclick="checkOut();" class="checkout"><?= GetMessage("SALE_ORDER") ?></a>
+                <input style="background: #363636;" value="<?= GetMessage("BASKET_CLEAR") ?>" type="submit" name="BasketClear">
+                <input style="background: #8DC63F;" value="<?= GetMessage("SALE_ORDER") ?>" type="submit" class="checkout" onclick="checkOut();">
+
             </div>
+            <div style="clear:both;"></div>
+
+
+        </div>
+    </div>
+    <div class="dostavka clear">
+        <div>
+            <h4>Доставка</h4>
+            <select>
+                <option value="">Самовывоз</option>
+                <option value="">Курьером</option>
+            </select>
+        </div>
+        <div>
+            <h4>Итого в коризне</h4>
+            <ul>
+                <? if ($arParams["PRICE_VAT_SHOW_VALUE"] == "Y"): ?>
+                    <li>
+                        <span>Сумма</span>
+                        <span id="allSum_wVAT_FORMATED"><?= $arResult["allSum_wVAT_FORMATED"] ?></span>
+                    </li>
+                    <? if (floatval($arResult["DISCOUNT_PRICE_ALL"]) > 0): ?>
+                        <span class="custom_t2" style="text-decoration:line-through; color:#828282;"
+                              id="PRICE_WITHOUT_DISCOUNT">
+                                    <?= $arResult["PRICE_WITHOUT_DISCOUNT"] ?>
+                                </span>
+                    <? endif; ?>
+                    <?
+                    if (floatval($arResult['allVATSum']) > 0):
+                        ?>
+                        <li><span>Итого</span>
+                            <span id="allSum_FORMATED"><?= $arResult["allVATSum_FORMATED"] ?></span>
+                        </li>
+                        <?
+                    endif;
+                    ?>
+                    <li>
+                        <span>Скидка</span>
+                        <span>30%</span>
+                    </li>
+                <? endif; ?>
+                <li>
+                    <span><?= GetMessage("SALE_TOTAL") ?></span>
+                <span class="fwb" id="allSum_FORMATED">
+                            <?= str_replace(" ", "&nbsp;", $arResult["allSum_FORMATED"]) ?>
+                        </span>
+                </li>
+            </ul>
         </div>
     </div>
     <?
