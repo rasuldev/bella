@@ -12,10 +12,6 @@
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
 ?>
-<?
-    
-?>
-
 <div class="inner_page clear">
     <? if ($arParams["DISPLAY_TOP_PAGER"]): ?>
         <?= $arResult["NAV_STRING"] ?><br/>
@@ -68,3 +64,4 @@ $this->setFrameMode(true);
 
 
     </div>
+</div>
