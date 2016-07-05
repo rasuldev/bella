@@ -112,7 +112,7 @@ if (strlen($arResult["ERROR_MESSAGE"]) <= 0)
 	?>
 		<form method="post" action="<?=POST_FORM_ACTION_URI?>" name="basket_form" id="basket_form">
 			<div id="basket_form_container">
-				<div class="bx_ordercart <?=$templateData['TEMPLATE_CLASS']; ?>">
+				<div class="bx_ordercart <?=$templateData['TEMPLATE_CLASS']; ?> inner_page clear">
 					<div class="bx_sort_container">
 						<span><?=GetMessage("SALE_ITEMS")?></span>
 						<a href="javascript:void(0)" id="basket_toolbar_button" class="current" onclick="showBasketItemsList()"><?=GetMessage("SALE_BASKET_ITEMS")?><div id="normal_count" class="flat" style="display:none">&nbsp;(<?=$normalCount?>)</div></a>
