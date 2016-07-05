@@ -51,6 +51,10 @@ if ($normalCount > 0):
                             ?>
                             <th id="col_<?= $arHeader["id"]; ?>">
                             <?
+                        elseif ($arHeader["id"] == "DISCOUNT"):
+                            ?>
+                            <?$arHeader["name"] = "";?>
+                            <?
                         else:
                             ?>
                             <th id="col_<?= $arHeader["id"]; ?>">
@@ -335,11 +339,11 @@ if ($normalCount > 0):
                                         <div class="current_price" id="current_price_<?= $arItem["ID"] ?>">
                                             <?= $arItem["PRICE_FORMATED"] ?>
                                         </div>
-                                        <div class="old_price" id="old_price_<?= $arItem["ID"] ?>">
-                                            <? if (floatval($arItem["DISCOUNT_PRICE_PERCENT"]) > 0): ?>
-                                                <?= $arItem["FULL_PRICE_FORMATED"] ?>
-                                            <? endif; ?>
-                                        </div>
+<!--                                        <div class="old_price" id="old_price_--><?//= $arItem["ID"] ?><!--">-->
+<!--                                            --><?// if (floatval($arItem["DISCOUNT_PRICE_PERCENT"]) > 0): ?>
+<!--                                                --><?//= $arItem["FULL_PRICE_FORMATED"] ?>
+<!--                                            --><?// endif; ?>
+<!--                                        </div>-->
 
                                         <? if ($bPriceType && strlen($arItem["NOTES"]) > 0): ?>
                                             <div class="type_price"><?= GetMessage("SALE_TYPE") ?></div>
@@ -349,12 +353,13 @@ if ($normalCount > 0):
                                     <?
                                 elseif ($arHeader["id"] == "DISCOUNT"):
                                     ?>
-                                    <td class="custom">
-                                        <span><?= $arHeader["name"]; ?>:</span>
-
-                                        <div
-                                            id="discount_value_<?= $arItem["ID"] ?>"><?= $arItem["DISCOUNT_PRICE_PERCENT_FORMATED"] ?></div>
-                                    </td>
+                                    <? $v=4; // nothing ?>
+<!--                                    <td class="custom">-->
+<!--                                        <span>--><?//= $arHeader["name"]; ?><!--:</span>-->
+<!---->
+<!--                                        <div-->
+<!--                                            id="discount_value_--><?//= $arItem["ID"] ?><!--">--><?//= $arItem["DISCOUNT_PRICE_PERCENT_FORMATED"] ?><!--</div>-->
+<!--                                    </td>-->
                                     <?
                                 elseif ($arHeader["id"] == "WEIGHT"):
                                     ?>
@@ -474,45 +479,40 @@ if ($normalCount > 0):
     </div>
     <div class="dostavka clear">
         <div>
-            <h4>Доставка</h4>
-            <select>
-                <option value="">Самовывоз</option>
-                <option value="">Курьером</option>
-            </select>
+            <h4></h4>
         </div>
         <div>
-            <h4>Итого в коризне</h4>
+            <h4>Итого в корзине</h4>
             <ul>
                 <? if ($arParams["PRICE_VAT_SHOW_VALUE"] == "Y"): ?>
                     <li>
                         <span>Сумма</span>
-                        <span id="allSum_wVAT_FORMATED"><?= $arResult["allSum_wVAT_FORMATED"] ?></span>
+                        <span id="PRICE_WITHOUT_DISCOUNT"><?= $arResult["PRICE_WITHOUT_DISCOUNT"] ?></span>
                     </li>
-                    <? if (floatval($arResult["DISCOUNT_PRICE_ALL"]) > 0): ?>
-                        <span class="custom_t2" style="text-decoration:line-through; color:#828282;"
-                              id="PRICE_WITHOUT_DISCOUNT">
-                                    <?= $arResult["PRICE_WITHOUT_DISCOUNT"] ?>
-                                </span>
-                    <? endif; ?>
+
                     <?
                     if (floatval($arResult['allVATSum']) > 0):
                         ?>
                         <li><span>Итого</span>
-                            <span id="allSum_FORMATED"><?= $arResult["allVATSum_FORMATED"] ?></span>
+                            <span id="allSum_FORMATED"></span>
                         </li>
                         <?
                     endif;
                     ?>
                     <li>
                         <span>Скидка</span>
-                        <span>30%</span>
+                        <span>
+                            <?
+                            $sum = preg_replace('/[^0-9]/', '', $arResult["PRICE_WITHOUT_DISCOUNT"]);
+                            $total_sum = preg_replace('/[^0-9]/', '', $arResult["allSum_FORMATED"]);
+                            echo 100*(1 - ($total_sum/$sum)).' %';
+                            ?>
+                        </span>
                     </li>
                 <? endif; ?>
                 <li>
                     <span><?= GetMessage("SALE_TOTAL") ?></span>
-                <span class="fwb" id="allSum_FORMATED">
-                            <?= str_replace(" ", "&nbsp;", $arResult["allSum_FORMATED"]) ?>
-                        </span>
+                <span class="fwb" id="allSum_FORMATED"><?= str_replace(" ", "&nbsp;", $arResult["allSum_FORMATED"]) ?></span>
                 </li>
             </ul>
         </div>
