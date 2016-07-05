@@ -151,7 +151,7 @@ $APPLICATION->SetTitle("Bellashop");
 		"MESSAGE_404" => ""
 	),
 	false
-);*/?><div id="slider" class="clear">
+);*/?><!--<div id="slider" class="clear">
 	<div class="slider">
 		<ul class="slides">
 			<li class="slide"> <img src="/bitrix/templates/eshop_bootstrap_black/img/slide.jpg" alt="">
@@ -192,8 +192,72 @@ $APPLICATION->SetTitle("Bellashop");
  </li>
 		</ul>
 	</div>
-</div>
- <!--slider-->
+</div>-->
+ <!--slider-->&nbsp;<?$APPLICATION->IncludeComponent(
+	"bitrix:news.list", 
+	"main_slider", 
+	array(
+		"ACTIVE_DATE_FORMAT" => "d.m.Y",
+		"ADD_SECTIONS_CHAIN" => "Y",
+		"AJAX_MODE" => "N",
+		"AJAX_OPTION_ADDITIONAL" => "",
+		"AJAX_OPTION_HISTORY" => "N",
+		"AJAX_OPTION_JUMP" => "N",
+		"AJAX_OPTION_STYLE" => "Y",
+		"CACHE_FILTER" => "N",
+		"CACHE_GROUPS" => "Y",
+		"CACHE_TIME" => "36000000",
+		"CACHE_TYPE" => "A",
+		"CHECK_DATES" => "Y",
+		"DETAIL_URL" => "",
+		"DISPLAY_BOTTOM_PAGER" => "Y",
+		"DISPLAY_DATE" => "Y",
+		"DISPLAY_NAME" => "Y",
+		"DISPLAY_PICTURE" => "Y",
+		"DISPLAY_PREVIEW_TEXT" => "Y",
+		"DISPLAY_TOP_PAGER" => "N",
+		"FIELD_CODE" => array(
+			0 => "",
+			1 => "",
+		),
+		"FILTER_NAME" => "",
+		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
+		"IBLOCK_ID" => "4",
+		"IBLOCK_TYPE" => "services",
+		"INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
+		"INCLUDE_SUBSECTIONS" => "Y",
+		"MESSAGE_404" => "",
+		"NEWS_COUNT" => "4",
+		"PAGER_BASE_LINK_ENABLE" => "N",
+		"PAGER_DESC_NUMBERING" => "N",
+		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+		"PAGER_SHOW_ALL" => "N",
+		"PAGER_SHOW_ALWAYS" => "N",
+		"PAGER_TEMPLATE" => ".default",
+		"PAGER_TITLE" => "Новости",
+		"PARENT_SECTION" => "",
+		"PARENT_SECTION_CODE" => "",
+		"PREVIEW_TRUNCATE_LEN" => "",
+		"PROPERTY_CODE" => array(
+			0 => "TITLE",
+			1 => "TEXT",
+			2 => "",
+		),
+		"SET_BROWSER_TITLE" => "Y",
+		"SET_LAST_MODIFIED" => "N",
+		"SET_META_DESCRIPTION" => "Y",
+		"SET_META_KEYWORDS" => "Y",
+		"SET_STATUS_404" => "N",
+		"SET_TITLE" => "Y",
+		"SHOW_404" => "N",
+		"SORT_BY1" => "ACTIVE_FROM",
+		"SORT_BY2" => "SORT",
+		"SORT_ORDER1" => "DESC",
+		"SORT_ORDER2" => "ASC",
+		"COMPONENT_TEMPLATE" => "main_slider"
+	),
+	false
+);?><br>
 <div id="main_container">
 	<div class="banner_block clear">
  <aside class="wow zoomIn"> <a href="#"> <img src="/bitrix/templates/eshop_bootstrap_black/img/banner1.jpg" alt="">
@@ -562,8 +626,7 @@ $APPLICATION->SetTitle("Bellashop");
 			</form>
 		</div>
 	</div>
-	 <!--podpiska-->
-	<!--<div class="our_brends">
+	 <!--podpiska--> <!--<div class="our_brends">
 		<h2>наши бренды</h2>
 		<div class="slider1">
 			<div class="slide">
@@ -597,18 +660,14 @@ $APPLICATION->SetTitle("Bellashop");
  <a href="#"><img src="/bitrix/templates/eshop_bootstrap_black/img/05.png" alt=""></a>
 			</div>
 		</div>
-	</div>-->
-	 <!--our_brends-->
-	<?$APPLICATION->IncludeComponent(
-		"bitrix:highloadblock.list",
-		"brand_list",
-		array(
-			"BLOCK_ID" => "2",
-			"DETAIL_URL" => "",
-			"COMPONENT_TEMPLATE" => "brand_list"
-		),
-		false
-	);?>
+	</div>--> <!--our_brends--> <?$APPLICATION->IncludeComponent(
+	"bitrix:highloadblock.list",
+	"brand_list",
+	Array(
+		"BLOCK_ID" => "2",
+		"COMPONENT_TEMPLATE" => "brand_list",
+		"DETAIL_URL" => ""
+	)
+);?>
 </div>
- <!--#content_main-->
-<? require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+ <!--#content_main--><br><? require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
