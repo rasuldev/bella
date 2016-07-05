@@ -80,12 +80,33 @@ $APPLICATION->SetTitle("Каталог");
                         <li>
                             <input id="check_6" type="checkbox"/>
                             <a class="ico_plus_min" href="javascript:void(0);"><label for="check_6">По цвету</label></a>
-                        </li>
+                        </li>-->
                         <li>
-                            <input id="check_7" type="checkbox"/>
-                            <a class="ico_plus_min" href="javascript:void(0);"><label for="check_7">По бренду</label></a>
+                            <input id="check_brand" type="checkbox"/>
+                            <a class="ico_plus_min" href="javascript:void(0);"><label for="check_brand">По бренду</label></a>
+							<ul class="active_tab">
+								<?
+								CModule::IncludeModule("highloadblock"); // подключить инфоблоки
+								use Bitrix\Highloadblock as HL;
+								use Bitrix\Main\Entity;
+								$hlblock_id = 2;// id инфоблока
+								$hlblock = HL\HighloadBlockTable::getById($hlblock_id)->fetch();
+
+								$entity = HL\HighloadBlockTable::compileEntity($hlblock);
+								$entity_data_class = $entity->getDataClass();
+								$rsData = $entity_data_class::getList(array(
+									"select" => array("*"),
+									"order" => array("ID" => "ASC")
+								));
+								while($arData = $rsData->Fetch())
+								{
+									?>
+									<li><a href=<?echo '"?brand=', $arData['UF_XML_ID'], '"';?>><?echo $arData['UF_NAME'];?></a></li>
+									<?
+								}
+								?>
+							</ul>
                         </li>
-                        -->
                     </ul>
 
                 </aside>
@@ -160,9 +181,10 @@ $APPLICATION->SetTitle("Каталог");
                 <div class="prod_list clear">
         <?php
         $arrFilter = array(
-            '>=CATALOG_PRICE_1' => $_GET['min_price']?$_GET['min_price']:0,
-            '<=CATALOG_PRICE_1' => $_GET['max_price']?$_GET['max_price']:3000
-        );
+			'>=CATALOG_PRICE_1' => $_GET['min_price']?$_GET['min_price']:0,
+			'<=CATALOG_PRICE_1' => $_GET['max_price']?$_GET['max_price']:3000,
+			'PROPERTY_BRAND_REF' => $_GET['brand']?$_GET['brand']:""
+		);
         ?>
         <?$APPLICATION->IncludeComponent(
 	"bitrix:catalog.section", 
