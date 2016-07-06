@@ -13,6 +13,21 @@ $bPriceType = false;
 
 if ($normalCount > 0):
     ?>
+    <?
+    foreach ($arResult["ITEMS"]["AnDelCanBuy"] as $item)
+    {
+        $product = CIBlockElement::GetByID($item["PRODUCT_ID"]);
+        if ($arProduct = $product->Fetch()) {
+            $section = CIBlockSection::GetByID($arProduct["IBLOCK_SECTION_ID"]);
+            if ($arSection = $section->Fetch()) {
+                $productsCategories[$item["PRODUCT_ID"]]["NAME"] = $arSection["NAME"];
+                $productsCategories[$item["PRODUCT_ID"]]["URL"] = 'http://'.$_SERVER["SERVER_NAME"].'/catalog/'.$arSection["CODE"];
+            }
+        }
+    }
+    ?>
+
+
     <div class="added_products">
         <div class="added_products_list">
             <table class="added_products_list" id="basket_items" style="width: 100%;">
@@ -128,7 +143,7 @@ if ($normalCount > 0):
                                         ?>
 
                                         <p>
-                                            <span class="cat_prod"><a href="#">Категория</a></span><br/>
+                                            <span class="cat_prod"><a href="<?=$productsCategories[$arItem["PRODUCT_ID"]]["URL"]?>"><?=$productsCategories[$arItem["PRODUCT_ID"]]["NAME"]?></a></span><br/>
                                             <? if (strlen($arItem["DETAIL_PAGE_URL"]) > 0): ?><a
                                                 href="<?= $arItem["DETAIL_PAGE_URL"] ?>"><?endif;
                                                 ?>
