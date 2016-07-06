@@ -22,14 +22,17 @@ foreach ($arResult["ITEMS"] as $item)
     $arId[] = $item["ID"];
 
 $rand_val = array_rand($arId, 1);
+$arResult["ITEMS"]["SELECTED_RANDOM_ITEM"] = $arResult["ITEMS"][$rand_val];
+
+$productId = $arResult["ITEMS"]["SELECTED_RANDOM_ITEM"]["DISPLAY_PROPERTIES"]["akcii_element"]["VALUE"];
 ?>
 
 
-<a href="#">
-    <img src="<?=$arResult["ITEMS"][$rand_val]["DETAIL_PICTURE"]["SRC"]?>" alt="">
+<a href="<?=$arResult["ITEMS"]["SELECTED_RANDOM_ITEM"]["DISPLAY_PROPERTIES"]["akcii_element"]["LINK_ELEMENT_VALUE"][$productId]["DETAIL_PAGE_URL"]?>">
+    <img src="<?=$arResult["ITEMS"]["SELECTED_RANDOM_ITEM"]["DETAIL_PICTURE"]["SRC"]?>" alt="">
     <p>
-        <?=$arResult["ITEMS"][$rand_val]["PREVIEW_TEXT"]?><br/>
-        <span><?=$arResult["ITEMS"][$rand_val]["DETAIL_TEXT"]?></span>
+        <?=$arResult["ITEMS"]["SELECTED_RANDOM_ITEM"]["PREVIEW_TEXT"]?><br/>
+        <span><?=$arResult["ITEMS"]["SELECTED_RANDOM_ITEM"]["DETAIL_TEXT"]?></span>
     </p>
-    <div class="skidka">скидка <?=$arResult["ITEMS"][$rand_val]["DISPLAY_PROPERTIES"]["akcii_skidka"]["VALUE"]?>%</div>
+    <div class="skidka">скидка <?=$arResult["ITEMS"]["SELECTED_RANDOM_ITEM"]["DISPLAY_PROPERTIES"]["akcii_skidka"]["VALUE"]?>%</div>
 </a>
