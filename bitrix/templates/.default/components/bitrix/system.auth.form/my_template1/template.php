@@ -22,7 +22,7 @@ if ($arResult['SHOW_ERRORS'] == 'Y' && $arResult['ERROR'])
 		<tr>
 			<td colspan="2">
 							<p>
-			<input type="text" placeholder="Ваш E-mail..." name="USER_LOGIN" maxlength="50" value="<?=$arResult["USER_LOGIN"]?>" size="17" />
+			<input type="email" placeholder="Ваш E-mail..." name="USER_LOGIN" maxlength="50" value="<?=$arResult["USER_LOGIN"]?>" size="17" />
             <i class="ico_user"></i>
                 </p>
 
