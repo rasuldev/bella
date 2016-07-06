@@ -18,24 +18,10 @@ akcii_skidka
 akcii_element
 -->
 <?
-//$arSelect = array("ID", "PROPERTY_akcii_element", "PROPERTY_akcii_skidka", "DETAIL_TEXT", "DETAIL_PICTURE");
-//$arFilter = Array("IBLOCK_ID" => 6);
-//$akciya_res = CIBlockElement::GetList(Array("SORT" => "ASC"), $arFilter, false, array(), $arSelect);
-//
-//while($arItem = $akciya_res->GetNext()) {
-//    $arElements[] = $arItem;
-//    $arId[] = $arItem["ID"];
-//}
-//
-//$arResult["ITEMS"] = $arElements[array_rand($arId, 1)];
-//$arResult["ITEMS"][0]["DETAIL_PICTURE"]["SRC"];
-//
-//var_dump($arResult["ITEMS"]);
 foreach ($arResult["ITEMS"] as $item)
     $arId[] = $item["ID"];
 
 $rand_val = array_rand($arId, 1);
-//var_dump($arResult["ITEMS"][$rand_val]);
 ?>
 
 
