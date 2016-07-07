@@ -206,7 +206,14 @@ if (is_array($arResult['SKU_PROPS']))
 				</p>
 			</figure>
 			<p class="cat_prod">
-				<a href="#">Категория</a>
+				<?
+					$section = CIBlockSection::GetByID($arItem["IBLOCK_SECTION_ID"]);
+					if ($arSection = $section->Fetch()) {
+						$productsCategories["NAME"] = $arSection["NAME"];
+						$productsCategories["URL"] = 'http://'.$_SERVER["SERVER_NAME"].'/catalog/'.$arSection["CODE"];
+					}
+				?>
+				<a href="<?=$productsCategories["URL"]?>"><?=$productsCategories["NAME"]?></a>
 			</p>
 			<?
 			if ($arItem['SECOND_PICT']) {
