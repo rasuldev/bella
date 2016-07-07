@@ -294,7 +294,7 @@ if (is_array($arResult['SKU_PROPS']))
 						if ('Y' == $arParams['USE_PRODUCT_QUANTITY'])
 						{
 							?>
-							<div class="bx_catalog_item_controls_blockone">
+							<div class="bx_catalog_item_controls_blockone" style="display: none;">
 								<div style="display: inline-block;position: relative;">
 									<a id="<? echo $arItemIDs['QUANTITY_DOWN']; ?>" href="javascript:void(0)"
 									   class="bx_bt_button_type_2 bx_small" rel="nofollow">-</a>
@@ -311,12 +311,12 @@ if (is_array($arResult['SKU_PROPS']))
 							<?
 						}
 						?>
-						<div class="bx_catalog_item_controls_blocktwo">
+						<p class="but_prod">
 							<a id="<? echo $arItemIDs['BUY_LINK']; ?>" class="bx_bt_button bx_medium"
 							   href="javascript:void(0)" rel="nofollow"><?
 								echo('' != $arParams['MESS_BTN_BUY'] ? $arParams['MESS_BTN_BUY'] : GetMessage('CT_BCS_TPL_MESS_BTN_BUY'));
 								?></a>
-						</div>
+						</p>
 						<?
 					}
 					else
