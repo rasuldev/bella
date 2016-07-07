@@ -27,12 +27,20 @@ $arResult["ITEMS"]["SELECTED_RANDOM_ITEM"] = $arResult["ITEMS"][$rand_val];
 $productId = $arResult["ITEMS"]["SELECTED_RANDOM_ITEM"]["DISPLAY_PROPERTIES"]["akcii_element"]["VALUE"];
 ?>
 
+<?
+$pictureSRC = $arResult["ITEMS"]["SELECTED_RANDOM_ITEM"]["DETAIL_PICTURE"]["SRC"];
 
-<a href="<?=$arResult["ITEMS"]["SELECTED_RANDOM_ITEM"]["DISPLAY_PROPERTIES"]["akcii_element"]["LINK_ELEMENT_VALUE"][$productId]["DETAIL_PAGE_URL"]?>">
-    <img src="<?=$arResult["ITEMS"]["SELECTED_RANDOM_ITEM"]["DETAIL_PICTURE"]["SRC"]?>" alt="">
+$skidkaValue = $arResult["ITEMS"]["SELECTED_RANDOM_ITEM"]["DISPLAY_PROPERTIES"]["akcii_skidka"]["VALUE"];
+
+$path = $arResult["ITEMS"]["SELECTED_RANDOM_ITEM"]["DISPLAY_PROPERTIES"]["akcii_element"]["LINK_ELEMENT_VALUE"][$productId]["DETAIL_PAGE_URL"];
+if(substr($path, -1)) $path = substr($path, 0, -1);
+
+?>
+<a href="<?=$path?>">
+    <img src="<?=$pictureSRC?>" alt="">
     <p>
         <?=$arResult["ITEMS"]["SELECTED_RANDOM_ITEM"]["PREVIEW_TEXT"]?><br/>
         <span><?=$arResult["ITEMS"]["SELECTED_RANDOM_ITEM"]["DETAIL_TEXT"]?></span>
     </p>
-    <div class="skidka">скидка <?=$arResult["ITEMS"]["SELECTED_RANDOM_ITEM"]["DISPLAY_PROPERTIES"]["akcii_skidka"]["VALUE"]?>%</div>
+    <div class="skidka">скидка <?=$skidkaValue?>%</div>
 </a>
