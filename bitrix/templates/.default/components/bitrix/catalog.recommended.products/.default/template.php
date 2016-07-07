@@ -166,6 +166,10 @@ if (is_array($arResult['SKU_PROPS']))
 		?>
 		<asside class="prod" id="<? echo $strMainID; ?>">
 			<figure>
+				<?
+					if(substr($arItem['DETAIL_PAGE_URL'], -1) == '/')
+						$arItem['DETAIL_PAGE_URL'] = substr($arItem['DETAIL_PAGE_URL'], 0, -1);
+				?>
 				<a id="<? echo $arItemIDs['PICT']; ?>" href="<? echo $arItem['DETAIL_PAGE_URL']; ?>" class="img_prod">
 				<? if ($arParams['SHOW_IMAGE'] == "Y")
 				{
