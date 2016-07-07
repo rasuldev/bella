@@ -260,7 +260,7 @@ isset($arResult["IPROPERTY_VALUES"]["ELEMENT_DETAIL_PICTURE_FILE_ALT"]) && $arRe
         </p>
         <h3><? echo GetMessage('FULL_DESCRIPTION'); ?></h3>
 
-        <p class="text_prod"><? echo $arResult['PREVIEW_TEXT'] ?>;</p>
+        <p class="text_prod"><? echo $arResult['PREVIEW_TEXT']; ?></p>
         <?
         unset($minPrice);
         if (false) //!empty($arResult['DISPLAY_PROPERTIES']) || $arResult['SHOW_OFFERS_PROPS']
