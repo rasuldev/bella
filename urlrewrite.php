@@ -1,16 +1,15 @@
 <?
-$arUrlRewrite = array(
+$arUrlRewrite = array(array(
+				"CONDITION" => "#^/catalog/element/(.*)#",
+				"RULE" => "code=\$1",
+				"ID" => "",
+				"PATH" => "/catalog/element.php",
+		),
 	array(
 		"CONDITION" => "#^/bitrix/services/ymarket/#",
 		"RULE" => "",
 		"ID" => "",
 		"PATH" => "/bitrix/services/ymarket/index.php",
-	),
-	array(
-		"CONDITION" => "#^/catalog/element/(.*)#",
-		"RULE" => "code=\$1",
-		"ID" => "",
-		"PATH" => "/catalog/element.php",
 	),
 	array(
 		"CONDITION" => "#^/personal/order/#",
@@ -25,16 +24,16 @@ $arUrlRewrite = array(
 		"PATH" => "/catalog/index.php",
 	),
 	array(
-		"CONDITION" => "#^/store/#",
-		"RULE" => "",
-		"ID" => "bitrix:catalog.store",
-		"PATH" => "/store/index.php",
-	),
-	array(
 		"CONDITION" => "#^\\??(.*)#",
 		"RULE" => "&\$1",
 		"ID" => "bitrix:catalog.section",
 		"PATH" => "/catalog/index.php",
+	),
+	array(
+		"CONDITION" => "#^/store/#",
+		"RULE" => "",
+		"ID" => "bitrix:catalog.store",
+		"PATH" => "/store/index.php",
 	),
 	array(
 		"CONDITION" => "#^/news/#",

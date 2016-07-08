@@ -380,7 +380,7 @@ $APPLICATION->SetTitle("Каталог");
 		"PRICE_VAT_INCLUDE" => "Y",
 		"PRICE_VAT_SHOW_VALUE" => "N",
 		"CONVERT_CURRENCY" => "N",
-		"BASKET_URL" => "/personal/basket.php",
+		"BASKET_URL" => "/personal/cart/",
 		"USE_PRODUCT_QUANTITY" => "Y",
 		"PRODUCT_QUANTITY_VARIABLE" => "",
 		"ADD_PROPERTIES_TO_BASKET" => "N",
