@@ -18,7 +18,6 @@ Array(
 	'HIDE_ICONS' => 'Y'
 )
 );?>
-<h1 class="bx-title dbg_title" id="pagetitle"><?=$APPLICATION->ShowTitle(false);?></h1>
 			</div>
 		</div>
 
