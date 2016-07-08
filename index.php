@@ -185,17 +185,10 @@ $APPLICATION->SetTitle("Bellashop");
 			<div>
 				<h4>Сервиз "синее барокко"</h4>
 				<p>
-					 Claritas est etiam processus dynamicus, qui sequitur <br>
-					 mutationem consuetudium lectorum.
-				</p>
-			</div>
- </li>
-		</ul>
-	</div>
-</div>--> <!--slider-->&nbsp;<?$APPLICATION->IncludeComponent(
-	"bitrix:news.list",
-	"main_slider",
-	Array(
+					 Claritas est etiam processus dynamicus, qui$APPLICATION->IncludeComponent(
+	"bitrix:news.list", 
+	"main_slider", 
+	array(
 		"ACTIVE_DATE_FORMAT" => "d.m.Y",
 		"ADD_SECTIONS_CHAIN" => "Y",
 		"AJAX_MODE" => "N",
@@ -216,10 +209,13 @@ $APPLICATION->SetTitle("Bellashop");
 		"DISPLAY_PICTURE" => "Y",
 		"DISPLAY_PREVIEW_TEXT" => "Y",
 		"DISPLAY_TOP_PAGER" => "N",
-		"FIELD_CODE" => array(0=>"",1=>"",),
+		"FIELD_CODE" => array(
+			0 => "",
+			1 => "",
+		),
 		"FILTER_NAME" => "",
 		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
-		"IBLOCK_ID" => "4",
+		"IBLOCK_ID" => "7",
 		"IBLOCK_TYPE" => "services",
 		"INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
 		"INCLUDE_SUBSECTIONS" => "Y",
@@ -235,13 +231,25 @@ $APPLICATION->SetTitle("Bellashop");
 		"PARENT_SECTION" => "",
 		"PARENT_SECTION_CODE" => "",
 		"PREVIEW_TRUNCATE_LEN" => "",
-		"PROPERTY_CODE" => array(0=>"TITLE",1=>"TEXT",2=>"",),
+		"PROPERTY_CODE" => array(
+			0 => "TITLE",
+			1 => "TEXT",
+			2 => "",
+		),
 		"SET_BROWSER_TITLE" => "Y",
 		"SET_LAST_MODIFIED" => "N",
 		"SET_META_DESCRIPTION" => "Y",
 		"SET_META_KEYWORDS" => "Y",
 		"SET_STATUS_404" => "N",
 		"SET_TITLE" => "Y",
+		"SHOW_404" => "N",
+		"SORT_BY1" => "ACTIVE_FROM",
+		"SORT_BY2" => "SORT",
+		"SORT_ORDER1" => "DESC",
+		"SORT_ORDER2" => "ASC"
+	),
+	false
+);,
 		"SHOW_404" => "N",
 		"SORT_BY1" => "ACTIVE_FROM",
 		"SORT_BY2" => "SORT",
@@ -263,313 +271,368 @@ $APPLICATION->SetTitle("Bellashop");
 		</p>
  </a> </aside>
 	</div>
-	 <!--banner_block-->
-	<div class="popular_tovar clear">
-		<h2>популярные товары</h2>
-		<ul class="bxslider clear">
-			<li> <aside class="prod"> <figure> <a class="img_prod" href="#"><img src="/bitrix/templates/eshop_bootstrap_black/img/product.jpg" alt=""></a>
-			<p class="hover_prod">
+	 <!--banner_block--><?$APPLICATION->IncludeComponent(
+	"bitrix:news.list",
+	"main_slider",
+	Array(
+		"ACTIVE_DATE_FORMAT" => "d.m.Y",
+		"ADD_SECTIONS_CHAIN" => "Y",
+		"AJAX_MODE" => "N",
+		"AJAX_OPTION_ADDITIONAL" => "",
+		"AJAX_OPTION_HISTORY" => "N",
+		"AJAX_OPTION_JUMP" => "N",
+		"AJAX_OPTION_STYLE" => "Y",
+		"CACHE_FILTER" => "N",
+		"CACHE_GROUPS" => "Y",
+		"CACHE_TIME" => "36000000",
+		"CACHE_TYPE" => "A",
+		"CHECK_DATES" => "Y",
+		"DETAIL_URL" => "",
+		"DISPLAY_BOTTOM_PAGER" => "Y",
+		"DISPLAY_DATE" => "Y",
+		"DISPLAY_NAME" => "Y",
+		"DISPLAY_PICTURE" => "Y",
+		"DISPLAY_PREVIEW_TEXT" => "Y",
+		"DISPLAY_TOP_PAGER" => "N",
+		"FIELD_CODE" => array("",""),
+		"FILTER_NAME" => "",
+		"HIDE_LINK_WHEN_NO_DETAIL" => "N",
+		"IBLOCK_ID" => "7",
+		"IBLOCK_TYPE" => "services",
+		"INCLUDE_IBLOCK_INTO_CHAIN" => "Y",
+		"INCLUDE_SUBSECTIONS" => "Y",
+		"MESSAGE_404" => "",
+		"NEWS_COUNT" => "20",
+		"PAGER_BASE_LINK_ENABLE" => "N",
+		"PAGER_DESC_NUMBERING" => "N",
+		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
+		"PAGER_SHOW_ALL" => "N",
+		"PAGER_SHOW_ALWAYS" => "N",
+		"PAGER_TEMPLATE" => ".default",
+		"PAGER_TITLE" => "Новости",
+		"PARENT_SECTION" => "",
+		"PARENT_SECTION_CODE" => "",
+		"PREVIEW_TRUNCATE_LEN" => "",
+		"PROPERTY_CODE" => array("TITLE","TEXT",""),
+		"SET_BROWSER_TITLE" => "Y",
+		"SET_LAST_MODIFIED" => "N",
+		"SET_META_DESCRIPTION" => "Y",
+		"SET_META_KEYWORDS" => "Y",
+		"SET_STATUS_404" => "N",
+		"SET_TITLE" => "Y",
+		"SHOW_404" => "N",
+		"SORT_BY1" => "ACTIVE_FROM",
+		"SORT_BY2" => "SORT",
+		"SORT_ORDER1" => "DESC",
+		"SORT_ORDER2" => "ASC"
+	)
+);?>
+<div class="popular_tovar clear">
+	<h2>популярные товары</h2>
+	<ul class="bxslider clear">
+		<li> <aside class="prod"> <figure> <a class="img_prod" href="#"><img src="/bitrix/templates/eshop_bootstrap_black/img/product.jpg" alt=""></a>
+		<p class="hover_prod">
  <a href="#"><i class="ico_cart"></i></a>
-			</p>
-			 <!--hover_prod-->
-			<p class="skidki_prod">
+		</p>
+		 <!--hover_prod-->
+		<p class="skidki_prod">
  <i class="sprite_1"></i>
-			</p>
-			 <!--skidki_prod-->
-			<p class="stars_prod">
+		</p>
+		 <!--skidki_prod-->
+		<p class="stars_prod">
  <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i>
-			</p>
-			 <!--stars_prod--> </figure>
-			<p class="cat_prod">
+		</p>
+		 <!--stars_prod--> </figure>
+		<p class="cat_prod">
  <a href="#">Категория</a>
-			</p>
-			<p class="name_prod">
+		</p>
+		<p class="name_prod">
  <a href="#">набор «Медовая Золотая»</a>
-			</p>
-			<p class="price_prod">
+		</p>
+		<p class="price_prod">
  <span class="now_price">1 927 ₽</span>
-			</p>
+		</p>
  </aside> <!--PRODUCT--> </li>
-			<li> <aside class="prod"> <figure> <a class="img_prod" href="#"><img src="/bitrix/templates/eshop_bootstrap_black/img/product.jpg" alt=""></a>
-			<p class="hover_prod">
+		<li> <aside class="prod"> <figure> <a class="img_prod" href="#"><img src="/bitrix/templates/eshop_bootstrap_black/img/product.jpg" alt=""></a>
+		<p class="hover_prod">
  <a href="#"><i class="ico_cart"></i></a>
-			</p>
-			 <!--hover_prod-->
-			<p class="skidki_prod">
+		</p>
+		 <!--hover_prod-->
+		<p class="skidki_prod">
  <i class="sprite_1"></i>
-			</p>
-			 <!--skidki_prod-->
-			<p class="stars_prod">
+		</p>
+		 <!--skidki_prod-->
+		<p class="stars_prod">
  <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i>
-			</p>
-			 <!--stars_prod--> </figure>
-			<p class="cat_prod">
+		</p>
+		 <!--stars_prod--> </figure>
+		<p class="cat_prod">
  <a href="#">Категория</a>
-			</p>
-			<p class="name_prod">
+		</p>
+		<p class="name_prod">
  <a href="#">набор «Медовая Золотая»</a>
-			</p>
-			<p class="price_prod">
+		</p>
+		<p class="price_prod">
  <span class="now_price">1 927 ₽</span>
-			</p>
+		</p>
  </aside> <!--PRODUCT--> </li>
-			<li> <aside class="prod"> <figure> <a class="img_prod" href="#"><img src="/bitrix/templates/eshop_bootstrap_black/img/product.jpg" alt=""></a>
-			<p class="hover_prod">
+		<li> <aside class="prod"> <figure> <a class="img_prod" href="#"><img src="/bitrix/templates/eshop_bootstrap_black/img/product.jpg" alt=""></a>
+		<p class="hover_prod">
  <a href="#"><i class="ico_cart"></i></a>
-			</p>
-			 <!--hover_prod-->
-			<p class="skidki_prod">
+		</p>
+		 <!--hover_prod-->
+		<p class="skidki_prod">
  <i class="sprite_1"></i>
-			</p>
-			 <!--skidki_prod-->
-			<p class="stars_prod">
+		</p>
+		 <!--skidki_prod-->
+		<p class="stars_prod">
  <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i>
-			</p>
-			 <!--stars_prod--> </figure>
-			<p class="cat_prod">
+		</p>
+		 <!--stars_prod--> </figure>
+		<p class="cat_prod">
  <a href="#">Категория</a>
-			</p>
-			<p class="name_prod">
+		</p>
+		<p class="name_prod">
  <a href="#">набор «Медовая Золотая»</a>
-			</p>
-			<p class="price_prod">
+		</p>
+		<p class="price_prod">
  <span class="now_price">1 927 ₽</span>
-			</p>
+		</p>
  </aside> <!--PRODUCT--> </li>
-			<li> <aside class="prod"> <figure> <a class="img_prod" href="#"><img src="/bitrix/templates/eshop_bootstrap_black/img/product.jpg" alt=""></a>
-			<p class="hover_prod">
+		<li> <aside class="prod"> <figure> <a class="img_prod" href="#"><img src="/bitrix/templates/eshop_bootstrap_black/img/product.jpg" alt=""></a>
+		<p class="hover_prod">
  <a href="#"><i class="ico_cart"></i></a>
-			</p>
-			 <!--hover_prod-->
-			<p class="skidki_prod">
+		</p>
+		 <!--hover_prod-->
+		<p class="skidki_prod">
  <i class="sprite_1"></i>
-			</p>
-			 <!--skidki_prod-->
-			<p class="stars_prod">
+		</p>
+		 <!--skidki_prod-->
+		<p class="stars_prod">
  <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i>
-			</p>
-			 <!--stars_prod--> </figure>
-			<p class="cat_prod">
+		</p>
+		 <!--stars_prod--> </figure>
+		<p class="cat_prod">
  <a href="#">Категория</a>
-			</p>
-			<p class="name_prod">
+		</p>
+		<p class="name_prod">
  <a href="#">набор «Медовая Золотая»</a>
-			</p>
-			<p class="price_prod">
+		</p>
+		<p class="price_prod">
  <span class="now_price">1 927 ₽</span>
-			</p>
+		</p>
  </aside> <!--PRODUCT--> </li>
-			<li> <aside class="prod"> <figure> <a class="img_prod" href="#"><img src="/bitrix/templates/eshop_bootstrap_black/img/product.jpg" alt=""></a>
-			<p class="hover_prod">
+		<li> <aside class="prod"> <figure> <a class="img_prod" href="#"><img src="/bitrix/templates/eshop_bootstrap_black/img/product.jpg" alt=""></a>
+		<p class="hover_prod">
  <a href="#"><i class="ico_cart"></i></a>
-			</p>
-			 <!--hover_prod-->
-			<p class="skidki_prod">
+		</p>
+		 <!--hover_prod-->
+		<p class="skidki_prod">
  <i class="sprite_1"></i>
-			</p>
-			 <!--skidki_prod-->
-			<p class="stars_prod">
+		</p>
+		 <!--skidki_prod-->
+		<p class="stars_prod">
  <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i>
-			</p>
-			 <!--stars_prod--> </figure>
-			<p class="cat_prod">
+		</p>
+		 <!--stars_prod--> </figure>
+		<p class="cat_prod">
  <a href="#">Категория</a>
-			</p>
-			<p class="name_prod">
+		</p>
+		<p class="name_prod">
  <a href="#">набор «Медовая Золотая»</a>
-			</p>
-			<p class="price_prod">
+		</p>
+		<p class="price_prod">
  <span class="now_price">1 927 ₽</span>
-			</p>
+		</p>
  </aside> <!--PRODUCT--> </li>
-		</ul>
+	</ul>
+</div>
+ <!--popular_tovar-->
+<div class="banner_akcii">
+	<div>
+		<h2 class="wow zoomIn"><a href="#">Столовый сервиз «тереза» всего за 20 000 ₷</a></h2>
 	</div>
-	 <!--popular_tovar-->
-	<div class="banner_akcii">
-		<div>
-			<h2 class="wow zoomIn"><a href="#">Столовый сервиз «тереза» всего за 20 000 ₷</a></h2>
-		</div>
-	</div>
-	 <!--banner_akcii-->
-	<div class="recomend_tovar clear">
-		<h2>рекомендуемые товары</h2>
-		<div class="product_block clear">
+</div>
+ <!--banner_akcii-->
+<div class="recomend_tovar clear">
+	<h2>рекомендуемые товары</h2>
+	<div class="product_block clear">
  <aside class="prod"> <figure> <a class="img_prod" href="#"><img src="/bitrix/templates/eshop_bootstrap_black/img/product.jpg" alt=""></a>
-			<p class="hover_prod">
+		<p class="hover_prod">
  <a href="#"><i class="ico_cart"></i></a>
-			</p>
-			 <!--hover_prod-->
-			<p class="skidki_prod">
+		</p>
+		 <!--hover_prod-->
+		<p class="skidki_prod">
  <i class="sprite_1"></i>
-			</p>
-			 <!--skidki_prod-->
-			<p class="stars_prod">
+		</p>
+		 <!--skidki_prod-->
+		<p class="stars_prod">
  <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i>
-			</p>
-			 <!--stars_prod--> </figure>
-			<p class="cat_prod">
+		</p>
+		 <!--stars_prod--> </figure>
+		<p class="cat_prod">
  <a href="#">Категория</a>
-			</p>
-			<p class="name_prod">
+		</p>
+		<p class="name_prod">
  <a href="#">набор «Медовая Золотая»</a>
-			</p>
-			<p class="price_prod">
+		</p>
+		<p class="price_prod">
  <span class="now_price">1 927 ₽</span>
-			</p>
+		</p>
  </aside> <!--PRODUCT--> <aside class="prod"> <figure> <a class="img_prod" href="#"><img src="/bitrix/templates/eshop_bootstrap_black/img/product.jpg" alt=""></a>
-			<p class="hover_prod">
+		<p class="hover_prod">
  <a href="#"><i class="ico_cart"></i></a>
-			</p>
-			 <!--hover_prod-->
-			<p class="skidki_prod">
+		</p>
+		 <!--hover_prod-->
+		<p class="skidki_prod">
  <i class="sprite_3"></i>
-			</p>
-			 <!--skidki_prod-->
-			<p class="stars_prod">
+		</p>
+		 <!--skidki_prod-->
+		<p class="stars_prod">
  <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i>
-			</p>
-			 <!--stars_prod--> </figure>
-			<p class="cat_prod">
+		</p>
+		 <!--stars_prod--> </figure>
+		<p class="cat_prod">
  <a href="#">Категория</a>
-			</p>
-			<p class="name_prod">
+		</p>
+		<p class="name_prod">
  <a href="#">набор «Медовая Золотая»</a>
-			</p>
-			<p class="price_prod">
+		</p>
+		<p class="price_prod">
  <span class="now_price">1 927 ₽</span>
-			</p>
+		</p>
  </aside> <!--PRODUCT--> <aside class="prod"> <figure> <a class="img_prod" href="#"><img src="/bitrix/templates/eshop_bootstrap_black/img/product.jpg" alt=""></a>
-			<p class="hover_prod">
+		<p class="hover_prod">
  <a href="#"><i class="ico_cart"></i></a>
-			</p>
-			 <!--hover_prod-->
-			<p class="skidki_prod">
+		</p>
+		 <!--hover_prod-->
+		<p class="skidki_prod">
  <i class="sprite_2"></i>
-			</p>
-			 <!--skidki_prod-->
-			<p class="stars_prod">
+		</p>
+		 <!--skidki_prod-->
+		<p class="stars_prod">
  <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i>
-			</p>
-			 <!--stars_prod--> </figure>
-			<p class="cat_prod">
+		</p>
+		 <!--stars_prod--> </figure>
+		<p class="cat_prod">
  <a href="#">Категория</a>
-			</p>
-			<p class="name_prod">
+		</p>
+		<p class="name_prod">
  <a href="#">набор «Медовая Золотая»</a>
-			</p>
-			<p class="price_prod">
+		</p>
+		<p class="price_prod">
  <span class="now_price">1 927 ₽</span>
-			</p>
+		</p>
  </aside> <!--PRODUCT--> <aside class="prod"> <figure> <a class="img_prod" href="#"><img src="/bitrix/templates/eshop_bootstrap_black/img/product.jpg" alt=""></a>
-			<p class="hover_prod">
+		<p class="hover_prod">
  <a class="in_cart" href="#"><i class="ico_cart"></i></a>
-			</p>
-			 <!--hover_prod-->
-			<p class="skidki_prod">
+		</p>
+		 <!--hover_prod-->
+		<p class="skidki_prod">
  <i class="sprite_1"></i> <i class="sprite_2"></i> <i class="sprite_3"></i>
-			</p>
-			 <!--skidki_prod-->
-			<p class="stars_prod">
+		</p>
+		 <!--skidki_prod-->
+		<p class="stars_prod">
  <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i>
-			</p>
-			 <!--stars_prod--> </figure>
-			<p class="cat_prod">
+		</p>
+		 <!--stars_prod--> </figure>
+		<p class="cat_prod">
  <a href="#">Категория</a>
-			</p>
-			<p class="name_prod">
+		</p>
+		<p class="name_prod">
  <a href="#">набор «Медовая Золотая»</a>
-			</p>
-			<p class="price_prod">
+		</p>
+		<p class="price_prod">
  <span class="old_price">1 927 ₽</span> <span class="now_price">1 927 ₽</span>
-			</p>
+		</p>
  </aside> <!--PRODUCT--> <aside class="prod"> <figure> <a class="img_prod" href="#"><img src="/bitrix/templates/eshop_bootstrap_black/img/product.jpg" alt=""></a>
-			<p class="hover_prod">
+		<p class="hover_prod">
  <a class="in_cart" href="#"><i class="ico_cart"></i></a>
-			</p>
-			 <!--hover_prod-->
-			<p class="skidki_prod">
+		</p>
+		 <!--hover_prod-->
+		<p class="skidki_prod">
  <i class="sprite_1"></i> <i class="sprite_2"></i> <i class="sprite_3"></i>
-			</p>
-			 <!--skidki_prod-->
-			<p class="stars_prod">
+		</p>
+		 <!--skidki_prod-->
+		<p class="stars_prod">
  <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i>
-			</p>
-			 <!--stars_prod--> </figure>
-			<p class="cat_prod">
+		</p>
+		 <!--stars_prod--> </figure>
+		<p class="cat_prod">
  <a href="#">Категория</a>
-			</p>
-			<p class="name_prod">
+		</p>
+		<p class="name_prod">
  <a href="#">набор «Медовая Золотая»</a>
-			</p>
-			<p class="price_prod">
+		</p>
+		<p class="price_prod">
  <span class="old_price">1 927 ₽</span> <span class="now_price">1 927 ₽</span>
-			</p>
+		</p>
  </aside> <!--PRODUCT--> <aside class="prod"> <figure> <a class="img_prod" href="#"><img src="/bitrix/templates/eshop_bootstrap_black/img/product.jpg" alt=""></a>
-			<p class="hover_prod">
+		<p class="hover_prod">
  <a class="in_cart" href="#"><i class="ico_cart"></i></a>
-			</p>
-			 <!--hover_prod-->
-			<p class="skidki_prod">
+		</p>
+		 <!--hover_prod-->
+		<p class="skidki_prod">
  <i class="sprite_1"></i> <i class="sprite_2"></i> <i class="sprite_3"></i>
-			</p>
-			 <!--skidki_prod-->
-			<p class="stars_prod">
+		</p>
+		 <!--skidki_prod-->
+		<p class="stars_prod">
  <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i>
-			</p>
-			 <!--stars_prod--> </figure>
-			<p class="cat_prod">
+		</p>
+		 <!--stars_prod--> </figure>
+		<p class="cat_prod">
  <a href="#">Категория</a>
-			</p>
-			<p class="name_prod">
+		</p>
+		<p class="name_prod">
  <a href="#">набор «Медовая Золотая»</a>
-			</p>
-			<p class="price_prod">
+		</p>
+		<p class="price_prod">
  <span class="old_price">1 927 ₽</span> <span class="now_price">1 927 ₽</span>
-			</p>
+		</p>
  </aside> <!--PRODUCT--> <aside class="prod"> <figure> <a class="img_prod" href="#"><img src="/bitrix/templates/eshop_bootstrap_black/img/product.jpg" alt=""></a>
-			<p class="hover_prod">
+		<p class="hover_prod">
  <a class="in_cart" href="#"><i class="ico_cart"></i></a>
-			</p>
-			 <!--hover_prod-->
-			<p class="skidki_prod">
+		</p>
+		 <!--hover_prod-->
+		<p class="skidki_prod">
  <i class="sprite_1"></i> <i class="sprite_2"></i> <i class="sprite_3"></i>
-			</p>
-			 <!--skidki_prod-->
-			<p class="stars_prod">
+		</p>
+		 <!--skidki_prod-->
+		<p class="stars_prod">
  <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i>
-			</p>
-			 <!--stars_prod--> </figure>
-			<p class="cat_prod">
+		</p>
+		 <!--stars_prod--> </figure>
+		<p class="cat_prod">
  <a href="#">Категория</a>
-			</p>
-			<p class="name_prod">
+		</p>
+		<p class="name_prod">
  <a href="#">набор «Медовая Золотая»</a>
-			</p>
-			<p class="price_prod">
+		</p>
+		<p class="price_prod">
  <span class="old_price">1 927 ₽</span> <span class="now_price">1 927 ₽</span>
-			</p>
+		</p>
  </aside> <!--PRODUCT--><aside class="prod"> <figure> <a class="img_prod" href="#"><img src="/bitrix/templates/eshop_bootstrap_black/img/product.jpg" alt=""></a>
-			<p class="hover_prod">
+		<p class="hover_prod">
  <a class="in_cart" href="#"><i class="ico_cart"></i></a>
-			</p>
-			 <!--hover_prod-->
-			<p class="skidki_prod">
+		</p>
+		 <!--hover_prod-->
+		<p class="skidki_prod">
  <i class="sprite_1"></i> <i class="sprite_2"></i> <i class="sprite_3"></i>
-			</p>
-			 <!--skidki_prod-->
-			<p class="stars_prod">
+		</p>
+		 <!--skidki_prod-->
+		<p class="stars_prod">
  <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i>
-			</p>
-			 <!--stars_prod--> </figure>
-			<p class="cat_prod">
+		</p>
+		 <!--stars_prod--> </figure>
+		<p class="cat_prod">
  <a href="#">Категория</a>
-			</p>
-			<p class="name_prod">
+		</p>
+		<p class="name_prod">
  <a href="#">набор «Медовая Золотая»</a>
-			</p>
-			<p class="price_prod">
+		</p>
+		<p class="price_prod">
  <span class="old_price">1 927 ₽</span> <span class="now_price">1 927 ₽</span>
-			</p>
+		</p>
  </aside> <!--PRODUCT--> <!--<aside class="prod">
 				<figure>
 					<a class="img_prod" href="#"><img src="<?=SITE_TEMPLATE_PATH?>/img/product.jpg" alt=""/></a>
@@ -599,42 +662,41 @@ $APPLICATION->SetTitle("Bellashop");
 					<a href="#" class="in_cart">в корзину</a>
 				</p>
 			</aside>-->
-		</div>
-		 <!--product_block-->
-		<p class="show_all_prod">
- <a href="#">посмотреть больше товаров</a>
-		</p>
 	</div>
-	 <!--recomend_tovar-->
-	<div class="podpiska">
-		<div>
-			<h2 class="wow zoomIn">подпишитесь на нашу <br>
-			 рассылку</h2>
-			<!--<form action="#">
+	 <!--product_block-->
+	<p class="show_all_prod">
+ <a href="#">посмотреть больше товаров</a>
+	</p>
+</div>
+ <!--recomend_tovar-->
+<div class="podpiska">
+	<div>
+		<h2 class="wow zoomIn">подпишитесь на нашу <br>
+		 рассылку</h2>
+		 <!--<form action="#">
 				<p class="clear wow zoomIn">
  <input type="text" placeholder="Введите ваш Е-Mail"> <input type="submit" value="подписаться">
 				</p>
-			</form>-->
-			<?$APPLICATION->IncludeComponent(
-				"bitrix:sender.subscribe",
-				"index_subscribe",
-				Array(
-					"AJAX_MODE" => "N",
-					"AJAX_OPTION_ADDITIONAL" => "",
-					"AJAX_OPTION_HISTORY" => "N",
-					"AJAX_OPTION_JUMP" => "N",
-					"AJAX_OPTION_STYLE" => "Y",
-					"CACHE_TIME" => "3600",
-					"CACHE_TYPE" => "A",
-					"CONFIRMATION" => "Y",
-					"SET_TITLE" => "Y",
-					"SHOW_HIDDEN" => "N",
-					"USE_PERSONALIZATION" => "Y"
-				)
-			);?>
-		</div>
+			</form>--> <?$APPLICATION->IncludeComponent(
+	"bitrix:sender.subscribe",
+	"index_subscribe",
+	Array(
+		"AJAX_MODE" => "N",
+		"AJAX_OPTION_ADDITIONAL" => "",
+		"AJAX_OPTION_HISTORY" => "N",
+		"AJAX_OPTION_JUMP" => "N",
+		"AJAX_OPTION_STYLE" => "Y",
+		"CACHE_TIME" => "3600",
+		"CACHE_TYPE" => "A",
+		"CONFIRMATION" => "Y",
+		"SET_TITLE" => "Y",
+		"SHOW_HIDDEN" => "N",
+		"USE_PERSONALIZATION" => "Y"
+	)
+);?>
 	</div>
-	 <!--podpiska--> <!--<div class="our_brends">
+</div>
+ <!--podpiska--> <!--<div class="our_brends">
 		<h2>наши бренды</h2>
 		<div class="slider1">
 			<div class="slide">
@@ -676,6 +738,4 @@ $APPLICATION->SetTitle("Bellashop");
 		"COMPONENT_TEMPLATE" => "brand_list",
 		"DETAIL_URL" => ""
 	)
-);?>
-</div>
- <!--#content_main--><br><? require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+);?> <!--#content_main--><br><? require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

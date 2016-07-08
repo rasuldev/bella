@@ -1,5 +1,13 @@
 <?
 $arUrlRewrite = array(
+		array(
+				"CONDITION" => "#^/element/(.*)#",
+				"RULE" => "code=$1",
+				"ID" => "",
+				"PATH" => "/catalog/element.php",
+		),
+
+
 	array(
 		"CONDITION" => "#^/bitrix/services/ymarket/#",
 		"RULE" => "",
