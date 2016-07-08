@@ -129,8 +129,8 @@ $APPLICATION->SetTitle("Каталог");
                 <aside class="have_banner">
                     <div class="sidebar_banner">
 						<?$APPLICATION->IncludeComponent(
-	"bitrix:news.list", 
-	"slychainaya_akciya", 
+	"bitrix:news.list",
+	"slychainaya_akciya",
 	array(
 		"ACTIVE_DATE_FORMAT" => "d.m.Y",
 		"ADD_SECTIONS_CHAIN" => "Y",
@@ -221,8 +221,8 @@ $APPLICATION->SetTitle("Каталог");
                                 <a href="#"><img src="<?=$img['SRC']?>" alt=""/></a>
                                 <div>
 									<?$APPLICATION->IncludeComponent(
-	"bitrix:iblock.vote", 
-	"footer_stars", 
+	"bitrix:iblock.vote",
+	"footer_stars",
 	array(
 		"IBLOCK_TYPE" => "catalog",
 		"IBLOCK_ID" => "2",
@@ -402,7 +402,7 @@ $APPLICATION->SetTitle("Каталог");
 					//);?>
 
 					<? $APPLICATION->IncludeComponent(
-	"bitrix:catalog", 
+	"bitrix:catalog",
 	"template1",
 	array(
 		"IBLOCK_TYPE" => "catalog",

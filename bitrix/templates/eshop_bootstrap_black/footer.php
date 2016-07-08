@@ -79,8 +79,8 @@
 						        				<span class="new_price"><?=$price['PRICE']?> ₷</span>
 						        			</p>
 											<?$APPLICATION->IncludeComponent(
-	"bitrix:iblock.vote", 
-	"footer_stars", 
+	"bitrix:iblock.vote",
+	"footer_stars",
 	array(
 		"IBLOCK_TYPE" => "catalog",
 		"IBLOCK_ID" => "2",
