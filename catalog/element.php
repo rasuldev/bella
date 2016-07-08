@@ -368,7 +368,7 @@ $APPLICATION->SetTitle("Каталог");
 		"SET_LAST_MODIFIED" => "N",
 		"USE_MAIN_ELEMENT_SECTION" => "N",
 		"ADD_SECTIONS_CHAIN" => "Y",
-		"ADD_ELEMENT_CHAIN" => "N",
+		"ADD_ELEMENT_CHAIN" => "Y",
 		"ACTION_VARIABLE" => "action",
 		"PRODUCT_ID_VARIABLE" => "id",
 		"DISPLAY_COMPARE" => "N",
