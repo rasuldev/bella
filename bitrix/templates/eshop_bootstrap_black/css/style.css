@@ -588,7 +588,7 @@ display:-webkit-flex;
 
 /**********BIG SLIDER HOME PAGE************/
 #slider{ margin: 0 auto 80px;}
-#slider .slider {position: relative;width: 100%;overflow: hidden;}
+#slider .slider {position: relative;width: 100%;overflow: hidden; height: 720px;}
 #slider .slides {height: 100%;overflow: hidden;
     -webkit-backface-visibility: hidden;
     -webkit-transform-style: preserve-3d;
