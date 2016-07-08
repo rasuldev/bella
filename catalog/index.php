@@ -49,10 +49,11 @@ $APPLICATION->SetTitle("Каталог");
                                 ?>
                                 <li>
                                     <input id="check_<?=$ar_result['ID']?>" type="checkbox"/>
+                                    <a class="ico_plus_min" href="javascript:void(0);">
                                     <label for="check_<?=$ar_result['ID']?>">
-                                        <a class="ico_plus_min" href="javascript:void(0);"><?=$ar_result['NAME']?></a>
+                                        <?=$ar_result['NAME']?>
                                     </label>
-
+                                    </a>
                                     <ul class="active_tab">
                                         <?php
                                         $db_inner = CIBlockSection::GetList(array('sort' => 'asc'), array(
@@ -273,8 +274,8 @@ $APPLICATION->SetTitle("Каталог");
                             'PROPERTY_BRAND_REF' => $_GET['brand'] ? $_GET['brand'] : ""
                         );
                         ?>
-                        <?
-                        $APPLICATION->IncludeComponent(
+
+                        <?$APPLICATION->IncludeComponent(
                         	"bitrix:catalog.section",
                         	"catalog",
                         	array(
