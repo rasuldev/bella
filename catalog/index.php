@@ -278,8 +278,8 @@ $APPLICATION->SetTitle("Каталог");
 		);
         ?>
 					        <? $APPLICATION->IncludeComponent(
-	"bitrix:catalog.section", 
-	"catalog", 
+	"bitrix:catalog.section",
+	"catalog",
 	array(
 		"IBLOCK_TYPE_ID" => "catalog",
 		"IBLOCK_ID" => "2",

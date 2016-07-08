@@ -418,7 +418,7 @@ $APPLICATION->SetTitle("Каталог");
 		"ACTION_VARIABLE" => "action_crp",
 		"ADDITIONAL_PICT_PROP_2" => "MORE_PHOTO",
 		"ADD_PROPERTIES_TO_BASKET" => "Y",
-		"BASKET_URL" => "/personal/basket.php",
+		"BASKET_URL" => "/personal/cart/",
 		"CACHE_TIME" => "86400",
 		"CACHE_TYPE" => "A",
 		"CART_PROPERTIES_2" => array(
