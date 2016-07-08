@@ -16,8 +16,7 @@ $theme = COption::GetOptionString("main", "wizard_eshop_bootstrap_theme_id", "bl
 
 </head>
 
-<body>
-<div id="wrapper">
+<body id="wrapper">
 <div id="panel"><?$APPLICATION->ShowPanel();?></div>
 
 <header>
