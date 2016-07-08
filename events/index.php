@@ -18,6 +18,7 @@ Array(
 	'HIDE_ICONS' => 'Y'
 )
 );?>
+
 			</div>
 		</div>
 
