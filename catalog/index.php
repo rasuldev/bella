@@ -80,12 +80,33 @@ $APPLICATION->SetTitle("Каталог");
                         <li>
                             <input id="check_6" type="checkbox"/>
                             <a class="ico_plus_min" href="javascript:void(0);"><label for="check_6">По цвету</label></a>
-                        </li>
+                        </li>-->
                         <li>
-                            <input id="check_7" type="checkbox"/>
-                            <a class="ico_plus_min" href="javascript:void(0);"><label for="check_7">По бренду</label></a>
+                            <input id="check_brand" type="checkbox"/>
+                            <a class="ico_plus_min" href="javascript:void(0);"><label for="check_brand">По бренду</label></a>
+							<ul class="active_tab">
+								<?
+								CModule::IncludeModule("highloadblock"); // подключить инфоблоки
+								use Bitrix\Highloadblock as HL;
+								use Bitrix\Main\Entity;
+								$hlblock_id = 2;// id инфоблока
+								$hlblock = HL\HighloadBlockTable::getById($hlblock_id)->fetch();
+
+								$entity = HL\HighloadBlockTable::compileEntity($hlblock);
+								$entity_data_class = $entity->getDataClass();
+								$rsData = $entity_data_class::getList(array(
+									"select" => array("*"),
+									"order" => array("ID" => "ASC")
+								));
+								while($arData = $rsData->Fetch())
+								{
+									?>
+									<li><a href=<?echo '"?brand=', $arData['UF_XML_ID'], '"';?>><?echo $arData['UF_NAME'];?></a></li>
+									<?
+								}
+								?>
+							</ul>
                         </li>
-                        -->
                     </ul>
 
                 </aside>
@@ -199,13 +220,40 @@ $APPLICATION->SetTitle("Каталог");
                             <div class="new_prod clear">
                                 <a href="#"><img src="<?=$img['SRC']?>" alt=""/></a>
                                 <div>
-                                    <p class="stars_prod">
+									<?$APPLICATION->IncludeComponent(
+	"bitrix:iblock.vote", 
+	"footer_stars", 
+	array(
+		"IBLOCK_TYPE" => "catalog",
+		"IBLOCK_ID" => "2",
+		"ELEMENT_ID" => $arFields["ID"],
+		"MAX_VOTE" => "5",
+		"VOTE_NAMES" => array(
+			0 => "1",
+			1 => "2",
+			2 => "3",
+			3 => "4",
+			4 => "5",
+			5 => "",
+		),
+		"CACHE_TYPE" => "A",
+		"CACHE_TIME" => $arParams["CACHE_TIME"],
+		"COMPONENT_TEMPLATE" => "footer_stars",
+		"ELEMENT_CODE" => $_REQUEST["CODE"],
+		"SET_STATUS_404" => "N",
+		"MESSAGE_404" => "",
+		"DISPLAY_AS_RATING" => "rating",
+		"SHOW_RATING" => "N"
+	),
+	$component
+);?>
+                                    <!--<p class="stars_prod">
                                         <i class="ico_star"></i>
                                         <i class="ico_star"></i>
                                         <i class="ico_star"></i>
                                         <i class="ico_star"></i>
                                         <i class="ico_star"></i>
-                                    </p>
+                                    </p>-->
                                     <p class="name_tov"><a href="<?=$arFields['DETAIL_PAGE_URL']?>"><?=$arFields['NAME']?></a></p>
                                     <p class="name_price">
                                         <?php /*<span class="old_price">18 000 ₷</span>*/?>
@@ -224,9 +272,10 @@ $APPLICATION->SetTitle("Каталог");
                 <div class="about_product clear">
         <?php
         $arrFilter = array(
-            '>=CATALOG_PRICE_1' => $_GET['min_price']?$_GET['min_price']:0,
-            '<=CATALOG_PRICE_1' => $_GET['max_price']?$_GET['max_price']:3000
-        );
+			'>=CATALOG_PRICE_1' => $_GET['min_price']?$_GET['min_price']:0,
+			'<=CATALOG_PRICE_1' => $_GET['max_price']?$_GET['max_price']:3000,
+			'PROPERTY_BRAND_REF' => $_GET['brand']?$_GET['brand']:""
+		);
         ?>
 					<!--        --><? //$APPLICATION->IncludeComponent(
 					//	"bitrix:catalog.section",

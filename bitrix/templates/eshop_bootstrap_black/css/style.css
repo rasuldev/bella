@@ -33,6 +33,7 @@ body{font-family:'Geometria'; font-size: 14px; color:#363636;}
 .ico_user:after{content:  "\f007";}/*user*/
 .ico_search:after{content:"\f002";}/*поиск*/
 .ico_star:after{content:  "\f005";}/*рейтинг*/
+.ico_star_o:after{content:  "\f005"; color: rgb(247, 148, 29);}/*рейтинг*/
 .ico_msg:after{content:   "\f0e0";}/*email*/
 .ico_map:after{content:   "\f041";}/*map*/
 .ico_left:after{content:  "\f104";}/*left*/
@@ -532,7 +533,8 @@ footer .footer_top section{max-width: 1170px; margin:0 auto;}
 .footer_top ul li{border-bottom: 1px solid #3D3D3D;padding: 0 0 15px;margin: 0 0 15px;}
 .footer_top ul li i{margin: 0 10px 0 0;}
 .footer_top ul li:last-child{border: none;margin: 0;padding-bottom: 0;}
-.footer_top .stars_prod .ico_star{margin: 0;}
+.footer_top .stars_prod .ico_star{margin-right: 5px;}
+.footer_top .stars_prod .ico_star_o{margin-right: 5px;}
 /*social ico*/
 .footer_top .ico_plane{font-size: 16px;}
 .footer_top .ico_tel{font-size: 24px;}
