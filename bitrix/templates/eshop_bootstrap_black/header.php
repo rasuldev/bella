@@ -139,5 +139,5 @@ $theme = COption::GetOptionString("main", "wizard_eshop_bootstrap_theme_id", "bl
 <?endif */
 ?>
 
-			<?$needSidebar = preg_match("~^".SITE_DIR."(catalog|personal\/cart|personal\/order)/~", $curPage);?>
+			<?$needSidebar = preg_match("~^".SITE_DIR."(catalog|personal/cart|personal/order)/~", $curPage);?>
 				<!-- <div class="bx-content <?=($needSidebar ? "col-xs-12" : "col-md-9 col-sm-8")?>"> -->
