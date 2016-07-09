@@ -460,9 +460,9 @@ i[class^='sprite']{background-image: url(../img/sprite.png);display: block;heigh
 .prod .price_prod .old_price{text-decoration: line-through;color: #8d8d8d;font-size: 14px;}
 .prod .skidki_prod{position: absolute;left:0;top:30px;}
 .prod .stars_prod{position: absolute; left:0; bottom:30px; width: 100%;}
-.stars_prod .ico_star{font-size: 13px;cursor: pointer;}
-.stars_prod .ico_star.reit{color:#FFC600 !important;}
-.stars_prod .ico_star:hover{color:#F7941D !important;}
+.stars_prod .ico_star{font-size: 13px;cursor: pointer; margin-right: 5px;}
+/*.stars_prod:hover .ico_star.reit{color:#F7941D !important;}*/
+.stars_vote_disabled .ico_star.reit, .stars_prod .ico_star.reit{color:#FFC600;}
 
 
 /*button*/
