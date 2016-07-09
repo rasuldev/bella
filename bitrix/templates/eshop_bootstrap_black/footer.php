@@ -165,7 +165,7 @@
 											'EMAIL',
 											'PASSWORD',
 											'CONFIRM_PASSWORD'),
-									"SET_TITLE" => "Y",
+									"SET_TITLE" => "N",
 									"SHOW_FIELDS" => array(
 											'EMAIL',
 											'PASSWORD',
