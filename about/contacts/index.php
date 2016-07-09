@@ -42,7 +42,7 @@ $APPLICATION->SetTitle("Контакты");
                             "FB_TEXT_SOURCE" => "PREVIEW_TEXT",
                             "FORM_ID" => "1",
                             "HIDE_FORM" => "N",
-                            "IBLOCK_ID" => "5",
+                            "IBLOCK_ID" => "8",
                             "IBLOCK_TYPE" => "altasib_feedback",
                             "IMG_ERROR" => "/upload/altasib.feedback.gif",
                             "IMG_OK" => "/upload/altasib.feedback.ok.gif",
