@@ -102,7 +102,7 @@ if (isset($arResult['SKU_PROPS']) && is_array($arResult['SKU_PROPS'])) {
 ?>
 <? if (isset($arResult['ITEMS']) && !empty($arResult['ITEMS'])): ?>
     <div
-        class="with_this_buy col<? echo $arParams['LINE_ELEMENT_COUNT']; ?> <? echo $templateData['TEMPLATE_CLASS']; ?>">
+        class="with_this_buy">
         <h2><? echo GetMessage('SRP_HREF_TITLE') ?>:</h2>
 
         <div class="this_by_list clear">

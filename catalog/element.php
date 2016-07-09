@@ -411,6 +411,9 @@ $APPLICATION->SetTitle("Каталог");
 	),
 	false
 );?>
+					</div><!--all_products-->
+
+				</div><!--product_filter-->
 						<?$APPLICATION->IncludeComponent(
 	"bitrix:sale.recommended.products", 
 	"template1", 
@@ -432,7 +435,7 @@ $APPLICATION->SetTitle("Каталог");
 		),
 		"CODE" => $_REQUEST["code"],
 		"CONVERT_CURRENCY" => "N",
-		"DETAIL_URL" => "",
+		"DETAIL_URL" => "#CODE#",
 		"HIDE_NOT_AVAILABLE" => "N",
 		"IBLOCK_ID" => "2",
 		"IBLOCK_TYPE" => "catalog",
@@ -489,9 +492,6 @@ $APPLICATION->SetTitle("Каталог");
                         </ul>
                     </div><!--pagi_on-->
 
-                </div><!--all_products-->
-
-            </div><!--product_filter-->
 
         </div>
 
