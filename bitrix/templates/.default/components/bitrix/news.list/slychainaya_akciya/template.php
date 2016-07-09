@@ -28,7 +28,7 @@ $productId = $arResult["ITEMS"]["SELECTED_RANDOM_ITEM"]["DISPLAY_PROPERTIES"]["a
 ?>
 
 <?
-$pictureSRC = $arResult["ITEMS"]["SELECTED_RANDOM_ITEM"]["DETAIL_PICTURE"]["SRC"];
+$pictureSRC = $arResult["ITEMS"]["SELECTED_RANDOM_ITEM"]["PREVIEW_PICTURE"]["SRC"];
 
 $skidkaValue = $arResult["ITEMS"]["SELECTED_RANDOM_ITEM"]["DISPLAY_PROPERTIES"]["akcii_skidka"]["VALUE"];
 
