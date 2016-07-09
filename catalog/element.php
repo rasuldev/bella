@@ -411,17 +411,22 @@ $APPLICATION->SetTitle("Каталог");
 	),
 	false
 );?>
-                        <?$APPLICATION->IncludeComponent(
-	"bitrix:catalog.recommended.products", 
-	".default", 
+						<?$APPLICATION->IncludeComponent(
+	"bitrix:sale.recommended.products", 
+	"template1", 
 	array(
-		"ACTION_VARIABLE" => "action_crp",
+		"ACTION_VARIABLE" => "action",
 		"ADDITIONAL_PICT_PROP_2" => "MORE_PHOTO",
+		"ADDITIONAL_PICT_PROP_3" => "MORE_PHOTO",
 		"ADD_PROPERTIES_TO_BASKET" => "Y",
-		"BASKET_URL" => "/personal/cart/",
+		"BASKET_URL" => "/personal/cart",
 		"CACHE_TIME" => "86400",
-		"CACHE_TYPE" => "A",
+		"CACHE_TYPE" => "N",
 		"CART_PROPERTIES_2" => array(
+			0 => "",
+			1 => "",
+		),
+		"CART_PROPERTIES_3" => array(
 			0 => "",
 			1 => "",
 		),
@@ -431,14 +436,15 @@ $APPLICATION->SetTitle("Каталог");
 		"HIDE_NOT_AVAILABLE" => "N",
 		"IBLOCK_ID" => "2",
 		"IBLOCK_TYPE" => "catalog",
-		"ID" => "",
 		"LABEL_PROP_2" => "-",
 		"LINE_ELEMENT_COUNT" => "3",
 		"MESS_BTN_BUY" => "Купить",
 		"MESS_BTN_DETAIL" => "Подробнее",
 		"MESS_BTN_SUBSCRIBE" => "Подписаться",
 		"MESS_NOT_AVAILABLE" => "Нет в наличии",
-		"OFFERS_PROPERTY_LINK" => "RECOMMEND",
+		"MIN_BUYES" => "1",
+		"OFFER_TREE_PROPS_3" => array(
+		),
 		"PAGE_ELEMENT_COUNT" => "30",
 		"PARTIAL_PRODUCT_PROPERTIES" => "N",
 		"PRICE_CODE" => array(
@@ -450,30 +456,24 @@ $APPLICATION->SetTitle("Каталог");
 		"PRODUCT_QUANTITY_VARIABLE" => "quantity",
 		"PRODUCT_SUBSCRIPTION" => "N",
 		"PROPERTY_CODE_2" => array(
+			0 => "NEWPRODUCT",
+			1 => "SALELEADER",
+			2 => "SPECIALOFFER",
+			3 => "",
+		),
+		"PROPERTY_CODE_3" => array(
 			0 => "",
 			1 => "",
 		),
-		"PROPERTY_LINK" => "RECOMMEND",
 		"SHOW_DISCOUNT_PERCENT" => "Y",
 		"SHOW_IMAGE" => "Y",
 		"SHOW_NAME" => "Y",
 		"SHOW_OLD_PRICE" => "Y",
 		"SHOW_PRICE_COUNT" => "1",
-		"SHOW_PRODUCTS_2" => "Y",
 		"TEMPLATE_THEME" => "blue",
 		"USE_PRODUCT_QUANTITY" => "N",
-		"COMPONENT_TEMPLATE" => ".default",
-		"PROPERTY_CODE_3" => array(
-			0 => "MORE_PHOTO",
-			1 => "",
-		),
-		"CART_PROPERTIES_3" => array(
-			0 => "",
-			1 => "",
-		),
-		"ADDITIONAL_PICT_PROP_3" => "MORE_PHOTO",
-		"OFFER_TREE_PROPS_3" => array(
-		)
+		"COMPONENT_TEMPLATE" => "template1",
+		"ID" => ""
 	),
 	false
 );?>
