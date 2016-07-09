@@ -514,6 +514,11 @@ if (isset($arResult['SKU_PROPS']) && is_array($arResult['SKU_PROPS'])) {
 
         </div>
     </div>
+    <script>
+        $('.but_prod a').click(function () {
+            $(this).addClass('in_cart');
+        });
+    </script>
 
     <script type="text/javascript">
         BX.message({
