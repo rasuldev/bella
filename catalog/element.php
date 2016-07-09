@@ -456,10 +456,8 @@ $APPLICATION->SetTitle("Каталог");
 		"PRODUCT_QUANTITY_VARIABLE" => "quantity",
 		"PRODUCT_SUBSCRIPTION" => "N",
 		"PROPERTY_CODE_2" => array(
-			0 => "NEWPRODUCT",
-			1 => "SALELEADER",
-			2 => "SPECIALOFFER",
-			3 => "",
+			0 => "",
+			1 => "",
 		),
 		"PROPERTY_CODE_3" => array(
 			0 => "",
