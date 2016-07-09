@@ -33,7 +33,6 @@ body{font-family:'Geometria'; font-size: 14px; color:#363636;}
 .ico_user:after{content:  "\f007";}/*user*/
 .ico_search:after{content:"\f002";}/*поиск*/
 .ico_star:after{content:  "\f005";}/*рейтинг*/
-.ico_star_o:after{content:  "\f005"; color: rgb(247, 148, 29);}/*рейтинг*/
 .ico_msg:after{content:   "\f0e0";}/*email*/
 .ico_map:after{content:   "\f041";}/*map*/
 .ico_left:after{content:  "\f104";}/*left*/
@@ -462,7 +461,9 @@ i[class^='sprite']{background-image: url(../img/sprite.png);display: block;heigh
 .prod .skidki_prod{position: absolute;left:0;top:30px;}
 .prod .stars_prod{position: absolute; left:0; bottom:30px; width: 100%;}
 .stars_prod .ico_star{font-size: 13px;cursor: pointer;}
-.stars_prod .ico_star:hover, .stars_prod .ico_star.reit{color:#F7941D !important;}
+.stars_prod .ico_star.reit{color:#FFC600 !important;}
+.stars_prod .ico_star:hover{color:#F7941D !important;}
+
 
 /*button*/
 .prod .but_prod a{color:inherit;text-decoration: none; display:block; max-width: 128px;margin:15px auto 0;text-transform: uppercase;font-size: 12px; border:1px solid #363636; text-align: center;padding: 10px 0;}
@@ -534,7 +535,6 @@ footer .footer_top section{max-width: 1170px; margin:0 auto;}
 .footer_top ul li i{margin: 0 10px 0 0;}
 .footer_top ul li:last-child{border: none;margin: 0;padding-bottom: 0;}
 .footer_top .stars_prod .ico_star{margin-right: 5px;}
-.footer_top .stars_prod .ico_star_o{margin-right: 5px;}
 /*social ico*/
 .footer_top .ico_plane{font-size: 16px;}
 .footer_top .ico_tel{font-size: 24px;}

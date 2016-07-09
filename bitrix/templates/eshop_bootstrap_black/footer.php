@@ -79,32 +79,32 @@
 						        				<span class="new_price"><?=$price['PRICE']?> ₷</span>
 						        			</p>
 											<?$APPLICATION->IncludeComponent(
-	"bitrix:iblock.vote",
-	"footer_stars",
-	array(
-		"IBLOCK_TYPE" => "catalog",
-		"IBLOCK_ID" => "2",
-		"ELEMENT_ID" => $arFields["ID"],
-		"MAX_VOTE" => "5",
-		"VOTE_NAMES" => array(
-			0 => "1",
-			1 => "2",
-			2 => "3",
-			3 => "4",
-			4 => "5",
-			5 => "",
-		),
-		"CACHE_TYPE" => "A",
-		"CACHE_TIME" => $arParams["CACHE_TIME"],
-		"COMPONENT_TEMPLATE" => "footer_stars",
-		"ELEMENT_CODE" => $_REQUEST["CODE"],
-		"SET_STATUS_404" => "N",
-		"MESSAGE_404" => "",
-		"DISPLAY_AS_RATING" => "rating",
-		"SHOW_RATING" => "N"
-	),
-	$component
-);?>
+												"bitrix:iblock.vote",
+												"footer_stars",
+												array(
+													"IBLOCK_TYPE" => "catalog",
+													"IBLOCK_ID" => "2",
+													"ELEMENT_ID" => $arFields["ID"],
+													"MAX_VOTE" => "5",
+													"VOTE_NAMES" => array(
+														0 => "1",
+														1 => "2",
+														2 => "3",
+														3 => "4",
+														4 => "5",
+														5 => "",
+													),
+													"CACHE_TYPE" => "A",
+													"CACHE_TIME" => $arParams["CACHE_TIME"],
+													"COMPONENT_TEMPLATE" => "footer_stars",
+													"ELEMENT_CODE" => $_REQUEST["CODE"],
+													"SET_STATUS_404" => "N",
+													"MESSAGE_404" => "",
+													"DISPLAY_AS_RATING" => "rating",
+													"SHOW_RATING" => "N"
+												),
+												$component
+											);?>
 						        		</div>
 						        	</div><!--new_prod-->
 						        </li>
