@@ -218,7 +218,7 @@ if ($arResult["USE_CAPTCHA"] == "Y")
 		</tr>
 	</tfoot>
 </table>
-	<a id="auth" href="javascript:void(0)">Авторизация</a>
+	<a id="auth" href="javascript:void(0)">Вход</a>
 
 </form>
 <?endif?>
