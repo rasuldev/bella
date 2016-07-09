@@ -37,7 +37,7 @@ if(substr($path, -1)) $path = substr($path, 0, -1);
 
 ?>
 <a href="<?=$path?>">
-    <img src="<?=$pictureSRC?>" alt="">
+    <img src="<?=$pictureSRC?>" alt="" style="min-height: 330px;">
     <p>
         <?=$arResult["ITEMS"]["SELECTED_RANDOM_ITEM"]["PREVIEW_TEXT"]?><br/>
         <span><?=$arResult["ITEMS"]["SELECTED_RANDOM_ITEM"]["DETAIL_TEXT"]?></span>
