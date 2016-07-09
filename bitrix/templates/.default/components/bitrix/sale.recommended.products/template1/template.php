@@ -199,30 +199,41 @@ if (isset($arResult['SKU_PROPS']) && is_array($arResult['SKU_PROPS'])) {
                 <? if ($arParams['SHOW_NAME'] == "Y")
                 {
                     ?>
-                    <div class="bx_catalog_item_title"><a href="<? echo $arItem['DETAIL_PAGE_URL']; ?>"
-                                                          title="<? echo $arItem['NAME']; ?>"><? echo $arItem['NAME']; ?></a>
-                    </div>
+                    <p class="name_prod">
+                        <a href="<? echo $arItem['DETAIL_PAGE_URL']; ?>" title="<? echo $arItem['NAME']; ?>">
+                            <? echo $arItem['NAME']; ?>
+                        </a>
+                    </p>
                     <?
                 } ?>
-                <div class="bx_catalog_item_price">
-                <div id="<? echo $arItemIDs['PRICE']; ?>" class="bx_price"><?
-                    if (!empty($arItem['MIN_PRICE']))
+
+                <p class="price_prod">
+                <?
+                if (!empty($arItem['MIN_PRICE']))
+                {
+                    if ('Y' == $arParams['SHOW_OLD_PRICE'] && $arItem['MIN_PRICE']['DISCOUNT_VALUE'] < $arItem['MIN_PRICE']['VALUE'])
                     {
-                        if (isset($arItem['OFFERS']) && !empty($arItem['OFFERS']))
-                        {
-                            echo GetMessage('SRP_TPL_MESS_PRICE_SIMPLE_MODE', array('#PRICE#' => $arItem['MIN_PRICE']['PRINT_DISCOUNT_VALUE'], '#MEASURE#' => GetMessage('SRP_TPL_MESS_MEASURE_SIMPLE_MODE', array('#VALUE#' => $arItem['MIN_PRICE']['CATALOG_MEASURE_RATIO'], '#UNIT#' => $arItem['MIN_PRICE']['CATALOG_MEASURE_NAME']))));
-                        } else
-                        {
-                            echo $arItem['MIN_PRICE']['PRINT_DISCOUNT_VALUE'];
-                        }
-                        if ('Y' == $arParams['SHOW_OLD_PRICE'] && $arItem['MIN_PRICE']['DISCOUNT_VALUE'] < $arItem['MIN_PRICE']['VALUE'])
-                        {
-                            ?> <span
-                            style="color: #a5a5a5;font-size: 12px;font-weight: normal;white-space: nowrap;text-decoration: line-through;"><? echo $arItem['MIN_PRICE']['PRINT_VALUE']; ?></span><?
-                        }
+                        ?>
+                        <span class="old_price"><? echo $arItem['MIN_PRICE']['PRINT_VALUE']; ?></span>
+                        <?
                     }
-                    ?></div>
-                </div><?
+                }
+                ?>
+                <span id="<? echo $arItemIDs['PRICE']; ?>" class="now_price">
+                <?
+                if (isset($arItem['OFFERS']) && !empty($arItem['OFFERS']))
+                {
+                    echo GetMessage('SRP_TPL_MESS_PRICE_SIMPLE_MODE', array('#PRICE#' => $arItem['MIN_PRICE']['PRINT_DISCOUNT_VALUE'], '#MEASURE#' => GetMessage('SRP_TPL_MESS_MEASURE_SIMPLE_MODE', array('#VALUE#' => $arItem['MIN_PRICE']['CATALOG_MEASURE_RATIO'], '#UNIT#' => $arItem['MIN_PRICE']['CATALOG_MEASURE_NAME']))));
+                } else
+                {
+                    echo $arItem['MIN_PRICE']['PRINT_DISCOUNT_VALUE'];
+                }
+                ?>
+                </span>
+                </p>
+
+                <?
+
                 if (!isset($arItem['OFFERS']) || empty($arItem['OFFERS'])) // Simple Product
                 {
                     ?>
@@ -252,10 +263,10 @@ if (isset($arResult['SKU_PROPS']) && is_array($arResult['SKU_PROPS'])) {
                             }
                             ?>
                             <div class="bx_catalog_item_controls_blocktwo">
-                                <a id="<? echo $arItemIDs['BUY_LINK']; ?>" class="bx_bt_button bx_medium"
-                                   href="javascript:void(0)" rel="nofollow"><?
-                                    echo('' != $arParams['MESS_BTN_BUY'] ? $arParams['MESS_BTN_BUY'] : GetMessage('SRP_TPL_MESS_BTN_BUY'));
-                                    ?></a>
+                                <p class="but_prod">
+                                    <a id="<? echo $arItemIDs['BUY_LINK']; ?>"
+                                       href="javascript:void(0)" rel="nofollow"><?echo('' != $arParams['MESS_BTN_BUY'] ? $arParams['MESS_BTN_BUY'] : GetMessage('SRP_TPL_MESS_BTN_BUY'));?></a>
+                                </p>
                             </div>
                             <?
                         } else
