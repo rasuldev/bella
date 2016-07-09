@@ -502,6 +502,8 @@ if ($normalCount > 0):
                 <? if ($arParams["PRICE_VAT_SHOW_VALUE"] == "Y"): ?>
                     <li>
                         <span>Сумма</span>
+                        <?if(empty($arResult["PRICE_WITHOUT_DISCOUNT"]))
+                            $arResult["PRICE_WITHOUT_DISCOUNT"] = $arResult["allSum_FORMATED"]?>
                         <span id="PRICE_WITHOUT_DISCOUNT"><?= $arResult["PRICE_WITHOUT_DISCOUNT"] ?></span>
                     </li>
 
