@@ -265,7 +265,7 @@ if (isset($arResult['SKU_PROPS']) && is_array($arResult['SKU_PROPS'])) {
                             <div class="bx_catalog_item_controls_blocktwo">
                                 <p class="but_prod">
                                     <a id="<? echo $arItemIDs['BUY_LINK']; ?>"
-                                       href="javascript:void(0)" rel="nofollow"><?echo('' != $arParams['MESS_BTN_BUY'] ? $arParams['MESS_BTN_BUY'] : GetMessage('SRP_TPL_MESS_BTN_BUY'));?></a>
+                                       href="javascript:void(0)" rel="nofollow"><?echo('' != $arParams['MESS_BTN_ADD_TO_BASKET'] ? $arParams['MESS_BTN_ADD_TO_BASKET'] : GetMessage('SRP_TPL_MESS_BTN_ADD_TO_BASKET'));?></a>
                                 </p>
                             </div>
                             <?
