@@ -681,7 +681,7 @@ display:-webkit-flex;
 #ax_slider .ax_nav_left{left:0; border-radius: 3px 0 0 3px;}
 #ax_slider .ax_nav_right{right:0;border-radius: 0 3px 3px 0;}
 
-.ax_slide_img{display: block; background: url("../img/wait.gif") center center no-repeat;}
+.ax_slide_img{display: block;} /*background: url("../img/wait.gif") center center no-repeat;*/
 .ax_slide_img img{max-width: 420px;width: 100%;}
 
 .mini_slide{overflow: hidden;margin: 10px 0 0 28px;position: relative;height: 90px;}
