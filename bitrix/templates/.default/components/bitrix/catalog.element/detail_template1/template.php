@@ -188,24 +188,33 @@ isset($arResult["IPROPERTY_VALUES"]["ELEMENT_DETAIL_PICTURE_FILE_ALT"]) && $arRe
             <div class="bx_optionblock">
                 <?
                 if ($useVoteRating) {
-                    ?><? $APPLICATION->IncludeComponent(
+                    ?><?$APPLICATION->IncludeComponent(
                         "bitrix:iblock.vote",
-                        "stars",
+                        "footer_stars",
                         array(
                             "IBLOCK_TYPE" => $arParams['IBLOCK_TYPE'],
                             "IBLOCK_ID" => $arParams['IBLOCK_ID'],
-                            "ELEMENT_ID" => $arResult['ID'],
-                            "ELEMENT_CODE" => "",
+                            "ELEMENT_ID" =>$arResult['ID'],
                             "MAX_VOTE" => "5",
-                            "VOTE_NAMES" => array("1", "2", "3", "4", "5"),
+                            "VOTE_NAMES" => array(
+                                0 => "1",
+                                1 => "2",
+                                2 => "3",
+                                3 => "4",
+                                4 => "5",
+                                5 => "",
+                            ),
+                            "CACHE_TYPE" => "A",
+                            "CACHE_TIME" => $arParams["CACHE_TIME"],
+                            "COMPONENT_TEMPLATE" => "footer_stars",
+                            "ELEMENT_CODE" => $_REQUEST["CODE"],
                             "SET_STATUS_404" => "N",
-                            "DISPLAY_AS_RATING" => $arParams['VOTE_DISPLAY_AS_RATING'],
-                            "CACHE_TYPE" => $arParams['CACHE_TYPE'],
-                            "CACHE_TIME" => $arParams['CACHE_TIME']
+                            "MESSAGE_404" => "",
+                            "DISPLAY_AS_RATING" => "rating",
+                            "SHOW_RATING" => "N"
                         ),
-                        $component,
-                        array("HIDE_ICONS" => "Y")
-                    ); ?><?
+                        $component
+                    );?><?
                 }
                 if (false) //$useBrands
                 {
@@ -531,25 +540,33 @@ isset($arResult["IPROPERTY_VALUES"]["ELEMENT_DETAIL_PICTURE_FILE_ALT"]) && $arRe
                 <h3><?= $arResult["NAME"] ?></h3>
 
                 <div class="stars_prod clear">
-                    <?
-                    $APPLICATION->IncludeComponent(
+                    <?$APPLICATION->IncludeComponent(
                         "bitrix:iblock.vote",
-                        "stars",
+                        "footer_stars",
                         array(
                             "IBLOCK_TYPE" => $arParams['IBLOCK_TYPE'],
                             "IBLOCK_ID" => $arParams['IBLOCK_ID'],
-                            "ELEMENT_ID" => $arResult['ID'],
-                            "ELEMENT_CODE" => "",
+                            "ELEMENT_ID" =>$arResult['ID'],
                             "MAX_VOTE" => "5",
-                            "VOTE_NAMES" => array("1", "2", "3", "4", "5"),
+                            "VOTE_NAMES" => array(
+                                0 => "1",
+                                1 => "2",
+                                2 => "3",
+                                3 => "4",
+                                4 => "5",
+                                5 => "",
+                            ),
+                            "CACHE_TYPE" => "A",
+                            "CACHE_TIME" => $arParams["CACHE_TIME"],
+                            "COMPONENT_TEMPLATE" => "footer_stars",
+                            "ELEMENT_CODE" => $_REQUEST["CODE"],
                             "SET_STATUS_404" => "N",
-                            "DISPLAY_AS_RATING" => $arParams['VOTE_DISPLAY_AS_RATING'],
-                            "CACHE_TYPE" => $arParams['CACHE_TYPE'],
-                            "CACHE_TIME" => $arParams['CACHE_TIME']
+                            "MESSAGE_404" => "",
+                            "DISPLAY_AS_RATING" => "rating",
+                            "SHOW_RATING" => "N"
                         ),
-                        $component,
-                        array("HIDE_ICONS" => "Y")
-                    ); ?>
+                        $component
+                    );?>
                 </div>
                 <p><?= $arResult["DETAIL_TEXT"] ?></p>
             </div>

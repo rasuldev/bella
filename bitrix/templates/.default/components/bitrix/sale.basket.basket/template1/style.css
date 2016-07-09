@@ -1123,8 +1123,8 @@ i[class^='sprite']{background-image: url(../img/sprite.png);display: block;heigh
 .prod .price_prod .old_price{text-decoration: line-through;color: #8d8d8d;font-size: 14px;}
 .prod .skidki_prod{position: absolute;left:0;top:30px;}
 .prod .stars_prod{position: absolute; left:0; bottom:30px; width: 100%;}
-.stars_prod .ico_star{font-size: 13px;cursor: pointer;}
-.stars_prod .ico_star:hover, .stars_prod .ico_star.reit{color:#F7941D !important;}
+/*.stars_prod .ico_star{font-size: 13px;cursor: pointer;}*/
+/*.stars_prod .ico_star:hover, .stars_prod .ico_star.reit{color:#F7941D !important;}*/
 
 /*button*/
 .prod .but_prod a{color:inherit;text-decoration: none; display:block; max-width: 128px;margin:15px auto 0;text-transform: uppercase;font-size: 12px; border:1px solid #363636; text-align: center;padding: 10px 0;}

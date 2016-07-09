@@ -24,11 +24,11 @@ jQuery(document).ready(function(){
     });
 
     /*********STARS ON PROD*********/
-    $(".ico_star").hover(function(){
+    $(".stars_prod .ico_star").hover(function(){
         $(this).prevAll().andSelf().css({'color':'#F7941D'});
     },
     function(){
-        $(".ico_star").css({'color':'inherit'});
+        $(".stars_prod .ico_star").css({'color':''});
     });
 
 

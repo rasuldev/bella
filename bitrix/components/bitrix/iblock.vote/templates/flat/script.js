@@ -51,7 +51,8 @@
 					{
 						var obResult = BX.create('DIV');
 						obResult.innerHTML = data;
-						obContainer.parentNode.replaceChild(obResult.firstChild, obContainer);
+						var parent = obContainer.parentNode;
+						parent.replaceChild(obResult.firstChild, obContainer);
 					}
 				}
 			);
