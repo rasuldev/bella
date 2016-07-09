@@ -33,8 +33,6 @@ $pictureSRC = $arResult["ITEMS"]["SELECTED_RANDOM_ITEM"]["DETAIL_PICTURE"]["SRC"
 $skidkaValue = $arResult["ITEMS"]["SELECTED_RANDOM_ITEM"]["DISPLAY_PROPERTIES"]["akcii_skidka"]["VALUE"];
 
 $path = "element/".$arResult["ITEMS"]["SELECTED_RANDOM_ITEM"]["DISPLAY_PROPERTIES"]["akcii_element"]["LINK_ELEMENT_VALUE"][$productId]["CODE"];
-if(substr($path, -1)) $path = substr($path, 0, -1);
-
 ?>
 <a href="<?=$path?>">
     <img src="<?=$pictureSRC?>" alt="" style="min-height: 330px;">
