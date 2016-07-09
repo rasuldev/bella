@@ -32,12 +32,10 @@ $pictureSRC = $arResult["ITEMS"]["SELECTED_RANDOM_ITEM"]["DETAIL_PICTURE"]["SRC"
 
 $skidkaValue = $arResult["ITEMS"]["SELECTED_RANDOM_ITEM"]["DISPLAY_PROPERTIES"]["akcii_skidka"]["VALUE"];
 
-$path = $arResult["ITEMS"]["SELECTED_RANDOM_ITEM"]["DISPLAY_PROPERTIES"]["akcii_element"]["LINK_ELEMENT_VALUE"][$productId]["DETAIL_PAGE_URL"];
-if(substr($path, -1)) $path = substr($path, 0, -1);
-
+$path = 'http://'.$_SERVER["SERVER_NAME"].'catalog/element/'.$arResult["ITEMS"]["SELECTED_RANDOM_ITEM"]["DISPLAY_PROPERTIES"]["akcii_element"]["LINK_ELEMENT_VALUE"][$productId]["CODE"];
 ?>
 <a href="<?=$path?>">
-    <img src="<?=$pictureSRC?>" alt="">
+    <img src="<?=$pictureSRC?>" alt="" style="min-height: 330px;">
     <p>
         <?=$arResult["ITEMS"]["SELECTED_RANDOM_ITEM"]["PREVIEW_TEXT"]?><br/>
         <span><?=$arResult["ITEMS"]["SELECTED_RANDOM_ITEM"]["DETAIL_TEXT"]?></span>

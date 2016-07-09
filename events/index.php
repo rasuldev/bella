@@ -70,7 +70,7 @@ Array(
 		"SET_META_DESCRIPTION" => "Y",
 		"SET_META_KEYWORDS" => "Y",
 		"SET_STATUS_404" => "N",
-		"SET_TITLE" => "Y",
+		"SET_TITLE" => "N",
 		"SHOW_404" => "N",
 		"SORT_BY1" => "ID",
 		"SORT_BY2" => "ID",

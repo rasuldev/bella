@@ -242,7 +242,7 @@ $APPLICATION->SetTitle("Bellashop");
 		"SET_META_DESCRIPTION" => "Y",
 		"SET_META_KEYWORDS" => "Y",
 		"SET_STATUS_404" => "N",
-		"SET_TITLE" => "Y",
+		"SET_TITLE" => "N",
 		"SHOW_404" => "N",
 		"SORT_BY1" => "ACTIVE_FROM",
 		"SORT_BY2" => "SORT",
@@ -628,7 +628,7 @@ $APPLICATION->SetTitle("Bellashop");
 					"CACHE_TIME" => "3600",
 					"CACHE_TYPE" => "A",
 					"CONFIRMATION" => "Y",
-					"SET_TITLE" => "Y",
+					"SET_TITLE" => "N",
 					"SHOW_HIDDEN" => "N",
 					"USE_PERSONALIZATION" => "Y"
 				)
