@@ -461,8 +461,8 @@ i[class^='sprite']{background-image: url(../img/sprite.png);display: block;heigh
 .prod .skidki_prod{position: absolute;left:0;top:30px;}
 .prod .stars_prod{position: absolute; left:0; bottom:30px; width: 100%;}
 .stars_prod .ico_star{font-size: 13px;cursor: pointer;}
-.stars_prod .ico_star_o{font-size: 13px; cursor: pointer;}
-.stars_prod .ico_star:hover, .stars_prod .ico_star.reit{color:#F7941D !important;}
+.stars_prod .ico_star.reit{color:#FFC600 !important;}
+.stars_prod .ico_star:hover{color:#F7941D !important;}
 
 
 /*button*/

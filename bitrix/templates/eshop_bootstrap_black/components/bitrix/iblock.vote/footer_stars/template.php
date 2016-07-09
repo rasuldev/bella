@@ -53,6 +53,7 @@ $voteContainerId = 'vote_'.$arResult["ID"];
 			<?endif;?>
 		></i><?
 	}
+	?><span id="<?=$arJSParams["ratingId"]?>" class="bx_stars_rating_votes">(<?echo $arResult["PROPERTIES"]["vote_count"]["VALUE"]?>)</span><?
 	if ($arParams["SHOW_RATING"] == "Y"):?>
 		(<?echo $DISPLAY_VALUE?>)
 	<?endif;
