@@ -628,7 +628,7 @@ $APPLICATION->SetTitle("Bellashop");
 					"CACHE_TIME" => "3600",
 					"CACHE_TYPE" => "A",
 					"CONFIRMATION" => "Y",
-					"SET_TITLE" => "Y",
+					"SET_TITLE" => "N",
 					"SHOW_HIDDEN" => "N",
 					"USE_PERSONALIZATION" => "Y"
 				)
