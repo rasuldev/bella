@@ -13,19 +13,17 @@
 $this->setFrameMode(true);
 ?>
 <?
-
 $arSelect = array("ID", "PROPERTY_akcii_element", "IBLOCK_SECTION_ID");
 $arFilter = Array("IBLOCK_ID" => 6);
 $akcii_res = CIBlockElement::GetList(Array("SORT" => "ASC"), $arFilter, false, array(), $arSelect);
-while ($arItem = $akcii_res->GetNext()) {
+while ($arItem = $akcii_res->GetNext())
+{
     $product = CIBlockElement::GetByID($arItem["PROPERTY_AKCII_ELEMENT_VALUE"]);
     if ($arProduct = $product->Fetch()) {
-        $section = CIBlockSection::GetByID($arProduct["IBLOCK_SECTION_ID"]);
-      if ($arSection = $section->Fetch()) {
-          $arElement[$arItem["ID"]]["URL"] = "http://".$_SERVER["SERVER_NAME"]."/catalog/".$arSection["CODE"]."/".$arProduct["CODE"];
-      }
+        $arElement[$arItem["ID"]]["URL"] = "http://".$_SERVER["SERVER_NAME"]."/catalog/element/".$arProduct["CODE"];
     }
 }
+
 ?>
 
     <? if ($arParams["DISPLAY_TOP_PAGER"]): ?>
