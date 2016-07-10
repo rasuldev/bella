@@ -144,18 +144,20 @@
 			<h4>Авторизация</h4>
 			<div class="form_block">
 				<form id="form_auth">
-					<?$APPLICATION->IncludeComponent(
-							"ulogin:auth",
-							"",
-							Array(
-									"GROUP_ID" => array("5"),
-									"LOGIN_AS_EMAIL" => "Y",
-									"SEND_EMAIL" => "N",
-									"SOCIAL_LINK" => "N",
-									"ULOGINID1" => "",
-									"ULOGINID2" => ""
-							)
-					);?>
+					<div style="margin-bottom: 15px;">
+						<?$APPLICATION->IncludeComponent(
+								"ulogin:auth",
+								"",
+								Array(
+										"GROUP_ID" => array("5"),
+										"LOGIN_AS_EMAIL" => "Y",
+										"SEND_EMAIL" => "N",
+										"SOCIAL_LINK" => "N",
+										"ULOGINID1" => "",
+										"ULOGINID2" => ""
+								)
+						);?>
+					</div>
 					<?$APPLICATION->IncludeComponent("bitrix:system.auth.form", "my_template1", array("SHOW_ERRORS" => "Y"));?>
 				</form>
 				<form id="registr_form" method="post" action="" name="regform" enctype="multipart/form-data">
