@@ -229,7 +229,7 @@ header .h_bot .logo{display: table; margin:0  auto 25px;}
 .tab_link ~ div[id^="tab"] > div h3 {font-size: 18px; margin: 0 0 20px; float:left;}
 .tab_link ~ div[id^="tab"] > div p {color:#959595; line-height: 1.2;clear: both;}
 .tab_link ~ div[id^="tab"] > div p:last-of-type{margin: 0;}
-.tab_link ~ div[id^="tab"] > div .stars_prod {float:right;}
+.tab_link ~ div[id^="tab"] > div .stars_prod, div .stars_vote_disabled{float:right;}
 
 
 /**********SIDEBAR***********/
@@ -461,6 +461,7 @@ i[class^='sprite']{background-image: url(../img/sprite.png);display: block;heigh
 .prod .skidki_prod{position: absolute;left:0;top:30px;}
 .prod .stars_prod{position: absolute; left:0; bottom:30px; width: 100%;}
 .stars_prod .ico_star{font-size: 13px;cursor: pointer; margin-right: 5px;}
+.stars_vote_disabled .ico_star{font-size: 13px; margin-right: 5px;}
 /*.stars_prod:hover .ico_star.reit{color:#F7941D !important;}*/
 .stars_vote_disabled .ico_star.reit, .stars_prod .ico_star.reit{color:#FFC600;}
 
@@ -476,9 +477,9 @@ i[class^='sprite']{background-image: url(../img/sprite.png);display: block;heigh
 .prod .hover_prod .in_cart {color:#8EC63F;border-color: #8EC63F;}
 .prod .but_prod .in_cart {color:#fff !important;border-color: #8EC63F !important;background: #8EC63F !important;}
 .prod .hover_prod a .ico_cart{line-height: 1.9;}
-.prod .stars_prod {opacity: 0; transition: 1s;}
+.prod .stars_prod, .prod .stars_vote_disabled {opacity: 0; transition: 1s;}
 .prod:hover .img_prod img{opacity: 0.4;}
-.prod:hover .hover_prod, .prod:hover .stars_prod{opacity: 1;}
+.prod:hover .hover_prod, .prod:hover .stars_prod, .prod:hover .stars_vote_disabled{opacity: 1;}
 .prod:hover .price_prod span , .prod:hover .name_prod{color:#FFC600;}
 
 /*PODPISKA*/
@@ -535,6 +536,7 @@ footer .footer_top section{max-width: 1170px; margin:0 auto;}
 .footer_top ul li i{margin: 0 10px 0 0;}
 .footer_top ul li:last-child{border: none;margin: 0;padding-bottom: 0;}
 .footer_top .stars_prod .ico_star{margin-right: 5px;}
+.footer_top .stars_vote_disabled .ico_star{margin-right: 5px;}
 /*social ico*/
 .footer_top .ico_plane{font-size: 16px;}
 .footer_top .ico_tel{font-size: 24px;}
