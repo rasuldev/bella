@@ -55,7 +55,11 @@ $canVote = !$arResult["VOTED"] && $arParams["READ_ONLY"]!=="Y";
 			<?endif;?>
 		></i><?
 	}
-	?><span id="<?=$arJSParams["ratingId"]?>" class="bx_stars_rating_votes">(<?echo $arResult["PROPERTIES"]["vote_count"]["VALUE"]?>)</span><?
+	?>
+	<?if ($arResult["PROPERTIES"]["vote_count"]["VALUE"] != null)
+		echo '<span id="', $arJSParams["ratingId"], '" class="bx_stars_rating_votes">(', $arResult["PROPERTIES"]["vote_count"]["VALUE"], ')</span>';?>
+	<!--<span id="<?=$arJSParams["ratingId"]?>" class="bx_stars_rating_votes">(<?echo $arResult["PROPERTIES"]["vote_count"]["VALUE"]?>)</span>-->
+	<?
 	if ($arParams["SHOW_RATING"] == "Y"):?>
 		(<?echo $DISPLAY_VALUE?>)
 	<?endif;
