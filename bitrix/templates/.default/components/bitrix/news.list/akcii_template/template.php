@@ -31,14 +31,14 @@ while ($arItem = $akcii_res->GetNext())
     <? endif; ?>
     <div class="akcii clear">
         <div>
-            <p>
+            <p class="class1">
                 <a class="wow bounceInLeft" style="visibility: visible; animation-name: bounceInLeft;"
                    href="<?=$arElement[$arResult["ITEMS"][0]["ID"]]["URL"]?>">
                     <img src="<?= $arResult["ITEMS"][0]["DETAIL_PICTURE"]["SRC"] ?>" alt="">
                 </a>
             </p>
 
-            <p>
+            <p class="class1">
                 <a class="wow bounceInRight" style="visibility: visible; animation-name: bounceInRight;"
                    href="<?=$arElement[$arResult["ITEMS"][1]["ID"]]["URL"]?>">
                     <img src="<?= $arResult["ITEMS"][1]["DETAIL_PICTURE"]["SRC"] ?>" alt="">
@@ -56,14 +56,14 @@ while ($arItem = $akcii_res->GetNext())
         </div>
 
         <div>
-            <p>
+            <p  class="class1">
                 <a class="wow flipInY" style="visibility: visible; animation-name: flipInY;"
                    href="<?=$arElement[$arResult["ITEMS"][3]["ID"]]["URL"]?>">
                     <img src="<?= $arResult["ITEMS"][3]["DETAIL_PICTURE"]["SRC"] ?>" alt="">
                 </a>
             </p>
 
-            <p>
+            <p  class="class1">
                 <a class="wow flipInY" style="visibility: visible; animation-name: flipInY;"
                    href="<?=$arElement[$arResult["ITEMS"][4]["ID"]]["URL"]?>">
                     <img src="<?= $arResult["ITEMS"][4]["DETAIL_PICTURE"]["SRC"] ?>" alt="">

@@ -159,7 +159,8 @@ if (isset($arResult['SKU_PROPS']) && is_array($arResult['SKU_PROPS'])) {
                         if ('Y' == $arItem["PROPERTIES"]["NEWPRODUCT"]["VALUE_XML_ID"])
                             echo '<i class="sprite_2"></i>'; // Новинка
 
-                        if ('Y' == $arParams['SHOW_OLD_PRICE'] && $arItem['MIN_PRICE']['DISCOUNT_VALUE'] < $arItem['MIN_PRICE']['VALUE'])
+//                        if ('Y' == $arParams['SHOW_OLD_PRICE'] && $arItem['MIN_PRICE']['DISCOUNT_VALUE'] < $arItem['MIN_PRICE']['VALUE'])
+                        if('YES' == $arItem["PROPERTIES"]["SPECIALOFFER"]["VALUE_XML_ID"])
                             echo '<i class="sprite_3"></i>'; // Скидка
                         ?>
                     </p>

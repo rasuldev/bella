@@ -73,7 +73,7 @@
 						        	<div class="new_prod clear">
 						        		<a href="#"><img src="<?=$img['SRC']?>" alt=""/></a>
 						        		<div>
-						        			<p class="name_tov"><a href="<?=$arFields['DETAIL_PAGE_URL']?>"><?=$arFields['NAME']?></a></p>
+						        			<p class="name_tov"><a href="http://<?=$_SERVER['SERVER_NAME'].'/catalog/element/'.$arFields['CODE']?>"><?=$arFields['NAME']?></a></p>
 						        			<p class="name_price">
 						        				<?php /*<span class="old_price">18 000 ₷</span>*/?>
 						        				<span class="new_price"><?=$price['PRICE']?> ₷</span>
@@ -144,18 +144,20 @@
 			<h4>Авторизация</h4>
 			<div class="form_block">
 				<form id="form_auth">
-					<?$APPLICATION->IncludeComponent(
-							"ulogin:auth",
-							"",
-							Array(
-									"GROUP_ID" => array("5"),
-									"LOGIN_AS_EMAIL" => "Y",
-									"SEND_EMAIL" => "N",
-									"SOCIAL_LINK" => "N",
-									"ULOGINID1" => "",
-									"ULOGINID2" => ""
-							)
-					);?>
+					<div style="margin-bottom: 15px;">
+						<?$APPLICATION->IncludeComponent(
+								"ulogin:auth",
+								"",
+								Array(
+										"GROUP_ID" => array("5"),
+										"LOGIN_AS_EMAIL" => "Y",
+										"SEND_EMAIL" => "N",
+										"SOCIAL_LINK" => "N",
+										"ULOGINID1" => "",
+										"ULOGINID2" => ""
+								)
+						);?>
+					</div>
 					<?$APPLICATION->IncludeComponent("bitrix:system.auth.form", "my_template1", array("SHOW_ERRORS" => "Y"));?>
 				</form>
 				<form id="registr_form" method="post" action="" name="regform" enctype="multipart/form-data">

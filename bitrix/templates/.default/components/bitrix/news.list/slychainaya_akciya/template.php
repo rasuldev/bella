@@ -36,9 +36,20 @@ $path = 'http://'.$_SERVER["SERVER_NAME"].'/catalog/element/'.$arResult["ITEMS"]
 ?>
 <a href="<?=$path?>">
     <img src="<?=$pictureSRC?>" alt="" style="min-height: 330px;">
-    <p>
-        <?=$arResult["ITEMS"]["SELECTED_RANDOM_ITEM"]["PREVIEW_TEXT"]?><br/>
-        <span><?=$arResult["ITEMS"]["SELECTED_RANDOM_ITEM"]["DETAIL_TEXT"]?></span>
-    </p>
-    <div class="skidka">скидка <?=$skidkaValue?>%</div>
+    <?
+        if(!empty($arResult["ITEMS"]["SELECTED_RANDOM_ITEM"]["PREVIEW_TEXT"]))
+        {?>
+            <p>
+                <?=$arResult["ITEMS"]["SELECTED_RANDOM_ITEM"]["PREVIEW_TEXT"]?><br/>
+                <span><?=$arResult["ITEMS"]["SELECTED_RANDOM_ITEM"]["DETAIL_TEXT"]?></span>
+            </p>
+        <?}
+    ?>
+    <?
+        if(!empty($skidkaValue))
+        {?>
+            <div class="skidka">скидка <?=$skidkaValue?>%</div>
+        <?}
+    ?>
+
 </a>
