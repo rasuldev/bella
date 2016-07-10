@@ -138,7 +138,7 @@ $APPLICATION->SetTitle("Каталог");
                             $price = CPrice::GetBasePrice($arFields['ID']);
                             ?>
                             <div class="new_prod clear">
-                                <a href="#"><img src="<?= $img['SRC'] ?>" alt=""/></a>
+                                <a href="http://<?=$_SERVER['SERVER_NAME'].'/catalog/element/'.$arFields['CODE']?>"><img src="<?= $img['SRC'] ?>" alt=""/></a>
 
                                 <div>
                                     <? $APPLICATION->IncludeComponent("bitrix:iblock.vote", "footer_stars", array("IBLOCK_TYPE" => "catalog", "IBLOCK_ID" => "2", "ELEMENT_ID" => $arFields["ID"], "MAX_VOTE" => "5", "VOTE_NAMES" => array(0 => "1", 1 => "2", 2 => "3", 3 => "4", 4 => "5", 5 => "",), "CACHE_TYPE" => "A", "CACHE_TIME" => $arParams["CACHE_TIME"], "COMPONENT_TEMPLATE" => "footer_stars", "ELEMENT_CODE" => $_REQUEST["CODE"], "SET_STATUS_404" => "N", "MESSAGE_404" => "", "DISPLAY_AS_RATING" => "rating", "SHOW_RATING" => "N"), $component); ?>
@@ -150,7 +150,7 @@ $APPLICATION->SetTitle("Каталог");
                                         <i class="ico_star"></i>
                                     </p>-->
                                     <p class="name_tov"><a
-                                            href="<?= $arFields['DETAIL_PAGE_URL'] ?>"><?= $arFields['NAME'] ?></a></p>
+                                            href="http://<?=$_SERVER['SERVER_NAME'].'/catalog/element/'.$arFields['CODE']?>"><?= $arFields['NAME'] ?></a></p>
 
                                     <p class="name_price">
                                         <?php /*<span class="old_price">18 000 ₷</span>*/
