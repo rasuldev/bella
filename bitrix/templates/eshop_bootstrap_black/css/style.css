@@ -225,10 +225,9 @@ header .h_bot .logo{display: table; margin:0  auto 25px;}
 .tab_link ~ div[id^="tab"]:not(.act){display: none;}
 .tab_link ~ div[id^="tab"] > a {float:left;display: block;width: 70px; height: 70px;overflow: hidden; background: #EBEBEB; margin: 0 30px 0 0;}
 .tab_link ~ div[id^="tab"] > a img{width: 70px; min-height: 70px;}
-.tab_link ~ div[id^="tab"] > div {display: block;}
+.tab_link ~ div[id^="tab"] > div {display: table;}
 .tab_link ~ div[id^="tab"] > div h3 {font-size: 18px; margin: 0 0 20px; float:left;}
 .tab_link ~ div[id^="tab"] > div p {color:#959595; line-height: 1.2;clear: both;}
-.tab_link ~ div[id^="tab"] > div p:first-child {color:#363636 !important; line-height: 1.2;clear: both;}
 .tab_link ~ div[id^="tab"] > div p:last-of-type{margin: 0;}
 .tab_link ~ div[id^="tab"] > div .stars_prod{float:right;}
 
