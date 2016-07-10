@@ -532,9 +532,11 @@ isset($arResult["IPROPERTY_VALUES"]["ELEMENT_DETAIL_PICTURE_FILE_ALT"]) && $arRe
             <li><a class="tab_act" href="#tab_opis">Описание</a></li>
             <li><a href="#tab_oplat">Оплата и доставка</a></li>
         </ul>
-
+<?
+    $productURL = "http://".$_SERVER['SERVER_NAME'].'/catalog/element/'.$arResult['CODE'];
+?>
         <div class="act" id="tab_opis">
-            <a href="#"><img src="<?= $arResult["DETAIL_PICTURE"]["SRC"] ?>" alt=""></a>
+            <a href="<?=$productURL?>"><img src="<?= $arResult["DETAIL_PICTURE"]["SRC"] ?>" alt=""></a>
 
             <div>
                 <h3><?= $arResult["NAME"] ?></h3>
@@ -574,7 +576,7 @@ isset($arResult["IPROPERTY_VALUES"]["ELEMENT_DETAIL_PICTURE_FILE_ALT"]) && $arRe
 
         <div id="tab_oplat">
 
-            <a href="#"><img src="<?= $arResult["DETAIL_PICTURE"]["SRC"] ?>" alt=""></a>
+            <a href="<?=$productURL?>"><img src="<?= $arResult["DETAIL_PICTURE"]["SRC"] ?>" alt=""></a>
 
             <div>
                 <h3><?= $arResult["NAME"] ?></h3>
