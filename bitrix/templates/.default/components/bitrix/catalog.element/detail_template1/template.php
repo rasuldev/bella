@@ -574,10 +574,10 @@ isset($arResult["IPROPERTY_VALUES"]["ELEMENT_DETAIL_PICTURE_FILE_ALT"]) && $arRe
 
         <div id="tab_oplat">
 
-            <a href="#"><img src="img/tov.jpg" alt=""></a>
+            <a href="#"><img src="<?= $arResult["DETAIL_PICTURE"]["SRC"] ?>" alt=""></a>
 
             <div>
-                <h3>Название продукта</h3>
+                <h3><?= $arResult["NAME"] ?></h3>
 
                 <p>Стоимость доставки в пределах МКАД и до 20 км за МКАД составляет 400 рублей. В пределы МКАД также
                     входят районы Бутово, Жулебино, Новокосино, Реутов, Старое Косино.
