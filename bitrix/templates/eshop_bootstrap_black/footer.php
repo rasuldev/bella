@@ -73,7 +73,7 @@
 						        	<div class="new_prod clear">
 						        		<a href="#"><img src="<?=$img['SRC']?>" alt=""/></a>
 						        		<div>
-						        			<p class="name_tov"><a href="<?=$arFields['DETAIL_PAGE_URL']?>"><?=$arFields['NAME']?></a></p>
+						        			<p class="name_tov"><a href="http://<?=$_SERVER['SERVER_NAME'].'/catalog/element/'.$arFields['CODE']?>"><?=$arFields['NAME']?></a></p>
 						        			<p class="name_price">
 						        				<?php /*<span class="old_price">18 000 ₷</span>*/?>
 						        				<span class="new_price"><?=$price['PRICE']?> ₷</span>
