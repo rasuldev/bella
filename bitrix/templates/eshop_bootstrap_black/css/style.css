@@ -230,7 +230,7 @@ header .h_bot .logo{display: table; margin:0  auto 25px;}
 .tab_link ~ div[id^="tab"] > div p {color:#959595; line-height: 1.2;clear: both;}
 .tab_link ~ div[id^="tab"] > div p:last-of-type{margin: 0;}
 .tab_link ~ div[id^="tab"] > div .stars_prod{float:right;}
-
+.tab_link ~ div[id^="tab"] > div p.stars_vote_disabled, .tab_link ~ div[id^="tab"] > div p.stars_prod{color: #363636 !important;}
 
 /**********SIDEBAR***********/
 .sidebar{float:right;max-width: 270px;width: 100%;}
