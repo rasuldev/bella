@@ -68,12 +68,13 @@
 						        $arFields = $ob->GetFields();
 						        $img = CFile::GetFileArray($arFields['PREVIEW_PICTURE']);
 						        $price = CPrice::GetBasePrice($arFields['ID']);
+								$productURL = "http://".$_SERVER['SERVER_NAME'].'/catalog/element/'.$arFields['CODE'];
 						        ?>
 						        <li>
 						        	<div class="new_prod clear">
-						        		<a href="#"><img src="<?=$img['SRC']?>" alt=""/></a>
+						        		<a href="<?=$productURL?>"><img src="<?=$img['SRC']?>" alt=""/></a>
 						        		<div>
-						        			<p class="name_tov"><a href="http://<?=$_SERVER['SERVER_NAME'].'/catalog/element/'.$arFields['CODE']?>"><?=$arFields['NAME']?></a></p>
+						        			<p class="name_tov"><a href="<?=$productURL?>"><?=$arFields['NAME']?></a></p>
 						        			<p class="name_price">
 						        				<?php /*<span class="old_price">18 000 ₷</span>*/?>
 						        				<span class="new_price"><?=$price['PRICE']?> ₷</span>

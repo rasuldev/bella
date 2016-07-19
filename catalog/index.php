@@ -218,7 +218,7 @@ $APPLICATION->SetTitle("Каталог");
                             $price = CPrice::GetBasePrice($arFields['ID']);
                             ?>
                             <div class="new_prod clear">
-                                <a href="#"><img src="<?=$img['SRC']?>" alt=""/></a>
+                                <a href="http://<?=$_SERVER['SERVER_NAME'].'/catalog/element/'.$arFields['CODE']?>"><img src="<?=$img['SRC']?>" alt=""/></a>
                                 <div>
 									<?$APPLICATION->IncludeComponent(
 	"bitrix:iblock.vote", 
