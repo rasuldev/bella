@@ -274,7 +274,7 @@ $APPLICATION->SetTitle("Каталог");
         $arrFilter = array(
 			'>=CATALOG_PRICE_1' => $_GET['min_price']?$_GET['min_price']:0,
 			'<=CATALOG_PRICE_1' => $_GET['max_price']?$_GET['max_price']:3000,
-			'PROPERTY_BRAND_REF' => $_GET['brand']?$_GET['brand']:""
+			'PROPERTY_BRAND_REF' => $_GET['brand']?$_GET['brand']:"",
 		);
         ?>
 					        <? $APPLICATION->IncludeComponent(

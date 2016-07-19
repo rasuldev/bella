@@ -459,7 +459,7 @@ i[class^='sprite']{background-image: url(../img/sprite.png);display: block;heigh
 .prod .cat_prod a{font-size: 13px;text-transform: none;color: #8d8d8d; margin: 0 0 10px;display: inline-block;}
 .prod .price_prod .old_price{text-decoration: line-through;color: #8d8d8d;font-size: 14px;}
 .prod .skidki_prod{position: absolute;left:0;top:30px;}
-.prod .stars_prod{position: absolute; left:0; bottom:30px; width: 100%;}
+.prod .stars_prod, .prod .stars_vote_disabled{position: absolute; left:0; bottom:30px; width: 100%;}
 .stars_prod .ico_star{font-size: 13px;cursor: pointer; margin-right: 5px;}
 .stars_vote_disabled .ico_star{font-size: 13px; margin-right: 5px;}
 /*.stars_prod:hover .ico_star.reit{color:#F7941D !important;}*/
