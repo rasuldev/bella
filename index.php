@@ -264,9 +264,9 @@ $APPLICATION->SetTitle("Bellashop");
  </a> </aside>
 	</div>
 	 <!--banner_block--> <?php $arrFilter = array("PROPERTY_SALELEADER_VALUE" => "да");?> <?$APPLICATION->IncludeComponent(
-	"bitrix:catalog.section",
-	"saleleader",
-	Array(
+	"bitrix:catalog.section", 
+	"saleleader", 
+	array(
 		"ACTION_VARIABLE" => "action",
 		"ADD_PICT_PROP" => "MORE_PHOTO",
 		"ADD_PROPERTIES_TO_BASKET" => "Y",
@@ -290,9 +290,9 @@ $APPLICATION->SetTitle("Bellashop");
 		"DISABLE_INIT_JS_IN_COMPONENT" => "N",
 		"DISPLAY_BOTTOM_PAGER" => "Y",
 		"DISPLAY_TOP_PAGER" => "N",
-		"ELEMENT_SORT_FIELD" => "sort",
+		"ELEMENT_SORT_FIELD" => "RAND",
 		"ELEMENT_SORT_FIELD2" => "id",
-		"ELEMENT_SORT_ORDER" => "desc",
+		"ELEMENT_SORT_ORDER" => "ASC",
 		"ELEMENT_SORT_ORDER2" => "desc",
 		"FILTER_NAME" => "arrFilter",
 		"HIDE_NOT_AVAILABLE" => "N",
@@ -310,16 +310,28 @@ $APPLICATION->SetTitle("Bellashop");
 		"MESS_NOT_AVAILABLE" => "Нет в наличии",
 		"META_DESCRIPTION" => "-",
 		"META_KEYWORDS" => "-",
-		"OFFERS_CART_PROPERTIES" => array(0=>"COLOR_REF",),
-		"OFFERS_FIELD_CODE" => array(0=>"",1=>"",),
+		"OFFERS_CART_PROPERTIES" => array(
+			0 => "COLOR_REF",
+		),
+		"OFFERS_FIELD_CODE" => array(
+			0 => "",
+			1 => "",
+		),
 		"OFFERS_LIMIT" => "9",
-		"OFFERS_PROPERTY_CODE" => array(0=>"COLOR_REF",1=>"SIZES_SHOES",2=>"SIZES_CLOTHES",3=>"",),
+		"OFFERS_PROPERTY_CODE" => array(
+			0 => "COLOR_REF",
+			1 => "SIZES_SHOES",
+			2 => "SIZES_CLOTHES",
+			3 => "",
+		),
 		"OFFERS_SORT_FIELD" => "sort",
 		"OFFERS_SORT_FIELD2" => "id",
 		"OFFERS_SORT_ORDER" => "desc",
 		"OFFERS_SORT_ORDER2" => "desc",
 		"OFFER_ADD_PICT_PROP" => "-",
-		"OFFER_TREE_PROPS" => array(0=>"COLOR_REF",),
+		"OFFER_TREE_PROPS" => array(
+			0 => "COLOR_REF",
+		),
 		"PAGER_BASE_LINK_ENABLE" => "N",
 		"PAGER_DESC_NUMBERING" => "N",
 		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
@@ -329,21 +341,30 @@ $APPLICATION->SetTitle("Bellashop");
 		"PAGER_TITLE" => "Товары",
 		"PAGE_ELEMENT_COUNT" => "12",
 		"PARTIAL_PRODUCT_PROPERTIES" => "N",
-		"PRICE_CODE" => array(0=>"BASE",),
+		"PRICE_CODE" => array(
+			0 => "BASE",
+		),
 		"PRICE_VAT_INCLUDE" => "N",
 		"PRODUCT_DISPLAY_MODE" => "Y",
 		"PRODUCT_ID_VARIABLE" => "id",
-		"PRODUCT_PROPERTIES" => array(),
+		"PRODUCT_PROPERTIES" => array(
+		),
 		"PRODUCT_PROPS_VARIABLE" => "prop",
 		"PRODUCT_QUANTITY_VARIABLE" => "",
 		"PRODUCT_SUBSCRIPTION" => "N",
-		"PROPERTY_CODE" => array(0=>"",1=>"",),
+		"PROPERTY_CODE" => array(
+			0 => "",
+			1 => "",
+		),
 		"SECTION_CODE" => "",
 		"SECTION_CODE_PATH" => "",
 		"SECTION_ID" => $_REQUEST["SECTION_ID"],
 		"SECTION_ID_VARIABLE" => "SECTION_ID",
 		"SECTION_URL" => "",
-		"SECTION_USER_FIELDS" => array(0=>"",1=>"",),
+		"SECTION_USER_FIELDS" => array(
+			0 => "",
+			1 => "",
+		),
 		"SEF_MODE" => "Y",
 		"SEF_RULE" => "",
 		"SET_BROWSER_TITLE" => "Y",
@@ -362,7 +383,8 @@ $APPLICATION->SetTitle("Bellashop");
 		"USE_MAIN_ELEMENT_SECTION" => "N",
 		"USE_PRICE_COUNT" => "N",
 		"USE_PRODUCT_QUANTITY" => "N"
-	)
+	),
+	false
 );?>
 <!--	<div class="popular_tovar clear">-->
 <!--		<h2>популярные товары</h2>-->

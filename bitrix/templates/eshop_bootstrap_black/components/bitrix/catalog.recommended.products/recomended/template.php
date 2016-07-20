@@ -181,7 +181,7 @@ if (is_array($arResult['SKU_PROPS']))
 					?>
 				</a>
 				<p class="hover_prod">
-					<a id="<? echo $arItemIDs['BUY_LINK']; ?>" href="javascript:void(0)" rel="nofollow"><i class="ico_cart"></i></a>
+					<a id="<? echo $arItemIDs['BUY_LINK']; ?>" href="/?action=ADD2BASKET&amp;id=<?=$arItem['ID']?>" rel="nofollow"><i class="ico_cart"></i></a>
 				</p><!--hover_prod-->
 				<p class="skidki_prod">
 					<?if ($arItem['PROPERTIES']['SALELEADER']['VALUE_XML_ID'] == "YYY") {
