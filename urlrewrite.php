@@ -28,12 +28,6 @@ $arUrlRewrite = array(
 		"CONDITION" => "#^\\??(.*)#",
 		"RULE" => "&\$1",
 		"ID" => "bitrix:catalog.section",
-		"PATH" => "/index.php",
-	),
-	array(
-		"CONDITION" => "#^\\??(.*)#",
-		"RULE" => "&\$1",
-		"ID" => "bitrix:catalog.section",
 		"PATH" => "/catalog/index.php",
 	),
 	array(

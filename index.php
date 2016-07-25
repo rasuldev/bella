@@ -366,20 +366,76 @@ $APPLICATION->SetTitle("Bellashop");
 	)
 );*/?> <!--	<div class="popular_tovar clear">--> <!--		<h2>популярные товары</h2>--> <!--		<ul class="bxslider clear">--> <!--			<li> <aside class="prod"> <figure> <a class="img_prod" href="#"><img src="/bitrix/templates/eshop_bootstrap_black/img/product.jpg" alt=""></a>--> <!--			<p class="hover_prod">--> <!-- <a href="#"><i class="ico_cart"></i></a>--> <!--			</p>--> <!--			 <!--hover_prod--> <!--			<p class="skidki_prod">--> <!--<i class="sprite_1"></i>--> <!--    </p>--> <!--     <!--skidki_prod--> <!--						<p class="stars_prod">--> <!--<i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i>--> <!--    </p>--> <!--     <!--stars_prod--> <!--					</figure>--> <!--			<p class="cat_prod">--> <!-- <a href="#">Категория</a>--> <!--			</p>--> <!--			<p class="name_prod">--> <!-- <a href="#">набор «Медовая Золотая»</a>--> <!--			</p>--> <!--			<p class="price_prod">--> <!-- <span class="now_price">1 927 ₽</span>--> <!--			</p>--> <!-- </aside> <!--PRODUCT--> <!--</li>--> <!--			<li> <aside class="prod"> <figure> <a class="img_prod" href="#"><img src="/bitrix/templates/eshop_bootstrap_black/img/product.jpg" alt=""></a>--> <!--			<p class="hover_prod">--> <!-- <a href="#"><i class="ico_cart"></i></a>--> <!--			</p>--> <!--			 <!--hover_prod--> <!--						<p class="skidki_prod">--> <!--<i class="sprite_1"></i>--> <!--    </p>--> <!--     <!--skidki_prod--> <!--						<p class="stars_prod">--> <!--<i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i>--> <!--    </p>--> <!--     <!--stars_prod--> <!--</figure>--> <!--			<p class="cat_prod">--> <!-- <a href="#">Категория</a>--> <!--			</p>--> <!--			<p class="name_prod">--> <!-- <a href="#">набор «Медовая Золотая»</a>--> <!--			</p>--> <!--			<p class="price_prod">--> <!-- <span class="now_price">1 927 ₽</span>--> <!--			</p>--> <!-- </aside> --> <!--				<!--PRODUCT--> <!--			</li>--> <!--			<li> <aside class="prod"> <figure> <a class="img_prod" href="#"><img src="/bitrix/templates/eshop_bootstrap_black/img/product.jpg" alt=""></a>--> <!--			<p class="hover_prod">--> <!-- <a href="#"><i class="ico_cart"></i></a>--> <!--			</p>--> <!--			 <!--hover_prod--> <!--						<p class="skidki_prod">--> <!--<i class="sprite_1"></i>--> <!--    </p>--> <!--     <!--skidki_prod--> <!--						<p class="stars_prod">--> <!--<i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i>--> <!--    </p>--> <!--     <!--stars_prod--> <!--					</figure>--> <!--			<p class="cat_prod">--> <!-- <a href="#">Категория</a>--> <!--			</p>--> <!--			<p class="name_prod">--> <!-- <a href="#">набор «Медовая Золотая»</a>--> <!--			</p>--> <!--			<p class="price_prod">--> <!-- <span class="now_price">1 927 ₽</span>--> <!--			</p>--> <!-- </aside> --> <!--				<!--PRODUCT--> <!--			</li>--> <!--			<li> <aside class="prod"> <figure> <a class="img_prod" href="#"><img src="/bitrix/templates/eshop_bootstrap_black/img/product.jpg" alt=""></a>--> <!--			<p class="hover_prod">--> <!-- <a href="#"><i class="ico_cart"></i></a>--> <!--			</p>--> <!--			 <!--hover_prod--> <!--						<p class="skidki_prod">--> <!--<i class="sprite_1"></i>--> <!--    </p>--> <!--     <!--skidki_prod--> <!--						<p class="stars_prod">--> <!--<i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i>--> <!--    </p>--> <!--     <!--stars_prod--> <!--					</figure>--> <!--			<p class="cat_prod">--> <!-- <a href="#">Категория</a>--> <!--			</p>--> <!--			<p class="name_prod">--> <!-- <a href="#">набор «Медовая Золотая»</a>--> <!--			</p>--> <!--			<p class="price_prod">--> <!-- <span class="now_price">1 927 ₽</span>--> <!--			</p>--> <!-- </aside> <!--PRODUCT--> <!--			</li>--> <!--			<li> <aside class="prod"> <figure> <a class="img_prod" href="#"><img src="/bitrix/templates/eshop_bootstrap_black/img/product.jpg" alt=""></a>--> <!--			<p class="hover_prod">--> <!-- <a href="#"><i class="ico_cart"></i></a>--> <!--			</p>--> <!--			 <!--hover_prod--> <!--						<p class="skidki_prod">--> <!--<i class="sprite_1"></i>--> <!--    </p>--> <!--     <!--skidki_prod--> <!--						<p class="stars_prod">--> <!--<i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i>--> <!--    </p>--> <!--     <!--stars_prod--> <!--					</figure>--> <!--			<p class="cat_prod">--> <!-- <a href="#">Категория</a>--> <!--			</p>--> <!--			<p class="name_prod">--> <!-- <a href="#">набор «Медовая Золотая»</a>--> <!--			</p>--> <!--			<p class="price_prod">--> <!-- <span class="now_price">1 927 ₽</span>--> <!--			</p>--> <!-- </aside> --> <!--				<!--PRODUCT--> <!--			</li>--> <!--		</ul>--> <!--	</div>--> <!--popular_tovar-->
 	<?$APPLICATION->IncludeComponent(
-	"bitrix:sale.bestsellers", 
-	"bestsellers", 
+		"bitrix:sale.bestsellers",
+		"bestsellers",
+		Array(
+			"ACTION_VARIABLE" => "action",
+			"ADDITIONAL_PICT_PROP_2" => "MORE_PHOTO",
+			"ADDITIONAL_PICT_PROP_3" => "MORE_PHOTO",
+			"ADD_PROPERTIES_TO_BASKET" => "Y",
+			"AJAX_MODE" => "N",
+			"AJAX_OPTION_ADDITIONAL" => "",
+			"AJAX_OPTION_HISTORY" => "N",
+			"AJAX_OPTION_JUMP" => "N",
+			"AJAX_OPTION_STYLE" => "Y",
+			"BASKET_URL" => "/personal/basket.php",
+			"BY" => "AMOUNT",
+			"CACHE_TIME" => "86400",
+			"CACHE_TYPE" => "A",
+			"CART_PROPERTIES_2" => array("",""),
+			"CART_PROPERTIES_3" => array("",""),
+			"CONVERT_CURRENCY" => "N",
+			"DETAIL_URL" => "",
+			"DISPLAY_COMPARE" => "N",
+			"FILTER" => array("F"),
+			"HIDE_NOT_AVAILABLE" => "N",
+			"LABEL_PROP_2" => "-",
+			"LINE_ELEMENT_COUNT" => "3",
+			"MESS_BTN_BUY" => "Купить",
+			"MESS_BTN_DETAIL" => "Подробнее",
+			"MESS_BTN_SUBSCRIBE" => "Подписаться",
+			"MESS_NOT_AVAILABLE" => "Нет в наличии",
+			"OFFER_TREE_PROPS_3" => array(),
+			"PAGE_ELEMENT_COUNT" => "30",
+			"PARTIAL_PRODUCT_PROPERTIES" => "N",
+			"PERIOD" => "0",
+			"PRICE_CODE" => array("BASE"),
+			"PRICE_VAT_INCLUDE" => "Y",
+			"PRODUCT_ID_VARIABLE" => "id",
+			"PRODUCT_PROPS_VARIABLE" => "prop",
+			"PRODUCT_QUANTITY_VARIABLE" => "quantity",
+			"PRODUCT_SUBSCRIPTION" => "N",
+			"PROPERTY_CODE_2" => array("",""),
+			"PROPERTY_CODE_3" => array("",""),
+			"SHOW_DISCOUNT_PERCENT" => "N",
+			"SHOW_IMAGE" => "Y",
+			"SHOW_NAME" => "Y",
+			"SHOW_OLD_PRICE" => "Y",
+			"SHOW_PRICE_COUNT" => "1",
+			"SHOW_PRODUCTS_2" => "Y",
+			"TEMPLATE_THEME" => "blue",
+			"USE_PRODUCT_QUANTITY" => "N"
+		)
+	);?>
+	<div class="banner_akcii">
+		<div>
+			<h2 class="wow zoomIn"><a href="#">Столовый сервиз «тереза» всего за 20 000 ₷</a></h2>
+		</div>
+	</div>
+	 <!--banner_akcii--> <?
+	$rs= CIBlockElement::GetList(Array("RAND"=>"ASC"), Array('IBLOCK_ID'=>2), false, Array('nPageSize'=>1), Array('ID', 'NAME'));
+	$ob = $rs->GetNextElement();
+		$ar = $ob->GetFields();
+		$ar['ID'];
+	?> <?$APPLICATION->IncludeComponent(
+	"bitrix:catalog.recommended.products", 
+	"recomended", 
 	array(
-		"ACTION_VARIABLE" => "action",
+		"ACTION_VARIABLE" => "action_crp",
 		"ADDITIONAL_PICT_PROP_2" => "MORE_PHOTO",
 		"ADDITIONAL_PICT_PROP_3" => "MORE_PHOTO",
 		"ADD_PROPERTIES_TO_BASKET" => "Y",
-		"AJAX_MODE" => "N",
-		"AJAX_OPTION_ADDITIONAL" => "",
-		"AJAX_OPTION_HISTORY" => "N",
-		"AJAX_OPTION_JUMP" => "N",
-		"AJAX_OPTION_STYLE" => "Y",
 		"BASKET_URL" => "/personal/basket.php",
-		"BY" => "AMOUNT",
 		"CACHE_TIME" => "86400",
 		"CACHE_TYPE" => "A",
 		"CART_PROPERTIES_2" => array(
@@ -390,24 +446,24 @@ $APPLICATION->SetTitle("Bellashop");
 			0 => "",
 			1 => "",
 		),
+		"CODE" => $_REQUEST["PRODUCT_CODE"],
 		"CONVERT_CURRENCY" => "N",
 		"DETAIL_URL" => "",
-		"DISPLAY_COMPARE" => "N",
-		"FILTER" => array(
-			0 => "F",
-		),
 		"HIDE_NOT_AVAILABLE" => "N",
+		"IBLOCK_ID" => "2",
+		"IBLOCK_TYPE" => "catalog",
+		"ID" => $ar["ID"],
 		"LABEL_PROP_2" => "-",
-		"LINE_ELEMENT_COUNT" => "10",
+		"LINE_ELEMENT_COUNT" => "3",
 		"MESS_BTN_BUY" => "Купить",
 		"MESS_BTN_DETAIL" => "Подробнее",
 		"MESS_BTN_SUBSCRIBE" => "Подписаться",
 		"MESS_NOT_AVAILABLE" => "Нет в наличии",
+		"OFFERS_PROPERTY_LINK" => "RECOMMEND",
 		"OFFER_TREE_PROPS_3" => array(
 		),
-		"PAGE_ELEMENT_COUNT" => "10",
-		"PARTIAL_PRODUCT_PROPERTIES" => "Y",
-		"PERIOD" => "0",
+		"PAGE_ELEMENT_COUNT" => "30",
+		"PARTIAL_PRODUCT_PROPERTIES" => "N",
 		"PRICE_CODE" => array(
 			0 => "BASE",
 		),
@@ -424,76 +480,18 @@ $APPLICATION->SetTitle("Bellashop");
 			0 => "",
 			1 => "",
 		),
-		"SHOW_DISCOUNT_PERCENT" => "N",
-		"SHOW_IMAGE" => "Y",
-		"SHOW_NAME" => "Y",
-		"SHOW_OLD_PRICE" => "N",
-		"SHOW_PRICE_COUNT" => "1",
-		"SHOW_PRODUCTS_2" => "Y",
-		"TEMPLATE_THEME" => "blue",
-		"USE_PRODUCT_QUANTITY" => "N",
-		"COMPONENT_TEMPLATE" => "bestsellers"
-	),
-	false
-);?>
-	<div class="banner_akcii">
-		<div>
-			<h2 class="wow zoomIn"><a href="#">Столовый сервиз «тереза» всего за 20 000 ₷</a></h2>
-		</div>
-	</div>
-	 <!--banner_akcii--> <?
-	$rs= CIBlockElement::GetList(Array("RAND"=>"ASC"), Array('IBLOCK_ID'=>2), false, Array('nPageSize'=>1), Array('ID', 'NAME'));
-	$ob = $rs->GetNextElement();
-		$ar = $ob->GetFields();
-		$ar['ID'];
-	?> <?$APPLICATION->IncludeComponent(
-	"bitrix:catalog.recommended.products",
-	"recomended",
-	Array(
-		"ACTION_VARIABLE" => "action_crp",
-		"ADDITIONAL_PICT_PROP_2" => "MORE_PHOTO",
-		"ADDITIONAL_PICT_PROP_3" => "MORE_PHOTO",
-		"ADD_PROPERTIES_TO_BASKET" => "Y",
-		"BASKET_URL" => "/personal/basket.php",
-		"CACHE_TIME" => "86400",
-		"CACHE_TYPE" => "A",
-		"CART_PROPERTIES_2" => array(0=>"",1=>"",),
-		"CART_PROPERTIES_3" => array(0=>"",1=>"",),
-		"CODE" => $_REQUEST["PRODUCT_CODE"],
-		"CONVERT_CURRENCY" => "N",
-		"DETAIL_URL" => "",
-		"HIDE_NOT_AVAILABLE" => "N",
-		"IBLOCK_ID" => $_REQUEST["IBLOCK_ID"],
-		"IBLOCK_TYPE" => "catalog",
-		"ID" => $ar['ID'],
-		"LABEL_PROP_2" => "-",
-		"LINE_ELEMENT_COUNT" => "3",
-		"MESS_BTN_BUY" => "Купить",
-		"MESS_BTN_DETAIL" => "Подробнее",
-		"MESS_BTN_SUBSCRIBE" => "Подписаться",
-		"MESS_NOT_AVAILABLE" => "Нет в наличии",
-		"OFFERS_PROPERTY_LINK" => "RECOMMEND",
-		"OFFER_TREE_PROPS_3" => "",
-		"PAGE_ELEMENT_COUNT" => "30",
-		"PARTIAL_PRODUCT_PROPERTIES" => "N",
-		"PRICE_CODE" => "",
-		"PRICE_VAT_INCLUDE" => "Y",
-		"PRODUCT_ID_VARIABLE" => "id",
-		"PRODUCT_PROPS_VARIABLE" => "prop",
-		"PRODUCT_QUANTITY_VARIABLE" => "quantity",
-		"PRODUCT_SUBSCRIPTION" => "N",
-		"PROPERTY_CODE_2" => array(0=>"",1=>"",),
-		"PROPERTY_CODE_3" => array(0=>"",1=>"",),
 		"PROPERTY_LINK" => "RECOMMEND",
 		"SHOW_DISCOUNT_PERCENT" => "N",
 		"SHOW_IMAGE" => "Y",
 		"SHOW_NAME" => "Y",
-		"SHOW_OLD_PRICE" => "N",
+		"SHOW_OLD_PRICE" => "Y",
 		"SHOW_PRICE_COUNT" => "1",
 		"SHOW_PRODUCTS_2" => "Y",
 		"TEMPLATE_THEME" => "blue",
-		"USE_PRODUCT_QUANTITY" => "N"
-	)
+		"USE_PRODUCT_QUANTITY" => "N",
+		"COMPONENT_TEMPLATE" => "recomended"
+	),
+	false
 );?> <!--	<div class="recomend_tovar clear">--> <!--		<h2>рекомендуемые товары</h2>--> <!--		<div class="product_block clear">--> <!-- <aside class="prod"> <figure> <a class="img_prod" href="#"><img src="/bitrix/templates/eshop_bootstrap_black/img/product.jpg" alt=""></a>--> <!--			<p class="hover_prod">--> <!-- <a href="#"><i class="ico_cart"></i></a>--> <!--			</p>--> <!--			 <!--hover_prod--> <!--			<p class="skidki_prod">--> <!-- <i class="sprite_1"></i>--> <!--			</p>--> <!--			 <!--skidki_prod--> <!--			<p class="stars_prod">--> <!-- <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i>--> <!--			</p>--> <!--			 <!--stars_prod--><!-- </figure>--> <!--			<p class="cat_prod">--> <!-- <a href="#">Категория</a>--> <!--			</p>--> <!--			<p class="name_prod">--> <!-- <a href="#">набор «Медовая Золотая»</a>--> <!--			</p>--> <!--			<p class="price_prod">--> <!-- <span class="now_price">1 927 ₽</span>--> <!--			</p>--> <!-- </aside> <!--PRODUCT--><!-- <aside class="prod"> <figure> <a class="img_prod" href="#"><img src="/bitrix/templates/eshop_bootstrap_black/img/product.jpg" alt=""></a>--> <!--			<p class="hover_prod">--> <!-- <a href="#"><i class="ico_cart"></i></a>--> <!--			</p>--> <!--			 <!--hover_prod--> <!--			<p class="skidki_prod">--> <!-- <i class="sprite_3"></i>--> <!--			</p>--> <!--			 <!--skidki_prod--> <!--			<p class="stars_prod">--> <!-- <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i>--> <!--			</p>--> <!--			 <!--stars_prod--> <!--</figure>--> <!--			<p class="cat_prod">--> <!-- <a href="#">Категория</a>--> <!--			</p>--> <!--			<p class="name_prod">--> <!-- <a href="#">набор «Медовая Золотая»</a>--> <!--			</p>--> <!--			<p class="price_prod">--> <!-- <span class="now_price">1 927 ₽</span>--> <!--			</p>--> <!-- </aside> <!--PRODUCT--> <!--<aside class="prod"> <figure> <a class="img_prod" href="#"><img src="/bitrix/templates/eshop_bootstrap_black/img/product.jpg" alt=""></a>--> <!--			<p class="hover_prod">--> <!-- <a href="#"><i class="ico_cart"></i></a>--> <!--			</p>--> <!--			 <!--hover_prod--> <!--			<p class="skidki_prod">--> <!-- <i class="sprite_2"></i>--> <!--			</p>--> <!--			 <!--skidki_prod--> <!--			<p class="stars_prod">--> <!-- <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i>--> <!--			</p>--> <!--			 <!--stars_prod--> <!--</figure>--> <!--			<p class="cat_prod">--> <!-- <a href="#">Категория</a>--> <!--			</p>--> <!--			<p class="name_prod">--> <!-- <a href="#">набор «Медовая Золотая»</a>--> <!--			</p>--> <!--			<p class="price_prod">--> <!-- <span class="now_price">1 927 ₽</span>--> <!--			</p>--> <!-- </aside> <!--PRODUCT--> <!--<aside class="prod"> <figure> <a class="img_prod" href="#"><img src="/bitrix/templates/eshop_bootstrap_black/img/product.jpg" alt=""></a>--> <!--			<p class="hover_prod">--> <!-- <a class="in_cart" href="#"><i class="ico_cart"></i></a>--> <!--			</p>--> <!--			 <!--hover_prod--> <!--			<p class="skidki_prod">--> <!-- <i class="sprite_1"></i> <i class="sprite_2"></i> <i class="sprite_3"></i>--> <!--			</p>--> <!--			 <!--skidki_prod--> <!--			<p class="stars_prod">--> <!-- <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i>--> <!--			</p>--> <!--			 <!--stars_prod--> <!--</figure>
 <!--			<p class="cat_prod">--> <!-- <a href="#">Категория</a>--> <!--			</p>--> <!--			<p class="name_prod">--> <!-- <a href="#">набор «Медовая Золотая»</a>--> <!--			</p>--> <!--			<p class="price_prod">--> <!-- <span class="old_price">1 927 ₽</span> <span class="now_price">1 927 ₽</span>--> <!--			</p>--> <!-- </aside> <!--PRODUCT--><!-- <aside class="prod"> <figure> <a class="img_prod" href="#"><img src="/bitrix/templates/eshop_bootstrap_black/img/product.jpg" alt=""></a>--> <!--			<p class="hover_prod">--> <!-- <a class="in_cart" href="#"><i class="ico_cart"></i></a>--> <!--			</p>--> <!--			 <!--hover_prod--> <!--			<p class="skidki_prod">--> <!-- <i class="sprite_1"></i> <i class="sprite_2"></i> <i class="sprite_3"></i>--> <!--			</p>--> <!--			 <!--skidki_prod--> <!--			<p class="stars_prod">--> <!-- <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i>--> <!--			</p>--> <!--			 <!--stars_prod--> <!--</figure>--> <!--			<p class="cat_prod">--> <!-- <a href="#">Категория</a>--> <!--			</p>--> <!--			<p class="name_prod">--> <!-- <a href="#">набор «Медовая Золотая»</a>--> <!--			</p>--> <!--			<p class="price_prod">--> <!-- <span class="old_price">1 927 ₽</span> <span class="now_price">1 927 ₽</span>--> <!--			</p>--> <!-- </aside> <!--PRODUCT--> <!--<aside class="prod"> <figure> <a class="img_prod" href="#"><img src="/bitrix/templates/eshop_bootstrap_black/img/product.jpg" alt=""></a>--> <!--			<p class="hover_prod">--> <!-- <a class="in_cart" href="#"><i class="ico_cart"></i></a>--> <!--			</p>--> <!--			 <!--hover_prod--> <!--			<p class="skidki_prod">--> <!-- <i class="sprite_1"></i> <i class="sprite_2"></i> <i class="sprite_3"></i>--> <!--			</p>--> <!--			 <!--skidki_prod--> <!--			<p class="stars_prod">--> <!-- <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i>--> <!--			</p>--> <!--			 <!--stars_prod--> <!--</figure>--> <!--			<p class="cat_prod">--> <!-- <a href="#">Категория</a>--> <!--			</p>--> <!--			<p class="name_prod">--> <!-- <a href="#">набор «Медовая Золотая»</a>--> <!--			</p>--> <!--			<p class="price_prod">--> <!-- <span class="old_price">1 927 ₽</span> <span class="now_price">1 927 ₽</span>--> <!--			</p>--> <!-- </aside> <!--PRODUCT--> <!--<aside class="prod"> <figure> <a class="img_prod" href="#"><img src="/bitrix/templates/eshop_bootstrap_black/img/product.jpg" alt=""></a>--> <!--			<p class="hover_prod">--> <!-- <a class="in_cart" href="#"><i class="ico_cart"></i></a>--> <!--			</p>--> <!--			 <!--hover_prod--> <!--			<p class="skidki_prod">--> <!-- <i class="sprite_1"></i> <i class="sprite_2"></i> <i class="sprite_3"></i>--> <!--			</p>--> <!--			 <!--skidki_prod--> <!--			<p class="stars_prod">--> <!-- <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i>--> <!--			</p>--> <!--			 <!--stars_prod--> <!--</figure>--> <!--			<p class="cat_prod">--> <!-- <a href="#">Категория</a>--> <!--			</p>--> <!--			<p class="name_prod">--> <!-- <a href="#">набор «Медовая Золотая»</a>--> <!--			</p>--> <!--			<p class="price_prod">--> <!-- <span class="old_price">1 927 ₽</span> <span class="now_price">1 927 ₽</span>--> <!--			</p>--> <!-- </aside> <!--PRODUCT--><!--<aside class="prod"> <figure> <a class="img_prod" href="#"><img src="/bitrix/templates/eshop_bootstrap_black/img/product.jpg" alt=""></a>--> <!--			<p class="hover_prod">--> <!-- <a class="in_cart" href="#"><i class="ico_cart"></i></a>--> <!--			</p>--> <!--			 <!--hover_prod--> <!--			<p class="skidki_prod">--> <!-- <i class="sprite_1"></i> <i class="sprite_2"></i> <i class="sprite_3"></i>--> <!--			</p>--> <!--			 <!--skidki_prod--> <!--			<p class="stars_prod">--> <!-- <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i> <i class="ico_star"></i>--> <!--			</p>--> <!--			 <!--stars_prod--> <!--</figure>--> <!--			<p class="cat_prod">--> <!-- <a href="#">Категория</a>--> <!--			</p>--> <!--			<p class="name_prod">--> <!-- <a href="#">набор «Медовая Золотая»</a>--> <!--			</p>--> <!--			<p class="price_prod">--> <!-- <span class="old_price">1 927 ₽</span> <span class="now_price">1 927 ₽</span>--> <!--			</p>--> <!-- </aside> <!--PRODUCT--> <!--<aside class="prod">--> <!--				<figure>--> <!--					<a class="img_prod" href="#"><img src="--><?//=SITE_TEMPLATE_PATH?><!--/img/product.jpg" alt=""/></a>--> <!--					<p class="hover_prod">--> <!--						<a class="in_cart" href="#"><i class="ico_cart"></i></a>--> <!--					</p>&lt;!&ndash;hover_prod&ndash;&gt;--> <!--					<p class="skidki_prod">--> <!--						<i class="sprite_1"></i>--> <!--						<i class="sprite_2"></i>--> <!--						<i class="sprite_3"></i>--> <!--					</p>&lt;!&ndash;skidki_prod&ndash;&gt;--> <!--					<p class="stars_prod">--> <!--						<i class="ico_star"></i>--> <!--						<i class="ico_star"></i>--> <!--						<i class="ico_star"></i>--> <!--						<i class="ico_star"></i>--> <!--						<i class="ico_star"></i>--> <!--					</p>&lt;!&ndash;stars_prod&ndash;&gt;--> <!--				</figure>--> <!--				<p class="cat_prod"><a href="#">Категория</a></p>--> <!--				<p class="name_prod"><a href="#">набор «Медовая Золотая»</a></p>--> <!--				<p class="price_prod">--> <!--					<span class="old_price">1 927 ₽</span>--> <!--					<span class="now_price">1 927 ₽</span>--> <!--				</p>--> <!--				<p class="but_prod">--> <!--					<a href="#" class="in_cart">в корзину</a>--> <!--				</p>--> <!--			</aside>--> <!--		</div>--> <!--		 <!--product_block--> <!--		<p class="show_all_prod">--> <!-- <a href="#">посмотреть больше товаров</a>--> <!--		</p>--> <!--	</div>--> <!--recomend_tovar-->
 	<div class="podpiska">

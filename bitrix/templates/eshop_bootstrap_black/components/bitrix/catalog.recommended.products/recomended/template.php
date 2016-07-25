@@ -239,10 +239,35 @@ if (is_array($arResult['SKU_PROPS']))
 
 			<p class="price_prod">
 				<?
-				$ar_res = CPrice::GetBasePrice($arItem['ID']);
-				echo CurrencyFormat($ar_res["PRICE"], 'RUB');
+				if (!empty($arItem['MIN_PRICE']))
+				{
+					if (isset($arItem['OFFERS']) && !empty($arItem['OFFERS']))
+					{
+						echo GetMessage(
+							'CATALOG_RECOMMENDED_PRODUCTS_TPL_MESS_PRICE_SIMPLE_MODE',
+							array(
+								'#PRICE#' => $arItem['MIN_PRICE']['PRINT_DISCOUNT_VALUE'],
+								'#MEASURE#' => GetMessage(
+									'CATALOG_RECOMMENDED_PRODUCTS_TPL_MESS_MEASURE_SIMPLE_MODE',
+									array(
+										'#VALUE#' => $arItem['MIN_PRICE']['CATALOG_MEASURE_RATIO'],
+										'#UNIT#' => $arItem['MIN_PRICE']['CATALOG_MEASURE_NAME']
+									)
+								)
+							)
+						);
+					}
+					else
+					{
+						echo $arItem['MIN_PRICE']['PRINT_DISCOUNT_VALUE'];
+					}
+					if ('Y' == $arParams['SHOW_OLD_PRICE'] && $arItem['MIN_PRICE']['DISCOUNT_VALUE'] < $arItem['MIN_PRICE']['VALUE'])
+					{
+						?> <span
+						style="color: #a5a5a5;font-size: 12px;font-weight: normal;white-space: nowrap;text-decoration: line-through;"><? echo $arItem['MIN_PRICE']['PRINT_VALUE']; ?></span><?
+					}
+				}
 				?>
-				</span>
 			</p>
 		</aside>
 		<?
