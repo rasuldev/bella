@@ -463,7 +463,7 @@ i[class^='sprite']{background-image: url(../img/sprite.png);display: block;heigh
 .stars_prod .ico_star{font-size: 13px;cursor: pointer; margin-right: 5px;}
 .stars_vote_disabled .ico_star{font-size: 13px; margin-right: 5px;}
 /*.stars_prod:hover .ico_star.reit{color:#F7941D !important;}*/
-.stars_vote_disabled .ico_star.reit, .stars_prod .ico_star.reit{color:#F7941D !important;}
+.stars_vote_disabled .ico_star.reit, .stars_prod .ico_star.reit{color:#ffc600;}
 
 
 /*button*/
